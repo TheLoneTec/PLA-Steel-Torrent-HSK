@@ -1,0 +1,20 @@
+{
+    "folders": {
+        "new-version": {
+            "About": ".\\About",
+            "DefReferences": [
+                "e:\\Steam\\steamapps\\common\\RimWorld\\Data\\Ideology\\Defs",
+                "e:\\Steam\\steamapps\\common\\RimWorld\\Mods\\PLA_Armory\\Defs",
+                "e:\\Steam\\steamapps\\common\\RimWorld\\Data"
+            ],
+            "AssemblyReferences": [
+                "e:\\Steam\\steamapps\\common\\RimWorld\\RimWorldWin64_Data\\Managed"
+            ],
+            "Assemblies": ".\\Assemblies",
+            "Defs": ".\\Defs",
+            "Textures": ".\\Textures",
+            "Sounds": ".\\Sounds",
+            "Patches": ".\\Patches"
+        }
+    }
+}
