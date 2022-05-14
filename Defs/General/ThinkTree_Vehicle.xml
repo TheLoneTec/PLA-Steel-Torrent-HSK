@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+	<ThinkTreeDef>
+		<defName>PLA_RemoteVehicle</defName>
+		<thinkRoot Class="ThinkNode_Priority">
+			<subNodes>
+
+				<!-- Drafted -->
+
+				<li Class="ThinkNode_Subtree">
+					<treeDef>PLA_RemoteVehicleJoinCaravan</treeDef>
+				</li>
+				<li Class="ThinkNode_QueuedJob" />
+				<li Class="ThinkNode_Priority">
+					<subNodes>
+						<li Class="ThinkNode_Tagger">
+							<tagToGive>DraftedOrder</tagToGive>
+							<subNodes>
+								<li Class="JobGiver_Orders" />
+							</subNodes>
+						</li>
+					</subNodes>
+				</li>
+
+				<li Class="ThinkNode_QueuedJob" />
+				<li Class="ThinkNode_ConditionalHasLord">
+					<subNodes>
+						<li Class="ThinkNode_Duty" />
+					</subNodes>
+				</li>
+
+				<li Class="ThinkNode_Tagger">
+					<tagToGive>Idle</tagToGive>
+					<subNodes>
+						<!-- Wander -->
+						<li Class="PLA.Vehicle.JobGiver_ReturnToParkingLot" />
+					</subNodes>
+				</li>
+
+				<li Class="PLA.Vehicle.JobGiver_StandIdle" />
+			</subNodes>
+		</thinkRoot>
+	</ThinkTreeDef>
+
+	<ThinkTreeDef>
+		<defName>PLA_RemoteVehicleJoinCaravan</defName>
+		<thinkRoot Class="ThinkNode_Tagger">
+			<tagToGive>JoiningCaravan</tagToGive>
+			<subNodes>
+				<!-- If in non-PlayerHomeMap -->
+				<li Class="ThinkNode_ConditionalInNonPlayerHomeMap">
+					<subNodes>
+						<!-- Not a player controlled colonist -->
+						<li Class="ThinkNode_ConditionalPlayerControlledColonist">
+							<invert>true</invert>
+							<subNodes>
+								<!-- Of player faction, guest, or prisoner of colony -->
+								<li Class="ThinkNode_ConditionalOfPlayerFactionOrPlayerGuestOrPlayerPrisoner">
+									<subNodes>
+										<!-- There is a caravan nearby -->
+										<li Class="ThinkNode_ConditionalAnyAutoJoinableCaravan">
+											<subNodes>
+												<!-- Exit map and join the caravan -->
+												<li Class="JobGiver_ExitMapBest">
+													<failIfCantJoinOrCreateCaravan>true</failIfCantJoinOrCreateCaravan> <!-- in case the caravan moves before we manage to exit the map -->
+													<defaultLocomotion>Sprint</defaultLocomotion>
+												</li>
+											</subNodes>
+										</li>
+
+										<!-- Any colonist is now on his way to exit the map -> prepare to exit -->
+										<li Class="ThinkNode_ConditionalAnyColonistTryingToExitMap">
+											<subNodes>
+												<!-- Only if we're not currently following our master -->
+												<li Class="ThinkNode_ConditionalShouldFollowMaster">
+													<invert>true</invert>
+													<subNodes>
+														<!-- Wander near the map edge -->
+														<li Class="PLA.Vehicle.JobGiver_StandIdle"></li>
+													</subNodes>
+												</li>
+											</subNodes>
+										</li>
+									</subNodes>
+								</li>
+							</subNodes>
+						</li>
+					</subNodes>
+				</li>
+			</subNodes>
+		</thinkRoot>
+	</ThinkTreeDef>
+
+	<ThinkTreeDef>
+		<defName>PLA_RemoteVehicleConstant</defName>
+		<thinkRoot Class="ThinkNode_Priority">
+			<subNodes>
+				<li Class="ThinkNode_ConditionalCanDoConstantThinkTreeJobNow">
+					<subNodes>
+						<li Class="ThinkNode_Priority">
+							<subNodes>
+								<!-- Join auto joinable caravan -->
+								<li Class="ThinkNode_Subtree">
+									<treeDef>PLA_RemoteVehicleJoinCaravan</treeDef>
+								</li>
+
+								<!-- Lord directives -->
+								<li Class="ThinkNode_Subtree">
+									<treeDef>LordDutyConstant</treeDef>
+								</li>
+
+							</subNodes>
+						</li>
+					</subNodes>
+				</li>
+			</subNodes>
+		</thinkRoot>
+	</ThinkTreeDef>
+</Defs>

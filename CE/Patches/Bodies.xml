@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+    <!-- Car -->
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>/Defs/BodyDef[defName = "PLA_VehicleCar"]/corePart/groups</xpath>
+        <value>
+            <li>CoveredByNaturalArmor</li>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>/Defs/BodyDef[defName = "PLA_VehicleCar"]/corePart/parts/li[def = "PLA_VehicleTurret"]/groups</xpath>
+        <value>
+            <li>CoveredByNaturalArmor</li>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>/Defs/BodyDef[defName = "PLA_VehicleCar"]/corePart/parts/li[def = "PLA_VehicleBody"]/groups</xpath>
+        <value>
+            <li>CoveredByNaturalArmor</li>
+        </value>
+    </Operation>
+
+    <!-- Tank -->
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>/Defs/BodyDef[defName = "PLA_VehicleTank"]/corePart/groups</xpath>
+        <value>
+            <li>CoveredByNaturalArmor</li>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>/Defs/BodyDef[defName = "PLA_VehicleTank"]/corePart/parts/li[def = "PLA_VehicleTurret"]/groups</xpath>
+        <value>
+            <li>CoveredByNaturalArmor</li>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>/Defs/BodyDef[defName = "PLA_VehicleTank"]/corePart/parts/li[def = "PLA_VehicleBody"]/groups</xpath>
+        <value>
+            <li>CoveredByNaturalArmor</li>
+        </value>
+    </Operation>
+</Patch>

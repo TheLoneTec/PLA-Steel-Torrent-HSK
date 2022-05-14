@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+  <HediffDef Name="PLA_VehicleAttachmentBase" Abstract="True">
+    <hediffClass>Hediff_Implant</hediffClass>
+    <defaultLabelColor>(0.6, 0.6, 1.0)</defaultLabelColor>
+    <isBad>false</isBad>
+    <priceImpact>true</priceImpact>
+    <countsAsAddedPartOrImplant>true</countsAsAddedPartOrImplant>
+  </HediffDef>
+
+  <!-- These replace natural parts entirely -->
+  <HediffDef Name="PLA_VehiclePartBase" ParentName="PLA_VehicleAttachmentBase" Abstract="True">
+    <hediffClass>Hediff_AddedPart</hediffClass>
+    <priceImpact>true</priceImpact>
+  </HediffDef>
+
+  <ThingDef Name="PLA_VehicleModificationBase" ParentName="BodyPartBase" Abstract="True">
+    <techLevel>Industrial</techLevel>
+    <thingCategories>
+      <li>BodyPartsBionic</li>
+    </thingCategories>
+    <statBases>
+      <WorkToMake>26000</WorkToMake>
+    </statBases>
+    <recipeMaker>
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <effectWorking>Smith</effectWorking>
+      <soundWorking>Recipe_Smith</soundWorking>
+      <unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
+      <skillRequirements>
+        <Crafting>8</Crafting>
+      </skillRequirements>
+      <recipeUsers>
+        <li>FabricationBench</li>
+      </recipeUsers>
+    </recipeMaker>
+  </ThingDef>
+
+  <ThingDef Name="PLA_VehicleModComponentBase" ParentName="PLA_VehicleModificationBase" Abstract="True">
+    <graphicData>
+      <texPath>VehicleModification/VehicleComponent</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>1</drawSize>
+    </graphicData>
+  </ThingDef>
+
+  <ThingDef Name="PLA_VehicleModWeaponBase" ParentName="PLA_VehicleModificationBase" Abstract="True">
+    <graphicData>
+      <texPath>VehicleModification/VehicleWeapon</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>1</drawSize>
+    </graphicData>
+  </ThingDef>
+
+  <!--recipe-->
+  <RecipeDef Abstract="True" Name="PLA_RecipeModifyVehicle">
+    <effectWorking>Repair</effectWorking>
+    <workSpeedStat>ConstructionSpeed</workSpeedStat>
+    <workSkill>Construction</workSkill>
+    <workSkillLearnFactor>16</workSkillLearnFactor>
+    <dontShowIfAnyIngredientMissing>false</dontShowIfAnyIngredientMissing>
+  </RecipeDef>
+
+  <RecipeDef Abstract="True" Name="PLA_RecipeInstallVehicleAttachment" ParentName="PLA_RecipeModifyVehicle">
+    <workerClass>PLA.Vehicle.Recipe_InstallVehicleAttachment</workerClass>
+    <workAmount>2500</workAmount>
+  </RecipeDef>
+
+  <RecipeDef Abstract="True" Name="PLA_RecipeInstallVehiclePart" ParentName="PLA_RecipeModifyVehicle">
+    <workerClass>PLA.Vehicle.Recipe_InstallVehiclePart</workerClass>
+    <workAmount>2500</workAmount>
+  </RecipeDef>
+
+  <RecipeDef Abstract="True" Name="PLA_RecipeInstallVehicleWeapon" ParentName="PLA_RecipeModifyVehicle">
+    <workerClass>PLA.Vehicle.Recipe_InstallVehicleWeapon</workerClass>
+    <workAmount>2500</workAmount>
+  </RecipeDef>
+</Defs>

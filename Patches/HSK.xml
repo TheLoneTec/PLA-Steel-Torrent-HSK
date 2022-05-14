@@ -1,0 +1,452 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+	<Operation Class="PatchOperationFindMod">
+	<mods>
+		<li>PLA Steel Torrent</li>
+	</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+
+			<!-- ========== PLA Vechicles ========== -->
+			<li Class="PatchOperationAdd">
+				<xpath>Defs</xpath>
+				<value>
+					<ArchitectSense.DesignationSubCategoryDef>
+						<defName>SubCategory_PLA</defName>
+						<label>PLA Vechicles</label>
+						<description>Vehicles and Tanks for combat and travel.</description>
+						<defNames>
+							<li>PLA_BuildingLynx6x6UL</li>
+							<li>PLA_BuildingCSZ181OffRoad</li>
+							<li>PLA_BuildingVP22Truck</li>
+							<li>PLA_BuildingZTLL11IFV</li>
+							<li>PLA_BuildingZTZ99A</li>
+							<li>PLA_ParkingLot</li>
+						</defNames>
+						<designationCategory>Ship</designationCategory>
+						<debug>false</debug>
+					</ArchitectSense.DesignationSubCategoryDef>
+				</value>
+			</li>
+
+			<li Class="PatchOperationRemove">
+				<xpath>Defs/DesignationCategoryDef[defName="PLA_DesignationCategory_Vehicle"]</xpath>
+			</li>
+
+				<!-- ========== Ammo ========== -->
+
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/RecipeDef[defName="MakeAmmo_107mmRocket_HE"]</xpath>
+				<value>
+					<researchPrerequisite>Artillery_C2</researchPrerequisite>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/RecipeDef[defName="MakeAmmo_105mmShell_HE"]</xpath>
+				<value>
+					<researchPrerequisite>Artillery_C2</researchPrerequisite>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/RecipeDef[defName="MakeAmmo_105mmShell_APFSDS"]</xpath>
+				<value>
+					<researchPrerequisite>Artillery_C2</researchPrerequisite>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/RecipeDef[defName="MakeAmmo_125mmShell_HE"]</xpath>
+				<value>
+					<researchPrerequisite>Artillery_C2</researchPrerequisite>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/RecipeDef[defName="MakeAmmo_125mmShell_APFSDS"]</xpath>
+				<value>
+					<researchPrerequisite>Artillery_C2</researchPrerequisite>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/RecipeDef[defName="MakeAmmo_40mmCT_APFSDS"]</xpath>
+				<value>
+					<researchPrerequisite>Artillery_C2</researchPrerequisite>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/RecipeDef[defName="MakeAmmo_40mmCT_EMP"]</xpath>
+				<value>
+					<researchPrerequisite>Artillery_C2</researchPrerequisite>
+				</value>
+			</li>
+
+				<!-- ========== Lynx6x6 ultra light ========== -->
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="PLA_BuildingLynx6x6UL"]/costList</xpath>
+				<value>
+				<costList>
+					<Mechanism>8</Mechanism>
+					<ElectronicComponents>5</ElectronicComponents>
+					<Rubber>100</Rubber>
+					<ReinforcedGlass>35</ReinforcedGlass>
+					<ComponentIndustrial>12</ComponentIndustrial>
+					<ComponentSpacer>4</ComponentSpacer>
+				</costList>
+				</value>
+			</li>
+
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/ThingDef[defName = "PLA_BuildingLynx6x6UL"]</xpath>
+				<value>
+					<stuffCategories>
+						<li>Metallic</li>
+						<li>SolidMetallic</li>
+						<li>RuggedMetallic</li>
+					</stuffCategories>
+					<costStuffCount>800</costStuffCount>
+				</value>
+			</li>
+
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="PLA_BuildingLynx6x6UL"]/designationCategory</xpath>
+				<value>
+				<designationCategory>Ship</designationCategory>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="PLA_Lynx6x6UltraLight"]/comps/li/initialFuelPercent</xpath>
+				<value>
+				<initialFuelPercent>0</initialFuelPercent>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="PLA_Lynx6x6UltraLight"]/butcherProducts</xpath>
+				<value>
+				<butcherProducts>
+					<Mechanism>6</Mechanism>
+					<ElectronicComponents>3</ElectronicComponents>
+					<Rubber>70</Rubber>
+					<ReinforcedGlass>25</ReinforcedGlass>
+					<ComponentIndustrial>8</ComponentIndustrial>
+					<ComponentSpacer>2</ComponentSpacer>
+				</butcherProducts>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="PLA_Lynx6x6UltraLight"]/killedLeavings</xpath>
+				<value>
+				<killedLeavings>
+					<Mechanism>4</Mechanism>
+					<ElectronicComponents>3</ElectronicComponents>
+					<Rubber>30</Rubber>
+					<ReinforcedGlass>8</ReinforcedGlass>
+					<ComponentIndustrial>4</ComponentIndustrial>
+					<ComponentSpacer>1</ComponentSpacer>
+				</killedLeavings>
+				</value>
+			</li>
+			
+				<!-- ========== CSZ-181 off-road ========== -->
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="PLA_BuildingCSZ181OffRoad"]/costList</xpath>
+				<value>
+				<costList>
+					<Mechanism>17</Mechanism>
+					<ElectronicComponents>10</ElectronicComponents>
+					<Rubber>150</Rubber>
+					<ReinforcedGlass>35</ReinforcedGlass>
+					<ComponentIndustrial>32</ComponentIndustrial>
+					<ComponentSpacer>4</ComponentSpacer>
+				</costList>
+				</value>
+			</li>
+
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/ThingDef[defName = "PLA_BuildingCSZ181OffRoad"]</xpath>
+				<value>
+					<stuffCategories>
+						<li>Metallic</li>
+						<li>SolidMetallic</li>
+						<li>RuggedMetallic</li>
+					</stuffCategories>
+					<costStuffCount>2000</costStuffCount>
+				</value>
+			</li>
+
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="PLA_BuildingCSZ181OffRoad"]/designationCategory</xpath>
+				<value>
+				<designationCategory>Ship</designationCategory>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="PLA_CSZ181OffRoad"]/comps/li/initialFuelPercent</xpath>
+				<value>
+				<initialFuelPercent>0</initialFuelPercent>
+				</value>
+			</li>
+		
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="PLA_CSZ181OffRoad"]/butcherProducts</xpath>
+				<value>
+				<butcherProducts>
+					<Mechanism>6</Mechanism>
+					<ElectronicComponents>3</ElectronicComponents>
+					<Rubber>70</Rubber>
+					<ReinforcedGlass>25</ReinforcedGlass>
+					<ComponentIndustrial>8</ComponentIndustrial>
+					<ComponentSpacer>2</ComponentSpacer>
+				</butcherProducts>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="PLA_CSZ181OffRoad"]/killedLeavings</xpath>
+				<value>
+				<killedLeavings>
+					<Mechanism>4</Mechanism>
+					<ElectronicComponents>3</ElectronicComponents>
+					<Rubber>30</Rubber>
+					<ReinforcedGlass>8</ReinforcedGlass>
+					<ComponentIndustrial>4</ComponentIndustrial>
+					<ComponentSpacer>1</ComponentSpacer>
+				</killedLeavings>
+				</value>
+			</li>
+		
+				<!-- ========== VP-22 truck ========== -->
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="PLA_BuildingVP22Truck"]/costList</xpath>
+				<value>
+				<costList>
+					<Mechanism>20</Mechanism>
+					<ElectronicComponents>12</ElectronicComponents>
+					<Rubber>150</Rubber>
+					<ReinforcedGlass>25</ReinforcedGlass>
+					<ComponentIndustrial>40</ComponentIndustrial>
+					<ComponentSpacer>4</ComponentSpacer>
+				</costList>
+				</value>
+			</li>
+
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/ThingDef[defName = "PLA_BuildingVP22Truck"]</xpath>
+				<value>
+					<stuffCategories>
+						<li>Metallic</li>
+						<li>SolidMetallic</li>
+						<li>RuggedMetallic</li>
+					</stuffCategories>
+					<costStuffCount>3400</costStuffCount>
+				</value>
+			</li>
+
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="PLA_BuildingVP22Truck"]/designationCategory</xpath>
+				<value>
+				<designationCategory>Ship</designationCategory>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="PLA_VP22Truck"]/comps/li/initialFuelPercent</xpath>
+				<value>
+				<initialFuelPercent>0</initialFuelPercent>
+				</value>
+			</li>
+		
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="PLA_VP22Truck"]/butcherProducts</xpath>
+				<value>
+				<butcherProducts>
+					<Mechanism>12</Mechanism>
+					<ElectronicComponents>8</ElectronicComponents>
+					<Rubber>85</Rubber>
+					<ReinforcedGlass>25</ReinforcedGlass>
+					<ComponentIndustrial>28</ComponentIndustrial>
+					<ComponentSpacer>2</ComponentSpacer>
+				</butcherProducts>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="PLA_VP22Truck"]/killedLeavings</xpath>
+				<value>
+				<killedLeavings>
+					<Mechanism>6</Mechanism>
+					<ElectronicComponents>4</ElectronicComponents>
+					<Rubber>40</Rubber>
+					<ReinforcedGlass>8</ReinforcedGlass>
+					<ComponentIndustrial>12</ComponentIndustrial>
+					<ComponentSpacer>1</ComponentSpacer>
+				</killedLeavings>
+				</value>
+			</li>
+		
+				<!-- ========== ZTL-11 infantry fighting vehicle ========== -->
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="PLA_BuildingZTLL11IFV"]/costList</xpath>
+				<value>
+				<costList>
+					<Mechanism>20</Mechanism>
+					<ElectronicComponents>12</ElectronicComponents>
+					<Rubber>150</Rubber>
+					<ReinforcedGlass>15</ReinforcedGlass>
+					<SyntheticFibers>15</SyntheticFibers>
+					<ComponentIndustrial>40</ComponentIndustrial>
+					<ComponentSpacer>4</ComponentSpacer>
+				</costList>
+				</value>
+			</li>
+
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/ThingDef[defName = "PLA_BuildingZTLL11IFV"]</xpath>
+				<value>
+					<stuffCategories>
+						<li>Metallic</li>
+						<li>SolidMetallic</li>
+						<li>RuggedMetallic</li>
+					</stuffCategories>
+					<costStuffCount>3000</costStuffCount>
+				</value>
+			</li>
+
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="PLA_BuildingZTLL11IFV"]/designationCategory</xpath>
+				<value>
+				<designationCategory>Ship</designationCategory>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="PLA_ZTL11IFV"]/comps/li/initialFuelPercent</xpath>
+				<value>
+				<initialFuelPercent>0</initialFuelPercent>
+				</value>
+			</li>
+		
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="PLA_ZTL11IFV"]/butcherProducts</xpath>
+				<value>
+				<butcherProducts>
+					<Mechanism>12</Mechanism>
+					<ElectronicComponents>8</ElectronicComponents>
+					<Rubber>85</Rubber>
+					<SyntheticFibers>10</SyntheticFibers>
+					<ReinforcedGlass>25</ReinforcedGlass>
+					<ComponentIndustrial>28</ComponentIndustrial>
+					<ComponentSpacer>2</ComponentSpacer>
+				</butcherProducts>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="PLA_ZTL11IFV"]/killedLeavings</xpath>
+				<value>
+				<killedLeavings>
+					<Mechanism>6</Mechanism>
+					<ElectronicComponents>4</ElectronicComponents>
+					<Rubber>40</Rubber>
+					<SyntheticFibers>5</SyntheticFibers>
+					<ReinforcedGlass>8</ReinforcedGlass>
+					<ComponentIndustrial>12</ComponentIndustrial>
+					<ComponentSpacer>1</ComponentSpacer>
+				</killedLeavings>
+				</value>
+			</li>
+	
+				<!-- ========== ZTZ-99A main battle tank ========== -->
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="PLA_BuildingZTZ99A"]/costList</xpath>
+				<value>
+				<costList>
+					<Mechanism>25</Mechanism>
+					<ElectronicComponents>12</ElectronicComponents>
+					<Rubber>180</Rubber>
+					<ReinforcedGlass>5</ReinforcedGlass>
+					<SyntheticFibers>25</SyntheticFibers>
+					<ComponentIndustrial>50</ComponentIndustrial>
+					<ComponentSpacer>4</ComponentSpacer>
+				</costList>
+				</value>
+			</li>
+
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/ThingDef[defName = "PLA_BuildingZTZ99A"]</xpath>
+				<value>
+					<stuffCategories>
+						<li>Metallic</li>
+						<li>SolidMetallic</li>
+						<li>RuggedMetallic</li>
+					</stuffCategories>
+					<costStuffCount>4000</costStuffCount>
+				</value>
+			</li>
+
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="PLA_BuildingZTZ99A"]/designationCategory</xpath>
+				<value>
+				<designationCategory>Ship</designationCategory>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="PLA_ZTZ99ATank"]/comps/li/initialFuelPercent</xpath>
+				<value>
+				<initialFuelPercent>0</initialFuelPercent>
+				</value>
+			</li>
+		
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="PLA_ZTZ99ATank"]/butcherProducts</xpath>
+				<value>
+				<butcherProducts>
+					<Mechanism>12</Mechanism>
+					<ElectronicComponents>8</ElectronicComponents>
+					<Rubber>85</Rubber>
+					<ReinforcedGlass>25</ReinforcedGlass>
+					<SyntheticFibers>15</SyntheticFibers>
+					<ComponentIndustrial>28</ComponentIndustrial>
+					<ComponentSpacer>2</ComponentSpacer>
+				</butcherProducts>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="PLA_ZTZ99ATank"]/killedLeavings</xpath>
+				<value>
+				<killedLeavings>
+					<Mechanism>6</Mechanism>
+					<ElectronicComponents>4</ElectronicComponents>
+					<Rubber>40</Rubber>
+					<ReinforcedGlass>8</ReinforcedGlass>
+					<SyntheticFibers>5</SyntheticFibers>
+					<ComponentIndustrial>12</ComponentIndustrial>
+					<ComponentSpacer>1</ComponentSpacer>
+				</killedLeavings>
+				</value>
+			</li>
+	
+				<!-- ============ Parking Spot =============== -->
+				
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="PLA_ParkingLot"]/designationCategory</xpath>
+				<value>
+				<designationCategory>Ship</designationCategory>
+				</value>
+			</li>
+	
+			</operations>
+		</match>
+    </Operation>
+	
+</Patch>

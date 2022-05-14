@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+    <ST_AnitMaterialMachineGun.label>反器材机枪</ST_AnitMaterialMachineGun.label>
+    <ST_AnitMaterialMachineGun.description>发射大口径子弹的反器材机枪。</ST_AnitMaterialMachineGun.description>
+
+    <ST_AntiTankMissleLauncher.label>反坦克导弹</ST_AntiTankMissleLauncher.label>
+    <ST_AntiTankMissleLauncher.description>能跟踪载具和机械体的反坦克导弹。</ST_AntiTankMissleLauncher.description>
+
+    <PLA_BuildingLynx6x6UL.label>山猫全地形车</PLA_BuildingLynx6x6UL.label>
+    <PLA_BuildingLynx6x6UL.description>山猫VP-16全地形车。由北方工业研制的轻型全地形底盘，用来搭载用于步兵火力支援的武器。</PLA_BuildingLynx6x6UL.description>
+
+    <PLA_BuildingCSZ181OffRoad.label>猛士突击车</PLA_BuildingCSZ181OffRoad.label>
+    <PLA_BuildingCSZ181OffRoad.description>猛士CSZ-181越野车。由东风汽车集团研制的越野装甲车，顶部可以安装遥控炮塔。</PLA_BuildingCSZ181OffRoad.description>
+
+    <PLA_BuildingVP22Truck.label>装甲运输车</PLA_BuildingVP22Truck.label>
+    <PLA_BuildingVP22Truck.description>VP-22装甲运输车。由北方工业研制的装甲运输车，运载能力强，无法安装武器。</PLA_BuildingVP22Truck.description>
+
+    <PLA_BuildingZTLL11IFV.label>轮式突击炮</PLA_BuildingZTLL11IFV.label>
+    <PLA_BuildingZTLL11IFV.description>ZTL-11轮式突击炮。解放军的轮式突击炮，带有105mm加农炮。</PLA_BuildingZTLL11IFV.description>
+
+    <PLA_BuildingZTZ99A.label>99A主战坦克</PLA_BuildingZTZ99A.label>
+    <PLA_BuildingZTZ99A.description>ZTZ-99A主战坦克。解放军的主力坦克，带有125mm高压滑膛炮。</PLA_BuildingZTZ99A.description>
+
+    <PLA_ParkingLot.label>停车点</PLA_ParkingLot.label>
+    <PLA_ParkingLot.description>用于停放载具的区域，载具在非征召情况下会自动驶回停车点。车辆会根据停车点箭头的方向停放。</PLA_ParkingLot.description>
+
+    <PLA_Lynx6x6UltraLight.label>山猫全地形车</PLA_Lynx6x6UltraLight.label>
+    <PLA_Lynx6x6UltraLight.description>山猫VP-16全地形车。由北方工业研制的轻型全地形底盘，用来搭载用于步兵火力支援的武器。</PLA_Lynx6x6UltraLight.description>
+
+
+    <PLA_CSZ181OffRoad.label>猛士突击车</PLA_CSZ181OffRoad.label>
+    <PLA_CSZ181OffRoad.description>猛士CSZ-181越野车。由东风汽车集团研制的越野装甲车，顶部可以安装遥控炮塔。</PLA_CSZ181OffRoad.description>
+
+
+    <PLA_VP22Truck.label>装甲运输车</PLA_VP22Truck.label>
+    <PLA_VP22Truck.description>VP-22装甲运输车。由北方工业研制的装甲运输车，运载能力强，无法安装武器。</PLA_VP22Truck.description>
+
+    <PLA_ZTL11IFV.label>轮式突击炮</PLA_ZTL11IFV.label>
+    <PLA_ZTL11IFV.description>ZTL-11轮式突击炮。解放军的轮式突击炮，带有105mm加农炮。</PLA_ZTL11IFV.description>
+
+
+    <PLA_ZTZ99ATank.label>99A主战坦克</PLA_ZTZ99ATank.label>
+    <PLA_ZTZ99ATank.description>ZTZ-99A主战坦克。解放军的主力坦克，带有125mm高压滑膛炮。</PLA_ZTZ99ATank.description>
+
+    <PLA_Gun23mmAutocannon.label>23mm机炮</PLA_Gun23mmAutocannon.label>
+    <PLA_Gun23mmAutocannon.description>发射23x115mm炮弹的机炮，拥有强大的破环力。</PLA_Gun23mmAutocannon.description>
+
+    <PLA_Gun40mmCannon.label>40mm埋头弹炮</PLA_Gun40mmCannon.label>
+    <PLA_Gun40mmCannon.description>发射40mm埋头弹的机炮，能够轻易的击穿重型装甲。</PLA_Gun40mmCannon.description>
+
+    <PLA_Gun107mmRocketLauncher.label>107mm火箭炮</PLA_Gun107mmRocketLauncher.label>
+    <PLA_Gun107mmRocketLauncher.description>36管火箭炮，可以远距离打击敌人，精度不高，以量取胜。</PLA_Gun107mmRocketLauncher.description>
+
+    <PLA_Gun89HMGForVehicle.label>89式重机枪</PLA_Gun89HMGForVehicle.label>
+    <PLA_Gun89HMGForVehicle.description>发射12.7x108mm弹药的重机枪。</PLA_Gun89HMGForVehicle.description>
+
+    <PLA_TurretGun105mmCannon.label>105mm加农炮</PLA_TurretGun105mmCannon.label>
+    <PLA_TurretGun105mmCannon.description>发射105mm炮弹的加农炮。</PLA_TurretGun105mmCannon.description>
+    <PLA_TurretGun105mmCannon.comps.CompSecondaryVerb.mainWeaponLabel>使用主炮</PLA_TurretGun105mmCannon.comps.CompSecondaryVerb.mainWeaponLabel>
+    <PLA_TurretGun105mmCannon.comps.CompSecondaryVerb.secondaryWeaponLabel>使用同轴机枪</PLA_TurretGun105mmCannon.comps.CompSecondaryVerb.secondaryWeaponLabel>
+
+    <PLA_TurretGun105mmCannon.comps.CompAmmoUserVehicle.mainWeaponLabel>使用主炮</PLA_TurretGun105mmCannon.comps.CompAmmoUserVehicle.mainWeaponLabel>
+    <PLA_TurretGun105mmCannon.comps.CompAmmoUserVehicle.secondaryWeaponLabel>使用同轴机枪</PLA_TurretGun105mmCannon.comps.CompAmmoUserVehicle.secondaryWeaponLabel>
+
+    <PLA_TurretGun40mmAutoCannon.label>40mm自动埋头弹炮</PLA_TurretGun40mmAutoCannon.label>
+    <PLA_TurretGun40mmAutoCannon.description>发射40mm埋头弹弹的自动炮。</PLA_TurretGun40mmAutoCannon.description>
+    <PLA_TurretGun40mmAutoCannon.comps.CompSecondaryVerb.mainWeaponLabel>使用自动炮</PLA_TurretGun40mmAutoCannon.comps.CompSecondaryVerb.mainWeaponLabel>
+    <PLA_TurretGun40mmAutoCannon.comps.CompSecondaryVerb.secondaryWeaponLabel>使用同轴机枪</PLA_TurretGun40mmAutoCannon.comps.CompSecondaryVerb.secondaryWeaponLabel>
+
+    <PLA_TurretGun40mmAutoCannon.comps.CompAmmoUserVehicle.mainWeaponLabel>使用主炮</PLA_TurretGun40mmAutoCannon.comps.CompAmmoUserVehicle.mainWeaponLabel>
+    <PLA_TurretGun40mmAutoCannon.comps.CompAmmoUserVehicle.secondaryWeaponLabel>使用同轴机枪</PLA_TurretGun40mmAutoCannon.comps.CompAmmoUserVehicle.secondaryWeaponLabel>
+
+    <PLA_TurretGun99A.label>125mm高压滑膛炮</PLA_TurretGun99A.label>
+    <PLA_TurretGun99A.description>发射125mm炮弹的滑膛炮。</PLA_TurretGun99A.description>
+    <PLA_TurretGun99A.comps.CompSecondaryVerb.mainWeaponLabel>使用主炮</PLA_TurretGun99A.comps.CompSecondaryVerb.mainWeaponLabel>
+    <PLA_TurretGun99A.comps.CompSecondaryVerb.secondaryWeaponLabel>使用同轴机枪</PLA_TurretGun99A.comps.CompSecondaryVerb.secondaryWeaponLabel>
+
+    <PLA_TurretGun99A.comps.CompAmmoUserVehicle.mainWeaponLabel>使用主炮</PLA_TurretGun99A.comps.CompAmmoUserVehicle.mainWeaponLabel>
+    <PLA_TurretGun99A.comps.CompAmmoUserVehicle.secondaryWeaponLabel>使用同轴机枪</PLA_TurretGun99A.comps.CompAmmoUserVehicle.secondaryWeaponLabel>
+
+    <PLA_Gun04GLForVehicle.label>04式自动榴弹发射器</PLA_Gun04GLForVehicle.label>
+    <PLA_Gun04GLForVehicle.description>发射35mmSR榴弹的发射器。</PLA_Gun04GLForVehicle.description>
+
+    <PLA_Gun30mmAutocannon.label>30mm机炮</PLA_Gun30mmAutocannon.label>
+    <PLA_Gun30mmAutocannon.description>发射30x165mm炮弹的机炮，拥有强大的破环力。</PLA_Gun30mmAutocannon.description>
+    
+
+    
+
+
+</LanguageData>

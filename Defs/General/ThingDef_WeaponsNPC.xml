@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+    <ThingDef Name="ST_BaseGunNPC" Abstract="True" ParentName="BaseGunWithQuality">
+        <destroyOnDrop>true</destroyOnDrop>
+        <tradeability>None</tradeability>
+    </ThingDef>
+
+    <!-- ATMG-->
+
+    <ThingDef ParentName="ST_BaseGunNPC">
+        <defName>ST_AnitMaterialMachineGun</defName>
+        <label>anti-material machine gun</label>
+        <description>A anti-material machine gun uses high caliber ammo. It can penetrate armor very easily.</description>
+        <graphicData>
+            <texPath>WeaponsNPC/ATMG</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <soundInteract>Interact_Rifle</soundInteract>
+        <statBases>
+            <WorkToMake>25000</WorkToMake>
+            <Mass>12</Mass>
+            <AccuracyTouch>0.37</AccuracyTouch>
+            <AccuracyShort>0.41</AccuracyShort>
+            <AccuracyMedium>0.43</AccuracyMedium>
+            <AccuracyLong>0.38</AccuracyLong>
+            <RangedWeapon_Cooldown>2.5</RangedWeapon_Cooldown>
+        </statBases>
+        <equippedAngleOffset>45</equippedAngleOffset>
+        <costList>
+            <Steel>120</Steel>
+            <Plasteel>30</Plasteel>
+            <ComponentIndustrial>5</ComponentIndustrial>
+        </costList>
+        <weaponTags>
+            <!--li>IndustrialGunAdvanced</li-->
+        </weaponTags>
+        <equippedStatOffsets>
+            <MoveSpeed>-0.8</MoveSpeed>
+        </equippedStatOffsets>
+        <verbs>
+            <li>
+                <verbClass>Verb_Shoot</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <defaultProjectile>ST_Bullet_ATMG</defaultProjectile>
+                <warmupTime>2.2</warmupTime>
+                <range>35</range>
+                <burstShotCount>8</burstShotCount>
+                <ticksBetweenBurstShots>10</ticksBetweenBurstShots>
+                <soundCast>PLA_Shot89HMG</soundCast>
+                <soundCastTail>GunTail_Heavy</soundCastTail>
+                <muzzleFlashScale>9</muzzleFlashScale>
+            </li>
+        </verbs>
+        <tools>
+            <li>
+                <label>stock</label>
+                <capacities>
+                    <li>Blunt</li>
+                </capacities>
+                <power>15</power>
+                <cooldownTime>2</cooldownTime>
+            </li>
+            <li>
+                <label>barrel</label>
+                <capacities>
+                    <li>Blunt</li>
+                    <li>Poke</li>
+                </capacities>
+                <power>20</power>
+                <cooldownTime>2</cooldownTime>
+            </li>
+        </tools>
+    </ThingDef>
+
+    <ThingDef ParentName="BaseBullet">
+        <defName>ST_Bullet_ATMG</defName>
+        <label>Anti material bullet</label>
+        <graphicData>
+            <texPath>Things/Projectile/Bullet_Big</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <projectile>
+            <damageDef>Bullet</damageDef>
+            <damageAmountBase>23</damageAmountBase>
+            <stoppingPower>2</stoppingPower>
+            <armorPenetrationBase>0.50</armorPenetrationBase>
+            <speed>100</speed>
+        </projectile>
+    </ThingDef>
+
+    <!-- ATML-->
+
+    <ThingDef ParentName="ST_BaseGunNPC">
+        <defName>ST_AntiTankMissleLauncher</defName>
+        <label>anti-tank missile launcher</label>
+        <description>An anti-tank missile launcher. the missile can lock and guide if the target is vehicle, mechanoid or building</description>
+        <graphicData>
+            <texPath>WeaponsNPC/ATML</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <soundInteract>Interact_Rifle</soundInteract>
+        <statBases>
+            <WorkToMake>35000</WorkToMake>
+            <MarketValue>1000</MarketValue>
+            <AccuracyTouch>0.58</AccuracyTouch>
+            <AccuracyShort>0.65</AccuracyShort>
+            <AccuracyMedium>0.86</AccuracyMedium>
+            <AccuracyLong>0.87</AccuracyLong>
+            <Mass>8</Mass>
+            <RangedWeapon_Cooldown>5</RangedWeapon_Cooldown>
+        </statBases>
+        <costList>
+            <Steel>120</Steel>
+            <ComponentIndustrial>7</ComponentIndustrial>
+        </costList>
+        <weaponTags>
+            <!--li>IndustrialGunAdvanced</li-->
+        </weaponTags>
+        <verbs>
+            <li>
+                <verbClass>Verb_Shoot</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <defaultProjectile>ST_AntiTankMissile</defaultProjectile>
+                <forcedMissRadius>4</forcedMissRadius>
+                <warmupTime>6.8</warmupTime>
+                <ai_AvoidFriendlyFireRadius>8</ai_AvoidFriendlyFireRadius>
+                <range>42</range>
+                <burstShotCount>1</burstShotCount>
+                <soundCast>PLA_Shot107mmRocketLauncher</soundCast>
+                <soundCastTail>GunTail_Heavy</soundCastTail>
+                <onlyManualCast>true</onlyManualCast>
+                <muzzleFlashScale>14</muzzleFlashScale>
+            </li>
+        </verbs>
+        <tools>
+            <li>
+                <label>barrel</label>
+                <capacities>
+                    <li>Blunt</li>
+                </capacities>
+                <power>11.7</power>
+                <cooldownTime>2.6</cooldownTime>
+            </li>
+        </tools>
+    </ThingDef>
+    <ThingDef ParentName="BaseBullet">
+        <defName>ST_AntiTankMissile</defName>
+        <label>HEAT missile</label>
+        <graphicData>
+            <texPath>Things/Projectile/Bullet_Big</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <thingClass>IZUtility.Weapon.ProjectileMissile</thingClass>
+        <projectile>
+            <damageDef>Bomb</damageDef>
+            <explosionRadius>1.5</explosionRadius>
+            <speed>50</speed>
+            <damageAmountBase>90</damageAmountBase>
+            <flyOverhead>true</flyOverhead>
+            <explosionDelay>5</explosionDelay>
+            <stoppingPower>4</stoppingPower>
+            <armorPenetrationBase>2</armorPenetrationBase>
+        </projectile>
+    </ThingDef>
+</Defs>

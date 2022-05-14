@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+    <Ammo_40mmCT_APFSDS.label>40mm埋头弹（尾翼稳定脱壳穿甲弹）</Ammo_40mmCT_APFSDS.label>
+    <Bullet_40mmCT_APFSDS.label>40mm埋头弹（尾翼稳定脱壳穿甲弹）</Bullet_40mmCT_APFSDS.label>
+
+    <Ammo_40mmCT_EMP.label>40mm埋头弹（电磁脉冲）</Ammo_40mmCT_EMP.label>
+    <Bullet_40mmCT_EMP.label>40mm埋头弹（电磁脉冲）</Bullet_40mmCT_EMP.label>
+    
+
+
+    <Ammo_105mmShell_HE.label>105mm滑膛炮弹（高爆弹）</Ammo_105mmShell_HE.label>
+    <Bullet_105mmShell_HE.label>105mm滑膛炮弹（高爆弹）</Bullet_105mmShell_HE.label>
+
+    <Ammo_105mmShell_APFSDS.label>105mm滑膛炮弹（尾翼稳定脱壳穿甲弹）</Ammo_105mmShell_APFSDS.label>
+    <Bullet_105mmShell_APFSDS.label>105mm滑膛炮弹（尾翼稳定脱壳穿甲弹）</Bullet_105mmShell_APFSDS.label>
+
+    <Ammo_125mmShell_HE.label>125mm滑膛炮弹（高爆弹）</Ammo_125mmShell_HE.label>
+    <Bullet_125mmShell_HE.label>125mm滑膛炮弹（高爆弹）</Bullet_125mmShell_HE.label>
+
+    <Ammo_125mmShell_APFSDS.label>125mm滑膛炮弹（尾翼稳定脱壳穿甲弹）</Ammo_125mmShell_APFSDS.label>
+    <Bullet_125mmShell_APFSDS.label>125mm滑膛炮弹（尾翼稳定脱壳穿甲弹）</Bullet_125mmShell_APFSDS.label>
+
+    <PLA_MetalJet_CannonShell.label>金属射流</PLA_MetalJet_CannonShell.label>
+
+
+    <Ammo_30x165mmSoviet_FMJ.label>30x165mm 苏维埃炮弹（全金属被甲弹）</Ammo_30x165mmSoviet_FMJ.label>
+    <Bullet_30x165mmSoviet_FMJ.label>30x165mm 苏维埃炮弹（全金属被甲弹）</Bullet_30x165mmSoviet_FMJ.label>
+
+    <Ammo_30x165mmSoviet_Incendiary.label>30x165mm 苏维埃炮弹（穿甲燃烧弹）</Ammo_30x165mmSoviet_Incendiary.label>
+    <Bullet_30x165mmSoviet_Incendiary.label>30x165mm 苏维埃炮弹（穿甲燃烧弹）</Bullet_30x165mmSoviet_Incendiary.label>
+
+    <Ammo_30x165mmSoviet_HE.label>30x165mm 苏维埃炮弹（高爆弹）</Ammo_30x165mmSoviet_HE.label>
+    <Bullet_30x165mmSoviet_HE.label>30x165mm 苏维埃炮弹（高爆弹）</Bullet_30x165mmSoviet_HE.label>
+
+    <Ammo_30x165mmSoviet_Sabot.label>30x165mm 苏维埃炮弹（脱壳穿甲弹）</Ammo_30x165mmSoviet_Sabot.label>
+    <Bullet_30x165mmSoviet_Sabot.label>30x165mm 苏维埃炮弹（脱壳穿甲弹）</Bullet_30x165mmSoviet_Sabot.label>
+
+
+    <Ammo_23x115mmSoviet_FMJ.label>23x115mm 苏维埃炮弹（全金属被甲弹）</Ammo_23x115mmSoviet_FMJ.label>
+    <Bullet_23x115mmSoviet_FMJ.label>23x115mm 苏维埃炮弹（全金属被甲弹）</Bullet_23x115mmSoviet_FMJ.label>
+
+    <Ammo_23x115mmSoviet_Incendiary.label>23x115mm 苏维埃炮弹（穿甲燃烧弹）</Ammo_23x115mmSoviet_Incendiary.label>
+    <Bullet_23x115mmSoviet_Incendiary.label>23x115mm 苏维埃炮弹（穿甲燃烧弹）</Bullet_23x115mmSoviet_Incendiary.label>
+
+    <Ammo_23x115mmSoviet_HE.label>23x115mm 苏维埃炮弹（高爆弹）</Ammo_23x115mmSoviet_HE.label>
+    <Bullet_23x115mmSoviet_HE.label>23x115mm 苏维埃炮弹（高爆弹）</Bullet_23x115mmSoviet_HE.label>
+
+    <Ammo_23x115mmSoviet_Sabot.label>23x115mm 苏维埃炮弹（脱壳穿甲弹）</Ammo_23x115mmSoviet_Sabot.label>
+    <Bullet_23x115mmSoviet_Sabot.label>23x115mm 苏维埃炮弹（脱壳穿甲弹）</Bullet_23x115mmSoviet_Sabot.label>
+
+
+    <Ammo_107mmRocket_HE.label>107mm火箭弹 (高爆弹)</Ammo_107mmRocket_HE.label>
+    <Bullet_107mmRocket_HE.label>107mm火箭弹 (高爆弹)</Bullet_107mmRocket_HE.label>
+
+    <Ammo_80x256mmFuel_HEAT.label>80x256mm 制导炮弹 (穿甲)</Ammo_80x256mmFuel_HEAT.label>
+    <Bullet_107mmRocket_HE.label>80x256mm 制导炮弹 (穿甲)</Bullet_107mmRocket_HE.label>
+</LanguageData>

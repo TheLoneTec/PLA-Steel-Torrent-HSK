@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+    <ThingDef ParentName="PLA_VehicleModWeaponBase">
+        <defName>PLA_VehicleWeapon105mmCannon</defName>
+        <label>vehicle modification kit - 105mm cannon</label>
+        <description>A modification toolkit that can be used to install the 105mm cannon on vehicle.</description>
+        <descriptionHyperlinks>
+            <ThingDef>PLA_TurretGun105mmCannon</ThingDef>
+            <RecipeDef>PLA_InstallWeapon105mmCannon</RecipeDef>
+            <ThingDef>PLA_ZTL11IFV</ThingDef>
+        </descriptionHyperlinks>
+        <costList>
+            <Steel>420</Steel>
+            <ComponentIndustrial>15</ComponentIndustrial>
+        </costList>
+        <statBases>
+            <Mass>80</Mass>
+        </statBases>
+        <researchPrerequisites>
+            <li>PLA_ResearchVehicle_VehicleModification</li>
+            <li>PLA_ResearchVehicle_ZTL11IFV</li>
+        </researchPrerequisites>
+    </ThingDef>
+
+    <RecipeDef ParentName="PLA_RecipeInstallVehicleWeapon">
+        <defName>PLA_InstallWeapon105mmCannon</defName>
+        <label>install 105mm cannon</label>
+        <description>Install the 105mm cannon on vehicle.</description>
+        <descriptionHyperlinks>
+            <ThingDef>PLA_VehicleWeapon105mmCannon</ThingDef>
+            <ThingDef>PLA_TurretGun105mmCannon</ThingDef>
+            <ThingDef>PLA_ZTL11IFV</ThingDef>
+        </descriptionHyperlinks>
+        <jobString>Installing 105mm cannon</jobString>
+        <recipeUsers>
+            <li>PLA_ZTL11IFV</li>
+        </recipeUsers>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>PLA_VehicleWeapon105mmCannon</li>
+                    </thingDefs>
+                </filter>
+                <count>1</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>PLA_VehicleWeapon105mmCannon</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <appliedOnFixedBodyParts>
+            <li>PLA_VehicleTurret</li>
+        </appliedOnFixedBodyParts>
+        <modExtensions>
+            <li Class="PLA.Vehicle.RecipeModifyVehicleProps">
+                <weaponToInstall>PLA_TurretGun105mmCannon</weaponToInstall>
+            </li>
+        </modExtensions>
+    </RecipeDef>
+
+    <!--40mm-->
+
+    <ThingDef ParentName="PLA_VehicleModWeaponBase">
+        <defName>PLA_VehicleWeapon40mmAutoCannon</defName>
+        <label>vehicle modification kit - 40mm auto CT cannon</label>
+        <description>A modification toolkit that can be used to install the 40mm auto CT cannon on vehicle.</description>
+        <descriptionHyperlinks>
+            <ThingDef>PLA_TurretGun40mmAutoCannon</ThingDef>
+            <RecipeDef>PLA_InstallWeapon40mmAutoCannon</RecipeDef>
+            <ThingDef>PLA_ZTL11IFV</ThingDef>
+        </descriptionHyperlinks>
+        <costList>
+            <Steel>420</Steel>
+            <ComponentIndustrial>15</ComponentIndustrial>
+        </costList>
+        <statBases>
+            <Mass>80</Mass>
+        </statBases>
+        <researchPrerequisites>
+            <li>PLA_ResearchVehicle_VehicleModification</li>
+            <li>PLA_ResearchVehicle_ZTL11IFV</li>
+        </researchPrerequisites>
+    </ThingDef>
+
+    <RecipeDef ParentName="PLA_RecipeInstallVehicleWeapon">
+        <defName>PLA_InstallWeapon40mmAutoCannon</defName>
+        <label>install 40mm auto CT cannon</label>
+        <description>Install the 40mm auto CT cannon on vehicle.</description>
+        <descriptionHyperlinks>
+            <ThingDef>PLA_VehicleWeapon40mmAutoCannon</ThingDef>
+            <ThingDef>PLA_TurretGun40mmAutoCannon</ThingDef>
+            <ThingDef>PLA_ZTL11IFV</ThingDef>
+        </descriptionHyperlinks>
+        <jobString>Installing 40mm auto CT cannon</jobString>
+        <recipeUsers>
+            <li>PLA_ZTL11IFV</li>
+        </recipeUsers>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>PLA_VehicleWeapon40mmAutoCannon</li>
+                    </thingDefs>
+                </filter>
+                <count>1</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>PLA_VehicleWeapon40mmAutoCannon</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <appliedOnFixedBodyParts>
+            <li>PLA_VehicleTurret</li>
+        </appliedOnFixedBodyParts>
+        <modExtensions>
+            <li Class="PLA.Vehicle.RecipeModifyVehicleProps">
+                <weaponToInstall>PLA_TurretGun40mmAutoCannon</weaponToInstall>
+            </li>
+        </modExtensions>
+    </RecipeDef>
+</Defs>

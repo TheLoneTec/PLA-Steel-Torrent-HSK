@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/CombatExtended.AmmoSetDef[defName="AmmoSet_80x256mmFuel"]/ammoTypes</xpath>
+        <value>
+            <Ammo_80x256mmFuel_HEAT>Bullet_80x256mmFuel_HEAT</Ammo_80x256mmFuel_HEAT>
+        </value>
+    </Operation>
+
+</Patch>

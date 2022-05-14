@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+  <!-- advanced fire control computer  -->
+  <HediffDef ParentName="PLA_VehiclePartBase">
+    <defName>PLA_AdvancedFireControlComputer</defName>
+    <label>advanced fire-control computer</label>
+    <labelNoun>advanced fire-control computer</labelNoun>
+    <description>An installed advanced fire-control computer.</description>
+    <descriptionHyperlinks>
+      <ThingDef>PLA_AdvancedFireControlComputer</ThingDef>
+    </descriptionHyperlinks>
+    <spawnThingOnRemoved>PLA_AdvancedFireControlComputer</spawnThingOnRemoved>
+    <woundAnchorRange>0</woundAnchorRange>
+    <displayWound>true</displayWound>
+    <addedPartProps>
+      <solid>true</solid>
+      <partEfficiency>1.5</partEfficiency>
+      <betterThanNatural>true</betterThanNatural>
+    </addedPartProps>
+  </HediffDef>
+
+  <ThingDef ParentName="PLA_VehicleModComponentBase">
+    <defName>PLA_AdvancedFireControlComputer</defName>
+    <label>advanced advanced-fire control computer</label>
+    <description>An advanced fire-control computer, it can improve the aming acuracy of vehicle.</description>
+    <descriptionHyperlinks>
+      <RecipeDef>PLA_InstallAdvancedFireControlComputer</RecipeDef>
+      <ThingDef>PLA_Lynx6x6UltraLight</ThingDef>
+      <ThingDef>PLA_CSZ181OffRoad</ThingDef>
+      <ThingDef>PLA_ZTZ99ATank</ThingDef>
+    </descriptionHyperlinks>
+    <costList>
+      <Steel>50</Steel>
+      <Gold>15</Gold>
+      <ComponentSpacer>4</ComponentSpacer>
+    </costList>
+    <statBases>
+      <Mass>15</Mass>
+    </statBases>
+    <researchPrerequisites>
+      <li>PLA_ResearchVehicle_VehicleModification</li>
+  </researchPrerequisites>
+  </ThingDef>
+
+  <RecipeDef ParentName="PLA_RecipeInstallVehiclePart">
+    <defName>PLA_InstallAdvancedFireControlComputer</defName>
+    <label>install advanced fire-control computer</label>
+    <description>Install a advanced fire-control computer.</description>
+    <descriptionHyperlinks>
+      <ThingDef>PLA_AdvancedFireControlComputer</ThingDef>
+      <HediffDef>PLA_AdvancedFireControlComputer</HediffDef>
+    </descriptionHyperlinks>
+    <jobString>Installing advanced fire-control computer.</jobString>
+    <recipeUsers>
+      <li>PLA_CSZ181OffRoad</li>
+      <li>PLA_Lynx6x6UltraLight</li>
+      <li>PLA_ZTZ99ATank</li>
+      <li>PLA_ZTL11IFV</li>
+    </recipeUsers>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>PLA_AdvancedFireControlComputer</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>PLA_AdvancedFireControlComputer</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>PLA_SightSensor</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>PLA_AdvancedFireControlComputer</addsHediff>
+  </RecipeDef>
+
+  <!-- composite armor  -->
+
+  <HediffDef ParentName="PLA_VehicleAttachmentBase">
+    <defName>PLA_CompositeArmor</defName>
+    <label>composite armor</label>
+    <labelNoun>composite armor</labelNoun>
+    <description>The composite armor, it can give better protection for vehicle.</description>
+    <descriptionHyperlinks>
+      <ThingDef>PLA_CompositeArmor</ThingDef>
+    </descriptionHyperlinks>
+    <spawnThingOnRemoved>PLA_CompositeArmor</spawnThingOnRemoved>
+    <woundAnchorRange>0</woundAnchorRange>
+    <displayWound>true</displayWound>
+    <addedPartProps>
+      <solid>true</solid>
+      <betterThanNatural>true</betterThanNatural>
+    </addedPartProps>
+    <stages>
+      <li>
+        <capMods>
+          <li>
+            <capacity>Moving</capacity>
+            <postFactor>0.95</postFactor>
+          </li>
+        </capMods>
+        <statOffsets>
+          <ArmorRating_Sharp>0.3</ArmorRating_Sharp>
+          <ArmorRating_Blunt>0.1</ArmorRating_Blunt>
+          <ArmorRating_Heat>0.2</ArmorRating_Heat>
+        </statOffsets>
+      </li>
+    </stages>
+  </HediffDef>
+
+  <ThingDef ParentName="PLA_VehicleModComponentBase">
+    <defName>PLA_CompositeArmor</defName>
+    <label>composite armor</label>
+    <description>The composite armor, it can give better protection for vehicle.</description>
+    <descriptionHyperlinks>
+      <RecipeDef>PLA_InstallCompositeArmor</RecipeDef>
+      <ThingDef>PLA_Lynx6x6UltraLight</ThingDef>
+      <ThingDef>PLA_CSZ181OffRoad</ThingDef>
+    </descriptionHyperlinks>
+    <costList>
+      <Plasteel>75</Plasteel>
+      <Uranium>50</Uranium>
+      <ComponentIndustrial>8</ComponentIndustrial>
+    </costList>
+    <statBases>
+      <Mass>15</Mass>
+    </statBases>
+    <researchPrerequisites>
+      <li>PLA_ResearchVehicle_VehicleModification</li>
+  </researchPrerequisites>
+  </ThingDef>
+
+  <RecipeDef ParentName="PLA_RecipeInstallVehicleAttachment">
+    <defName>PLA_InstallCompositeArmor</defName>
+    <label>install composite armor</label>
+    <description>Install the composite armor.</description>
+    <descriptionHyperlinks>
+      <ThingDef>PLA_CompositeArmor</ThingDef>
+      <HediffDef>PLA_CompositeArmor</HediffDef>
+    </descriptionHyperlinks>
+    <jobString>Installing advanced fire-control computer.</jobString>
+    <recipeUsers>
+      <li>PLA_CSZ181OffRoad</li>
+      <li>PLA_Lynx6x6UltraLight</li>
+    </recipeUsers>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>PLA_CompositeArmor</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>PLA_CompositeArmor</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>PLA_VehicleArmor</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>PLA_CompositeArmor</addsHediff>
+  </RecipeDef>
+
+</Defs>

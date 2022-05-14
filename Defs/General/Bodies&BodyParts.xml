@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+    <!-- sensor&core -->
+
+    <BodyPartDef>
+        <defName>PLA_AutoPilotComputer</defName>
+        <label>auto-pilot computer</label>
+        <hitPoints>20</hitPoints>
+        <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+        <skinCovered>false</skinCovered>
+        <solid>true</solid>
+        <alive>false</alive>
+        <bleedRate>0</bleedRate>
+        <tags>
+            <li>ConsciousnessSource</li>
+        </tags>
+    </BodyPartDef>
+
+    <BodyPartDef>
+        <defName>PLA_Engine</defName>
+        <label>engine</label>
+        <hitPoints>40</hitPoints>
+        <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+        <skinCovered>false</skinCovered>
+        <solid>true</solid>
+        <alive>false</alive>
+        <bleedRate>0</bleedRate>
+        <frostbiteVulnerability>1</frostbiteVulnerability>
+        <tags>
+            <li>BloodPumpingSource</li>
+            <li>MovingLimbCore</li>
+            <li>ManipulationLimbCore</li>
+        </tags>
+    </BodyPartDef>
+
+    <BodyPartDef>
+        <defName>PLA_SightSensor</defName>
+        <label>visual sensor</label>
+        <hitPoints>20</hitPoints>
+        <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+        <skinCovered>false</skinCovered>
+        <solid>true</solid>
+        <alive>false</alive>
+        <bleedRate>0</bleedRate>
+        <tags>
+            <li>SightSource</li>
+        </tags>
+    </BodyPartDef>
+
+    <!-- body&armor-->
+
+    <BodyPartDef Abstract="True" Name="PLA_VehicleBodyBase">
+        <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+        <skinCovered>false</skinCovered>
+        <solid>true</solid>
+        <alive>false</alive>
+        <bleedRate>0</bleedRate>
+    </BodyPartDef>
+
+    <BodyPartDef ParentName="PLA_VehicleBodyBase">
+        <defName>PLA_VehicleChassis</defName>
+        <label>chassis</label>
+        <hitPoints>80</hitPoints>
+        <tags>
+            <li>MovingLimbCore</li>
+        </tags>
+    </BodyPartDef>
+
+    <BodyPartDef ParentName="PLA_VehicleBodyBase">
+        <defName>PLA_VehicleArmor</defName>
+        <label>armor</label>
+        <hitPoints>120</hitPoints>
+    </BodyPartDef>
+
+    <BodyPartDef ParentName="PLA_VehicleBodyBase">
+        <defName>PLA_VehicleBody</defName>
+        <label>body</label>
+        <solid>true</solid>
+        <hitPoints>120</hitPoints>
+    </BodyPartDef>
+
+    <BodyPartDef ParentName="PLA_VehicleBodyBase">
+        <defName>PLA_VehicleTurret</defName>
+        <label>turret</label>
+        <solid>true</solid>
+        <hitPoints>60</hitPoints>
+    </BodyPartDef>
+
+    <BodyPartDef ParentName="PLA_VehicleBodyBase">
+        <defName>PLA_VehicleFrame</defName>
+        <label>frame</label>
+        <solid>true</solid>
+        <hitPoints>120</hitPoints>
+    </BodyPartDef>
+
+    <BodyDef>
+        <defName>PLA_VehicleCar</defName>
+        <label>vehicle</label>
+        <corePart>
+            <def>PLA_VehicleArmor</def>
+            <height>Middle</height>
+            <depth>Outside</depth>
+            <coverage>1</coverage>
+            <parts>
+                <li>
+                    <def>PLA_VehicleTurret</def>
+                    <coverage>0.09</coverage>
+                    <height>Top</height>
+                    <depth>Outside</depth>
+                    <groups>
+                        <li>HeadAttackTool</li>
+                    </groups>
+                    <parts>
+                        <li>
+                            <def>PLA_SightSensor</def>
+                            <coverage>0.08</coverage>
+                            <depth>Inside</depth>
+                        </li>
+                    </parts>
+                </li>
+                <li>
+                    <def>PLA_VehicleBody</def>
+                    <coverage>0.9</coverage>
+                    <height>Middle</height>
+                    <depth>Outside</depth>
+                    <groups>
+                    </groups>
+                    <parts>
+                        <li>
+                            <def>PLA_Engine</def>
+                            <coverage>0.2</coverage>
+                            <height>Middle</height>
+                            <depth>Inside</depth>
+                        </li>
+                        <li>
+                            <def>PLA_VehicleFrame</def>
+                            <coverage>0.45</coverage>
+                            <height>Middle</height>
+                            <depth>Inside</depth>
+                        </li>
+                        <li>
+                            <def>PLA_VehicleChassis</def>
+                            <coverage>0.3</coverage>
+                            <height>Bottom</height>
+                            <depth>Inside</depth>
+                        </li>
+                        <li>
+                            <def>PLA_AutoPilotComputer</def>
+                            <coverage>0.04</coverage>
+                            <height>Top</height>
+                            <depth>Inside</depth>
+                        </li>
+                    </parts>
+                </li>
+            </parts>
+            <groups></groups>
+        </corePart>
+    </BodyDef>
+
+    <BodyDef>
+        <defName>PLA_VehicleTank</defName>
+        <label>vehicle</label>
+        <corePart>
+            <def>PLA_VehicleArmor</def>
+            <height>Middle</height>
+            <depth>Outside</depth>
+            <coverage>1</coverage>
+            <parts>
+                <li>
+                    <def>PLA_VehicleTurret</def>
+                    <coverage>0.29</coverage>
+                    <height>Top</height>
+                    <depth>Outside</depth>
+                    <groups>
+                        <li>HeadAttackTool</li>
+                    </groups>
+                    <parts>
+                        <li>
+                            <def>PLA_AutoPilotComputer</def>
+                            <coverage>0.05</coverage>
+                            <depth>Inside</depth>
+                        </li>
+                        <li>
+                            <def>PLA_SightSensor</def>
+                            <coverage>0.08</coverage>
+                            <depth>Inside</depth>
+                        </li>
+                    </parts>
+                </li>
+                <li>
+                    <def>PLA_VehicleBody</def>
+                    <coverage>0.7</coverage>
+                    <height>Middle</height>
+                    <depth>Outside</depth>
+                    <groups>
+                    </groups>
+                    <parts>
+                        <li>
+                            <def>PLA_Engine</def>
+                            <coverage>0.28</coverage>
+                            <height>Middle</height>
+                            <depth>Inside</depth>
+                        </li>
+                        <li>
+                            <def>PLA_VehicleFrame</def>
+                            <coverage>0.41</coverage>
+                            <height>Middle</height>
+                            <depth>Inside</depth>
+                        </li>
+                        <li>
+                            <def>PLA_VehicleChassis</def>
+                            <coverage>0.3</coverage>
+                            <height>Bottom</height>
+                            <depth>Inside</depth>
+                        </li>
+                    </parts>
+                </li>
+            </parts>
+            <groups></groups>
+        </corePart>
+    </BodyDef>
+</Defs>

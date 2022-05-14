@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+  <ThingDef ParentName="PLA_BaseVehicle">
+    <defName>PLA_Lynx6x6UltraLight</defName>
+    <label>Lynx 6x6 all-terrain vehicle</label>
+    <description>A vehicle lightweight multi-purpose all-terrain vehicle developed by NORINCO. it was proposed to mount various artillery and rocket weapons on it.</description>
+    <statBases>
+      <MarketValue>50000</MarketValue>
+      <MoveSpeed>5</MoveSpeed>
+      <ArmorRating_Blunt>0.9</ArmorRating_Blunt>
+      <ArmorRating_Sharp>0.7</ArmorRating_Sharp>
+      <PsychicSensitivity>0</PsychicSensitivity>
+      <CaravanRidingSpeedFactor>5</CaravanRidingSpeedFactor>
+      <CarryingCapacity>1000</CarryingCapacity>
+      <Mass>350</Mass>
+    </statBases>
+    <tools>
+      <li>
+        <label>Body</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>11.7</power>
+        <cooldownTime>2.6</cooldownTime>
+      </li>
+    </tools>
+    <race>
+      <deathActionWorkerClass>PLA.Vehicle.DeathActionWorker_VehicleExplosionFlame</deathActionWorkerClass>
+      <baseBodySize>4</baseBodySize>
+      <baseHealthScale>1</baseHealthScale>
+      <body>PLA_VehicleTank</body>
+    </race>
+    <butcherProducts>
+      <Steel>450</Steel>
+      <Plasteel>120</Plasteel>
+    </butcherProducts>
+    <killedLeavings>
+      <Steel>225</Steel>
+      <Plasteel>70</Plasteel>
+    </killedLeavings>
+    <comps>
+      <li Class="PLA.Vehicle.CompProperties_VehicleWeapon">
+        <turretRotationFollowPawn>true</turretRotationFollowPawn>
+        <defaultWeapon>PLA_Gun23mmAutocannon</defaultWeapon>
+      </li>
+      <li Class="CompProperties_Refuelable">
+        <fuelConsumptionRate>7</fuelConsumptionRate>
+        <fuelCapacity>210</fuelCapacity>
+        <fuelFilter>
+          <thingDefs>
+            <li>Chemfuel</li>
+          </thingDefs>
+        </fuelFilter>
+        <showAllowAutoRefuelToggle>false</showAllowAutoRefuelToggle>
+        <autoRefuelPercent>0.75</autoRefuelPercent>
+        <initialFuelPercent>1</initialFuelPercent>
+      </li>
+    </comps>
+    <uiIconPath>Vehicles/Lynx6x6UL/Icon_Lynx6x6UL</uiIconPath>
+    <modExtensions>
+      <li Class="PLA.Vehicle.VehicleExtension">
+        <allowVechicleInCaravan>true</allowVechicleInCaravan>
+        <carryWeightInCaravan>400</carryWeightInCaravan>
+      </li>
+    </modExtensions>
+  </ThingDef>
+
+  <PawnKindDef ParentName="PLA_BaseVehiclePawnKind">
+    <defName>PLA_Lynx6x6UltraLight</defName>
+    <label>Lynx 6x6 ultra light</label>
+    <race>PLA_Lynx6x6UltraLight</race>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Vehicles/Lynx6x6UL/Lynx6x6UL</texPath>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>5</drawSize>
+        </bodyGraphicData>
+      </li>
+    </lifeStages>
+  </PawnKindDef>
+
+  <!-- weapons-->
+
+  <ThingDef ParentName="BaseWeaponTurret">
+    <defName>PLA_Gun23mmAutocannon</defName>
+    <label>23mm autocannon</label>
+    <description>...</description>
+    <graphicData>
+      <texPath>Vehicles/Lynx6x6UL/23mmAutocannon</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(5,5)</drawSize>
+    </graphicData>
+    <statBases>
+      <MarketValue>1400</MarketValue>
+      <AccuracyTouch>0.68</AccuracyTouch>
+      <AccuracyShort>0.73</AccuracyShort>
+      <AccuracyMedium>0.84</AccuracyMedium>
+      <AccuracyLong>0.79</AccuracyLong>
+      <RangedWeapon_Cooldown>2.4</RangedWeapon_Cooldown>
+      <Mass>25.6</Mass>
+    </statBases>
+    <costList>
+      <PLA_VehicleWeapon23mmAutocannon>1</PLA_VehicleWeapon23mmAutocannon>
+    </costList>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>PLA_Bullet_23mmShell</defaultProjectile>
+        <ticksBetweenBurstShots>10</ticksBetweenBurstShots>
+        <burstShotCount>4</burstShotCount>
+        <warmupTime>2.1</warmupTime>
+        <range>35</range>
+        <soundCast>PLA_ShotAutoconnon</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>13</muzzleFlashScale>
+        <consumeFuelPerShot>1</consumeFuelPerShot>
+        <minRange>2</minRange>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>11.7</power>
+        <cooldownTime>2.6</cooldownTime>
+      </li>
+    </tools>
+    <relicChance>0</relicChance>
+  </ThingDef>
+  <ThingDef ParentName="BaseBullet">
+    <defName>PLA_Bullet_23mmShell</defName>
+    <label>23mm Shell</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Big</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>29</damageAmountBase>
+      <stoppingPower>2</stoppingPower>
+      <armorPenetrationBase>0.57</armorPenetrationBase>
+      <speed>110</speed>
+    </projectile>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseWeaponTurret">
+    <defName>PLA_Gun40mmCannon</defName>
+    <label>40mm CT cannon</label>
+    <description>...</description>
+    <graphicData>
+      <texPath>Vehicles/Lynx6x6UL/40mmCTCannon</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(5,5)</drawSize>
+    </graphicData>
+    <statBases>
+      <MarketValue>1400</MarketValue>
+      <AccuracyTouch>0.68</AccuracyTouch>
+      <AccuracyShort>0.71</AccuracyShort>
+      <AccuracyMedium>0.83</AccuracyMedium>
+      <AccuracyLong>0.79</AccuracyLong>
+      <RangedWeapon_Cooldown>1.4</RangedWeapon_Cooldown>
+      <Mass>25.6</Mass>
+    </statBases>
+    <costList>
+      <PLA_VehicleWeapon40mmCannon>1</PLA_VehicleWeapon40mmCannon>
+    </costList>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>PLA_Bullet_40mmCTA</defaultProjectile>
+        <forcedMissRadius>1</forcedMissRadius>
+        <warmupTime>2.1</warmupTime>
+        <range>39</range>
+        <soundCast>PLA_Shot40mmCT</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>13</muzzleFlashScale>
+        <consumeFuelPerShot>1</consumeFuelPerShot>
+        <minRange>2</minRange>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>11.7</power>
+        <cooldownTime>2.6</cooldownTime>
+      </li>
+    </tools>
+    <relicChance>0</relicChance>
+  </ThingDef>
+  <ThingDef ParentName="BaseBullet">
+    <defName>PLA_Bullet_40mmCTA</defName>
+    <label>40mm CTA</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Big</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <thingClass>Projectile_Explosive</thingClass>
+    <projectile>
+      <damageDef>Bomb</damageDef>
+      <explosionRadius>1.3</explosionRadius>
+      <speed>60</speed>
+      <damageAmountBase>65</damageAmountBase>
+      <flyOverhead>true</flyOverhead>
+      <explosionDelay>5</explosionDelay>
+      <stoppingPower>4</stoppingPower>
+      <armorPenetrationBase>0.7</armorPenetrationBase>
+    </projectile>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseWeaponTurret">
+    <defName>PLA_Gun107mmRocketLauncher</defName>
+    <label>107mm rocket launcher</label>
+    <description>...</description>
+    <graphicData>
+      <texPath>Vehicles/Lynx6x6UL/107mmRocketLauncher</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(5,5)</drawSize>
+    </graphicData>
+    <statBases>
+      <MarketValue>1400</MarketValue>
+      <AccuracyTouch>0.68</AccuracyTouch>
+      <AccuracyShort>0.44</AccuracyShort>
+      <AccuracyMedium>0.65</AccuracyMedium>
+      <AccuracyLong>0.63</AccuracyLong>
+      <RangedWeapon_Cooldown>3.4</RangedWeapon_Cooldown>
+      <Mass>25.6</Mass>
+    </statBases>
+    <costList>
+      <PLA_VehicleWeapon107mmRocketLauncher>1</PLA_VehicleWeapon107mmRocketLauncher>
+    </costList>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>PLA_Bullet_107mmRocket</defaultProjectile>
+        <forcedMissRadius>4.6</forcedMissRadius>
+        <warmupTime>3.5</warmupTime>
+        <burstShotCount>3</burstShotCount>
+        <ticksBetweenBurstShots>20</ticksBetweenBurstShots>
+        <range>42</range>
+        <soundCast>PLA_Shot107mmRocketLauncher</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>13</muzzleFlashScale>
+        <consumeFuelPerShot>1</consumeFuelPerShot>
+        <minRange>12</minRange>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>11.7</power>
+        <cooldownTime>2.6</cooldownTime>
+      </li>
+    </tools>
+    <relicChance>0</relicChance>
+  </ThingDef>
+  <ThingDef ParentName="BaseBullet">
+    <defName>PLA_Bullet_107mmRocket</defName>
+    <label>107mm rocket</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Big</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <thingClass>Projectile_Explosive</thingClass>
+    <projectile>
+      <damageDef>Bomb</damageDef>
+      <explosionRadius>1.7</explosionRadius>
+      <speed>45</speed>
+      <damageAmountBase>32</damageAmountBase>
+      <flyOverhead>true</flyOverhead>
+      <explosionDelay>5</explosionDelay>
+      <stoppingPower>4</stoppingPower>
+      <armorPenetrationBase>0.32</armorPenetrationBase>
+    </projectile>
+  </ThingDef>
+</Defs>

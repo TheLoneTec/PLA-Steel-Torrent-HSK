@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<ThingCategoryDef>
+		<defName>Ammo40mmCT</defName>
+		<label>40mm CT shell</label>
+		<parent>AmmoHighCaliber</parent>
+		<iconPath>UI/Icons/ThingCategories/CaliberHighCaliber</iconPath>
+	</ThingCategoryDef>
+
+	<!-- ==================== AmmoSet ========================== -->
+
+	<CombatExtended.AmmoSetDef>
+		<defName>AmmoSet_40mmCT</defName>
+		<label>40mm CT</label>
+		<ammoTypes>
+			<Ammo_40mmCT_APFSDS>Bullet_40mmCT_APFSDS</Ammo_40mmCT_APFSDS>
+			<Ammo_40mmCT_EMP>Bullet_40mmCT_EMP</Ammo_40mmCT_EMP>
+		</ammoTypes>
+	</CombatExtended.AmmoSetDef>
+
+	<ThingDef Class="CombatExtended.AmmoDef" Name="Ammo40mmCTBase" ParentName="SmallAmmoBase" Abstract="True">
+		<description>Large caliber CT used by autocannons.</description>
+		<statBases>
+			<Mass>0.837</Mass>
+			<Bulk>1.22</Bulk>
+		</statBases>
+		<tradeTags>
+			<li>CE_AutoEnableTrade</li>
+			<li>CE_AutoEnableCrafting_TableMachining</li>
+		</tradeTags>
+		<thingCategories>
+			<li>Ammo40mmCT</li>
+		</thingCategories>
+		<stackLimit>150</stackLimit>
+	</ThingDef>
+
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="Ammo40mmCTBase">
+		<defName>Ammo_40mmCT_APFSDS</defName>
+		<label>40mm CT (APFSDS)</label>
+		<graphicData>
+			<texPath>Things/Ammo/40mmCT_Sabot</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<statBases>
+			<Mass>1.248</Mass>
+			<MarketValue>4.61</MarketValue>
+		</statBases>
+		<ammoClass>Sabot</ammoClass>
+		<cookOffProjectile>Bullet_40mmCT_APFSDS</cookOffProjectile>
+	</ThingDef>
+
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="Ammo40mmCTBase">
+		<defName>Ammo_40mmCT_EMP</defName>
+		<label>40mm CT (EMP)</label>
+		<graphicData>
+			<texPath>Things/Ammo/40mmCT_EMP</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<statBases>
+			<Mass>1.248</Mass>
+			<MarketValue>4.61</MarketValue>
+		</statBases>
+		<ammoClass>GrenadeEMP</ammoClass>
+		<cookOffProjectile>Bullet_40mmCT_EMP</cookOffProjectile>
+	</ThingDef>
+	<!-- ================== Projectiles ================== -->
+
+    <ThingDef Class="CombatExtended.AmmoDef" Name="Base40mmCTBullet" ParentName="BaseBullet" Abstract="true">
+        <graphicData>
+        <texPath>Things/Projectile/Bullet_Big</texPath>
+        <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <projectile Class="CombatExtended.ProjectilePropertiesCE">
+        <damageDef>Bullet</damageDef>
+        <speed>250</speed>
+        <dropsCasings>true</dropsCasings>
+        </projectile>
+        </ThingDef>
+
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="Base40mmCTBullet">
+		<defName>Bullet_40mmCT_APFSDS</defName>
+		<label>40mm CT shell (APFSDS)</label>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<damageAmountBase>65</damageAmountBase>
+			<secondaryDamage>
+				<li>
+				  <def>Bomb_Secondary</def>
+				  <amount>34</amount>
+				</li>
+			  </secondaryDamage>
+			<armorPenetrationSharp>138.4</armorPenetrationSharp>
+			<armorPenetrationBlunt>2736.42</armorPenetrationBlunt>
+		</projectile>
+		<comps>
+			<li Class="CombatExtended.CompProperties_ExplosiveCE">
+				<damageAmountBase>36</damageAmountBase>
+				<explosiveDamageType>Bomb</explosiveDamageType>
+				<explosiveRadius>1.5</explosiveRadius>
+				<explosionSound>MortarBomb_Explode</explosionSound>
+				<applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
+			</li>
+			<li Class="CombatExtended.CompProperties_Fragments">
+				<fragments>
+					<Fragment_Large>38</Fragment_Large>
+				</fragments>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="Base40mmCTBullet">
+		<defName>Bullet_40mmCT_EMP</defName>
+		<label>40mm CT shell (EMP)</label>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<explosionRadius>2.5</explosionRadius>
+			<damageDef>EMP</damageDef>
+			<damageAmountBase>28</damageAmountBase>
+		</projectile>
+	</ThingDef>
+
+	<!-- ==================== Recipes ========================== -->
+	<RecipeDef ParentName="PLA_VehicleAmmoRecipeBase">
+		<defName>MakeAmmo_40mmCT_APFSDS</defName>
+		<label>make 40mm CT (APFSDS) shells x100</label>
+		<description>Craft 100 .40mm CT (APFSDS) shells.</description>
+		<jobString>Making .40mm CT (APFSDS) shells.</jobString>
+		<recipeUsers>
+			<li>TableMachining</li>
+		</recipeUsers>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Steel</li>
+					</thingDefs>
+				</filter>
+				<count>86</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>FSX</li>
+					</thingDefs>
+				</filter>
+				<count>12</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ComponentIndustrial</li>
+					</thingDefs>
+				</filter>
+				<count>3</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Steel</li>
+				<li>FSX</li>
+				<li>ComponentIndustrial</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<Ammo_40mmCT_APFSDS>100</Ammo_40mmCT_APFSDS>
+		</products>
+		<workAmount>8600</workAmount>
+	</RecipeDef>
+
+	<RecipeDef ParentName="PLA_VehicleAmmoRecipeBase">
+		<defName>MakeAmmo_40mmCT_EMP</defName>
+		<label>make 40mm CT (EMP) shells x100</label>
+		<description>Craft 100 .40mm CT (EMP) shells.</description>
+		<jobString>Making .40mm CT (EMP) shells.</jobString>
+		<recipeUsers>
+			<li>TableMachining</li>
+		</recipeUsers>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Steel</li>
+					</thingDefs>
+				</filter>
+				<count>86</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ComponentIndustrial</li>
+					</thingDefs>
+				</filter>
+				<count>12</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Steel</li>
+				<li>ComponentIndustrial</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<Ammo_40mmCT_EMP>100</Ammo_40mmCT_EMP>
+		</products>
+		<workAmount>8600</workAmount>
+	</RecipeDef>
+
+</Defs>

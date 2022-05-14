@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+    <StatDef>
+        <defName>PLA_VehicleCaliber</defName>
+        <workerClass>PLA.CE.Vehicle.StatWorker_Caliber</workerClass>
+        <label>caliber</label>
+        <description>The types of ammo this gun accepts.</description>
+        <category>Weapon</category>
+        <showIfUndefined>true</showIfUndefined>
+        <displayPriorityInCategory>898</displayPriorityInCategory>
+      </StatDef>
+</Defs>

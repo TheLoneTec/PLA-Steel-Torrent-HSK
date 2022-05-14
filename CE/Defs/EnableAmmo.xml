@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+    <ThingDef ParentName="BaseBullet">
+        <defName>PLA_VehicleAmmo</defName>
+        <label>vehicle ammo</label>
+        <graphicData>
+            <texPath>Things/Projectile/Bullet_Big</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <projectile>
+            <damageDef>Bullet</damageDef>
+            <damageAmountBase>0</damageAmountBase>
+            <stoppingPower>2</stoppingPower>
+        </projectile>
+    </ThingDef>
+
+    <ThingDef Abstract="true" Name="PLA_EnableAmmo" ParentName="BaseWeaponTurret">
+        <label>vehicle weapons</label>
+        <description>the weapon on the vehicle</description>
+        <techLevel>Industrial</techLevel>
+        <graphicData>
+            <texPath>UI/UI_CombatVehicle</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>(1,1)</drawSize>
+        </graphicData>
+        <statBases>
+            <Mass>10000</Mass>
+            <MarketValue>99999</MarketValue>
+        </statBases>
+        <verbs>
+            <li>
+                <verbClass>Verb_Shoot</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <defaultProjectile>PLA_VehicleAmmo</defaultProjectile>
+                <warmupTime>1.5</warmupTime>
+                <range>75</range>
+                <soundCastTail>GunTail_Heavy</soundCastTail>
+                <muzzleFlashScale>13</muzzleFlashScale>
+            </li>
+        </verbs>
+        <comps>
+        </comps>
+        <relicChance>0</relicChance>
+    </ThingDef>
+
+    <ThingDef ParentName="PLA_EnableAmmo">
+        <defName>PLA_Enable40mmCTA</defName>
+        <comps>
+            <li Class="CombatExtended.CompProperties_AmmoUser">
+                <magazineSize>40</magazineSize>
+                <reloadTime>9.2</reloadTime>
+                <ammoSet>AmmoSet_40mmCT</ammoSet>
+            </li>
+        </comps>
+    </ThingDef>
+
+    <ThingDef ParentName="PLA_EnableAmmo">
+        <defName>PLA_Enable105mmCannonShell</defName>
+        <comps>
+            <li Class="CombatExtended.CompProperties_AmmoUser">
+                <magazineSize>40</magazineSize>
+                <reloadTime>9.2</reloadTime>
+                <ammoSet>AmmoSet_105mmShell</ammoSet>
+            </li>
+        </comps>
+    </ThingDef>
+
+    <ThingDef ParentName="PLA_EnableAmmo">
+        <defName>PLA_Enable125mmCannonShell</defName>
+        <comps>
+            <li Class="CombatExtended.CompProperties_AmmoUser">
+                <magazineSize>22</magazineSize>
+                <reloadTime>9.2</reloadTime>
+                <ammoSet>AmmoSet_125mmShell</ammoSet>
+            </li>
+        </comps>
+    </ThingDef>
+
+    <ThingDef ParentName="PLA_EnableAmmo">
+        <defName>PLA_Enable127x108mmAmmo</defName>
+        <comps>
+            <li Class="CombatExtended.CompProperties_AmmoUser">
+                <magazineSize>200</magazineSize>
+                <reloadTime>9.2</reloadTime>
+                <ammoSet>AmmoSet_127x108mm</ammoSet>
+            </li>
+        </comps>
+    </ThingDef>
+
+    <ThingDef ParentName="PLA_EnableAmmo">
+        <defName>PLA_Enable30x165mmAmmo</defName>
+        <comps>
+            <li Class="CombatExtended.CompProperties_AmmoUser">
+                <magazineSize>200</magazineSize>
+                <reloadTime>9.2</reloadTime>
+                <ammoSet>AmmoSet_30x165mmSoviet</ammoSet>
+            </li>
+        </comps>
+    </ThingDef>
+
+    <ThingDef ParentName="PLA_EnableAmmo">
+        <defName>PLA_Enable23x115mmAmmo</defName>
+        <comps>
+            <li Class="CombatExtended.CompProperties_AmmoUser">
+                <magazineSize>200</magazineSize>
+                <reloadTime>9.2</reloadTime>
+                <ammoSet>AmmoSet_23x115mmSoviet</ammoSet>
+            </li>
+        </comps>
+    </ThingDef>
+
+    <ThingDef ParentName="PLA_EnableAmmo">
+        <defName>PLA_Enable107mmAmmo</defName>
+        <comps>
+            <li Class="CombatExtended.CompProperties_AmmoUser">
+                <magazineSize>200</magazineSize>
+                <reloadTime>9.2</reloadTime>
+                <ammoSet>AmmoSet_107mmRocket</ammoSet>
+            </li>
+        </comps>
+    </ThingDef>
+
+</Defs>

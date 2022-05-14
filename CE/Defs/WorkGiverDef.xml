@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+    <WorkGiverDef>
+        <defName>PLA_WorkGiverReloadVehicleAmmo</defName>
+        <label>reload vehicle</label>
+        <giverClass>PLA.CE.Vehicle.WorkGiver_ReloadVehicleAmmo</giverClass>
+        <workType>Hauling</workType>
+        <verb>reload</verb>
+        <gerund>reloading</gerund>
+        <priorityInType>110</priorityInType>
+        <requiredCapacities>
+          <li>Manipulation</li>
+        </requiredCapacities>
+        <nonColonistsCanDo>true</nonColonistsCanDo>
+      </WorkGiverDef>
+</Defs>

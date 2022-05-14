@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <PLA_AutoPilotComputer.label>自动驾驶计算机</PLA_AutoPilotComputer.label>
+  <PLA_Engine.label>引擎</PLA_Engine.label>
+  <PLA_SightSensor.label>视觉传感器</PLA_SightSensor.label>
+
+  <PLA_VehicleChassis.label>底盘</PLA_VehicleChassis.label>
+  <PLA_VehicleArmor.label>装甲</PLA_VehicleArmor.label>
+  <PLA_VehicleBody.label>车体</PLA_VehicleBody.label>
+  <PLA_VehicleTurret.label>炮塔</PLA_VehicleTurret.label>
+  <PLA_VehicleFrame.label>框架</PLA_VehicleFrame.label>
+
+
+</LanguageData>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+    <ResearchTabDef>
+        <defName>PLA_ResearchVehicle</defName>
+        <label>PLA Steel Torrent</label>
+    </ResearchTabDef>
+
+    <ResearchProjectDef Name="PLA_VehicleResearchProjectBase" Abstract="true">
+        <techLevel>Industrial</techLevel>
+        <tab>PLA_ResearchVehicle</tab>
+    </ResearchProjectDef>
+
+    <ResearchProjectDef ParentName="PLA_VehicleResearchProjectBase">
+        <defName>PLA_ResearchVehicle_Lynx</defName>
+        <label>Lynx ultra light 6x6</label>
+        <description>able to build the Lynx ultra light 6x6.</description>
+        <prerequisites>
+            <li>BiofuelRefining</li>
+        </prerequisites>
+        <baseCost>2000</baseCost>
+        <researchViewX>0</researchViewX>
+        <researchViewY>0</researchViewY>
+    </ResearchProjectDef>
+
+    <ResearchProjectDef ParentName="PLA_VehicleResearchProjectBase">
+        <defName>PLA_ResearchVehicle_CSZ181OffRoad</defName>
+        <label>CSZ-181 off-road</label>
+        <description>able to build the CSZ-181 off-road.</description>
+        <prerequisites>
+            <li>BiofuelRefining</li>
+        </prerequisites>
+        <baseCost>3400</baseCost>
+        <researchViewX>1</researchViewX>
+        <researchViewY>0</researchViewY>
+    </ResearchProjectDef>
+
+    <ResearchProjectDef ParentName="PLA_VehicleResearchProjectBase">
+        <defName>PLA_ResearchVehicle_VP22Truck</defName>
+        <label>VP-22 Trcuk</label>
+        <description>able to build the VP-22 trcuk.</description>
+        <prerequisites>
+            <li>BiofuelRefining</li>
+        </prerequisites>
+        <baseCost>3000</baseCost>
+        <researchViewX>2</researchViewX>
+        <researchViewY>0</researchViewY>
+    </ResearchProjectDef>
+
+    <ResearchProjectDef ParentName="PLA_VehicleResearchProjectBase">
+        <defName>PLA_ResearchVehicle_ZTZ99A</defName>
+        <label>ZTZ-99A main battle tank</label>
+        <description>able to build the ZTZ-99A main battle tank.</description>
+        <prerequisites>
+            <li>BiofuelRefining</li>
+        </prerequisites>
+        <baseCost>4800</baseCost>
+        <researchViewX>3</researchViewX>
+        <researchViewY>0</researchViewY>
+    </ResearchProjectDef>
+
+    <ResearchProjectDef ParentName="PLA_VehicleResearchProjectBase">
+        <defName>PLA_ResearchVehicle_ZTL11IFV</defName>
+        <label>ZTL-11 infantry fighting vehicle</label>
+        <description>able to build the ZTL-11 infantry fighting vehicle</description>
+        <prerequisites>
+            <li>BiofuelRefining</li>
+        </prerequisites>
+        <baseCost>4500</baseCost>
+        <researchViewX>1</researchViewX>
+        <researchViewY>0.7</researchViewY>
+    </ResearchProjectDef>
+
+    <ResearchProjectDef ParentName="PLA_VehicleResearchProjectBase">
+        <defName>PLA_ResearchVehicle_VehicleModification</defName>
+        <label>vehicle modification</label>
+        <description>able to modify the weapon and attachment of vehicle.</description>
+        <prerequisites>
+            <li>Machining</li>
+        </prerequisites>
+        <baseCost>2000</baseCost>
+        <researchViewX>0</researchViewX>
+        <researchViewY>0.7</researchViewY>
+    </ResearchProjectDef>
+</Defs>

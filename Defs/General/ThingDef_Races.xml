@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+  <ThingDef Name="PLA_BaseVehiclePawn" Abstract="True">
+    <thingClass>Pawn</thingClass>
+    <category>Pawn</category>
+    <selectable>true</selectable>
+    <tickerType>Normal</tickerType>
+    <altitudeLayer>Pawn</altitudeLayer>
+    <useHitPoints>false</useHitPoints>
+    <hasTooltip>true</hasTooltip>
+    <soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
+    <statBases>
+      <Mass>60</Mass>
+      <Flammability>0.7</Flammability>
+    </statBases>
+    <inspectorTabs>
+      <li>ITab_Pawn_Health</li>
+      <li>ITab_Pawn_Needs</li>
+      <li>ITab_Pawn_Training</li>
+      <li>ITab_Pawn_Social</li>
+      <li>ITab_Pawn_Guest</li>
+      <li>ITab_Pawn_FormingCaravan</li>
+      <li>PLA.CE.Vehicle.ITab_VehicleInventory</li>
+      <li>ITab_Pawn_Log</li>
+    </inspectorTabs>
+    <comps>
+      <li>
+        <compClass>CompAttachBase</compClass>
+      </li>
+    </comps>
+    <drawGUIOverlay>true</drawGUIOverlay>
+  </ThingDef>
+
+
+  <ThingDef ParentName="PLA_BaseVehiclePawn" Name="PLA_BaseVehicle" Abstract="True">
+    <thingClass>PLA.Vehicle.DroneVehicle</thingClass>
+    <soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
+    <statBases>
+      <PsychicSensitivity>0</PsychicSensitivity>
+      <ToxicSensitivity>0</ToxicSensitivity>
+      <Flammability>0</Flammability>
+      <ComfyTemperatureMin>-100</ComfyTemperatureMin>
+      <ComfyTemperatureMax>250</ComfyTemperatureMax>
+      <MeatAmount>0</MeatAmount>
+      <ArmorRating_Heat>2.00</ArmorRating_Heat>
+    </statBases>
+    <receivesSignals>true</receivesSignals>
+    <building></building>
+    <race>
+      <packAnimal>true</packAnimal>
+      <fleshType>Mechanoid</fleshType>
+      <needsRest>false</needsRest>
+      <hasGenders>false</hasGenders>
+      <foodType>None</foodType>
+      <lifeExpectancy>2500</lifeExpectancy>
+      <bloodDef>Filth_MachineBits</bloodDef>
+      <intelligence>ToolUser</intelligence>
+      <thinkTreeMain>PLA_RemoteVehicle</thinkTreeMain>
+      <!--thinkTreeConstant>PLA_RemoteVehicleConstant</thinkTreeConstant-->
+      <allowedOnCaravan>true</allowedOnCaravan>
+      <lifeStageAges>
+        <li>
+          <def>VehicleFullyFormed</def>
+          <minAge>0</minAge>
+          <!--soundWounded>Pawn_Mech_Centipede_Wounded</soundWounded-->
+          <!--soundDeath>Pawn_Mech_Centipede_Death</soundDeath-->
+          <!--soundCall>Pawn_Mech_Centipede_Call</soundCall-->
+        </li>
+      </lifeStageAges>
+      <soundCallIntervalRange>1000~2000</soundCallIntervalRange>
+      <soundMeleeHitPawn>Pawn_Melee_MechanoidBash_HitPawn</soundMeleeHitPawn>
+      <soundMeleeHitBuilding>Pawn_Melee_MechanoidBash_HitBuilding</soundMeleeHitBuilding>
+      <soundMeleeMiss>Pawn_Melee_MechanoidBash_Miss</soundMeleeMiss>
+    </race>
+    <repairEffect>Repair</repairEffect>
+    <comps>
+      <li Class="PLA.Vehicle.CompProperties_SoundLoop">
+        <sound>PLA_VehicleEngine_Ambience</sound>
+      </li>
+      <li>
+        <compClass>PLA.Vehicle.CompVehicleEquipmentGizmo</compClass>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <LifeStageDef>
+    <defName>VehicleFullyFormed</defName>
+    <label>fully-formed</label>
+    <visible>false</visible>
+    <caravanRideable>true</caravanRideable>
+  </LifeStageDef>
+
+
+</Defs>

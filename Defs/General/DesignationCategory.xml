@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+    <DesignationCategoryDef>
+        <defName>PLA_DesignationCategory_Vehicle</defName>
+        <label>steel torrent</label>
+        <order>301</order>
+        <specialDesignatorClasses>
+          <li>Designator_Cancel</li>
+          <li>Designator_Deconstruct</li>
+        </specialDesignatorClasses>
+      </DesignationCategoryDef>
+</Defs>

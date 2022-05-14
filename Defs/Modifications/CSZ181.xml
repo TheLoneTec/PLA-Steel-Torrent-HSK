@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+    <ThingDef ParentName="PLA_VehicleModWeaponBase">
+        <defName>PLA_VehicleWeapon89HMG</defName>
+        <label>vehicle modification kit - Type 89 HMG</label>
+        <description>A modification toolkit that can be used to install the Type 89 HMG on vehicle.</description>
+        <descriptionHyperlinks>
+            <ThingDef>PLA_Gun04GLForVehicle</ThingDef>
+            <RecipeDef>PLA_InstallWeapon89HMG</RecipeDef>
+            <ThingDef>PLA_CSZ181OffRoad</ThingDef>
+        </descriptionHyperlinks>
+        <costList>
+            <Steel>180</Steel>
+            <ComponentIndustrial>12</ComponentIndustrial>
+        </costList>
+        <statBases>
+            <Mass>41</Mass>
+        </statBases>
+        <researchPrerequisites>
+            <li>PLA_ResearchVehicle_VehicleModification</li>
+            <li>PLA_ResearchVehicle_CSZ181OffRoad</li>
+        </researchPrerequisites>
+    </ThingDef>
+
+    <RecipeDef ParentName="PLA_RecipeInstallVehicleWeapon">
+        <defName>PLA_InstallWeapon89HMG</defName>
+        <label>install Type 89 HMG</label>
+        <description>Install the Type 89 HMG on vehicle.</description>
+        <descriptionHyperlinks>
+            <ThingDef>PLA_VehicleWeapon89HMG</ThingDef>
+            <ThingDef>PLA_Gun04GLForVehicle</ThingDef>
+            <ThingDef>PLA_CSZ181OffRoad</ThingDef>
+        </descriptionHyperlinks>
+        <jobString>Installing Type 89 HMG.</jobString>
+        <recipeUsers>
+            <li>PLA_CSZ181OffRoad</li>
+        </recipeUsers>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>PLA_VehicleWeapon89HMG</li>
+                    </thingDefs>
+                </filter>
+                <count>1</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>PLA_VehicleWeapon89HMG</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <appliedOnFixedBodyParts>
+            <li>PLA_VehicleTurret</li>
+        </appliedOnFixedBodyParts>
+        <modExtensions>
+            <li Class="PLA.Vehicle.RecipeModifyVehicleProps">
+                <weaponToInstall>PLA_Gun89HMGForVehicle</weaponToInstall>
+            </li>
+        </modExtensions>
+    </RecipeDef>
+
+    <ThingDef ParentName="PLA_VehicleModWeaponBase">
+        <defName>PLA_VehicleWeapon04GL</defName>
+        <label>vehicle modification kit - Type-04 grenade launcher</label>
+        <description>A modification toolkit that can be used to install the Type-04 grenade launcher on vehicle.</description>
+        <descriptionHyperlinks>
+            <ThingDef>PLA_Gun04GLForVehicle</ThingDef>
+            <RecipeDef>PLA_InstallWeapon04GL</RecipeDef>
+            <ThingDef>PLA_CSZ181OffRoad</ThingDef>
+        </descriptionHyperlinks>
+        <costList>
+            <Steel>180</Steel>
+            <ComponentIndustrial>12</ComponentIndustrial>
+        </costList>
+        <statBases>
+            <Mass>41</Mass>
+        </statBases>
+        <researchPrerequisites>
+            <li>PLA_ResearchVehicle_VehicleModification</li>
+            <li>PLA_ResearchVehicle_CSZ181OffRoad</li>
+        </researchPrerequisites>
+    </ThingDef>
+    <RecipeDef ParentName="PLA_RecipeInstallVehicleWeapon">
+        <defName>PLA_InstallWeapon04GL</defName>
+        <label>install Type-04 grenade launcher</label>
+        <description>Install the Type-04 grenade launcher on vehicle.</description>
+        <descriptionHyperlinks>
+            <ThingDef>PLA_VehicleWeapon04GL</ThingDef>
+            <ThingDef>PLA_Gun04GLForVehicle</ThingDef>
+            <ThingDef>PLA_CSZ181OffRoad</ThingDef>
+        </descriptionHyperlinks>
+        <jobString>Installing Type-04 grenade launcher.</jobString>
+        <recipeUsers>
+            <li>PLA_CSZ181OffRoad</li>
+        </recipeUsers>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>PLA_VehicleWeapon04GL</li>
+                    </thingDefs>
+                </filter>
+                <count>1</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>PLA_VehicleWeapon04GL</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <appliedOnFixedBodyParts>
+            <li>PLA_VehicleTurret</li>
+        </appliedOnFixedBodyParts>
+        <modExtensions>
+            <li Class="PLA.Vehicle.RecipeModifyVehicleProps">
+                <weaponToInstall>PLA_Gun04GLForVehicle</weaponToInstall>
+            </li>
+        </modExtensions>
+    </RecipeDef>
+
+
+    <ThingDef ParentName="PLA_VehicleModWeaponBase">
+        <defName>PLA_VehicleWeapon30mmAutocannon</defName>
+        <label>vehicle modification kit - 30mm autocannon</label>
+        <description>A modification toolkit that can be used to install the 30mm autocannon on vehicle.</description>
+        <descriptionHyperlinks>
+            <ThingDef>PLA_Gun30mmAutocannon</ThingDef>
+            <RecipeDef>PLA_InstallWeapon30mmAutocannon</RecipeDef>
+            <ThingDef>PLA_CSZ181OffRoad</ThingDef>
+        </descriptionHyperlinks>
+        <costList>
+            <Steel>280</Steel>
+            <ComponentIndustrial>18</ComponentIndustrial>
+        </costList>
+        <statBases>
+            <Mass>41</Mass>
+        </statBases>
+        <researchPrerequisites>
+            <li>PLA_ResearchVehicle_VehicleModification</li>
+            <li>PLA_ResearchVehicle_CSZ181OffRoad</li>
+        </researchPrerequisites>
+    </ThingDef>
+    <RecipeDef ParentName="PLA_RecipeInstallVehicleWeapon">
+        <defName>PLA_InstallWeapon30mmAutocannon</defName>
+        <label>install 30mm autocannon</label>
+        <description>Install the 30mm autocannon on vehicle.</description>
+        <descriptionHyperlinks>
+            <ThingDef>PLA_VehicleWeapon30mmAutocannon</ThingDef>
+            <ThingDef>PLA_Gun30mmAutocannon</ThingDef>
+            <ThingDef>PLA_CSZ181OffRoad</ThingDef>
+        </descriptionHyperlinks>
+        <jobString>Installing 30mm autocannon.</jobString>
+        <recipeUsers>
+            <li>PLA_CSZ181OffRoad</li>
+        </recipeUsers>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>PLA_VehicleWeapon30mmAutocannon</li>
+                    </thingDefs>
+                </filter>
+                <count>1</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>PLA_VehicleWeapon30mmAutocannon</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <appliedOnFixedBodyParts>
+            <li>PLA_VehicleTurret</li>
+        </appliedOnFixedBodyParts>
+        <modExtensions>
+            <li Class="PLA.Vehicle.RecipeModifyVehicleProps">
+                <weaponToInstall>PLA_Gun30mmAutocannon</weaponToInstall>
+            </li>
+        </modExtensions>
+    </RecipeDef>
+</Defs>

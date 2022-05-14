@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+    <Ammo40mmCT.label>40mm埋头弹</Ammo40mmCT.label>
+    <Ammo105mmShell.label>105mm 滑膛炮弹</Ammo105mmShell.label>
+    <Ammo125mmShell.label>125mm 滑膛炮弹</Ammo125mmShell.label>
+
+    <Ammo23x115mmSoviet.label>23x115mm 苏维埃机炮弹</Ammo23x115mmSoviet.label>
+    <Ammo30x165mmSoviet.label>30x165mm 苏维埃机炮弹</Ammo30x165mmSoviet.label>
+
+    <Ammo107mmRocket.label>107mm火箭弹</Ammo107mmRocket.label>
+
+</LanguageData>

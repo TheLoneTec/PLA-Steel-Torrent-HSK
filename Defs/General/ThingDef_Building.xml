@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+    <ThingDef ParentName="BuildingBase">
+        <defName>PLA_BuildingLynx6x6UL</defName>
+        <label>Lynx6x6 ultra light</label>
+        <description>A vehicle lightweight multi-purpose all-terrain vehicle developed by NORINCO. it was proposed to mount various artillery and rocket weapons on it.</description>
+        <graphicData>
+            <texPath>Vehicles/Lynx6x6UL/Lynx6x6UL</texPath>
+            <graphicClass>Graphic_Multi</graphicClass>
+            <drawSize>5</drawSize>
+        </graphicData>
+        <statBases>
+            <WorkToBuild>1000</WorkToBuild>
+        </statBases>
+        <tickerType>Normal</tickerType>
+        <rotatable>true</rotatable>
+        <costList>
+            <Steel>800</Steel>
+            <Plasteel>200</Plasteel>
+            <Chemfuel>210</Chemfuel>
+            <ComponentIndustrial>12</ComponentIndustrial>
+            <ComponentSpacer>4</ComponentSpacer>
+        </costList>
+        <designationCategory>PLA_DesignationCategory_Vehicle</designationCategory>
+        <researchPrerequisites>
+            <li>PLA_ResearchVehicle_Lynx</li>
+        </researchPrerequisites>
+        <comps>
+            <li Class="PLA.Vehicle.CompProperties_BuildingToVehicle">
+                <vehicle>PLA_Lynx6x6UltraLight</vehicle>
+            </li>
+        </comps>
+        <uiIconPath>Vehicles/Lynx6x6UL/Icon_Lynx6x6UL</uiIconPath>
+    </ThingDef>
+
+    <ThingDef ParentName="BuildingBase">
+        <defName>PLA_BuildingCSZ181OffRoad</defName>
+        <label>CSZ-181 off-road</label>
+        <description>A off-road vehicles developed by Dongfeng Motor Group.</description>
+        <graphicData>
+            <texPath>Vehicles/CSZ181/CSZ181</texPath>
+            <graphicClass>Graphic_Multi</graphicClass>
+            <drawSize>7</drawSize>
+        </graphicData>
+        <size>(3,3)</size>
+        <statBases>
+            <WorkToBuild>2000</WorkToBuild>
+        </statBases>
+        <tickerType>Normal</tickerType>
+        <rotatable>true</rotatable>
+        <costList>
+            <Steel>2000</Steel>
+            <Plasteel>500</Plasteel>
+            <Chemfuel>300</Chemfuel>
+            <ComponentIndustrial>32</ComponentIndustrial>
+            <ComponentSpacer>4</ComponentSpacer>
+        </costList>
+        <designationCategory>PLA_DesignationCategory_Vehicle</designationCategory>
+        <researchPrerequisites>
+            <li>PLA_ResearchVehicle_CSZ181OffRoad</li>
+        </researchPrerequisites>
+        <comps>
+            <li Class="PLA.Vehicle.CompProperties_BuildingToVehicle">
+                <vehicle>PLA_CSZ181OffRoad</vehicle>
+            </li>
+        </comps>
+        <uiIconPath>Vehicles/CSZ181/Icon_CSZ181</uiIconPath>
+    </ThingDef>
+
+    <ThingDef ParentName="BuildingBase">
+        <defName>PLA_BuildingVP22Truck</defName>
+        <label>VP-22 truck</label>
+        <description>A transport vehicle developed by NORINCO.</description>
+        <graphicData>
+            <texPath>Vehicles/VP22/VP22</texPath>
+            <graphicClass>Graphic_Multi</graphicClass>
+            <drawSize>10</drawSize>
+        </graphicData>
+        <size>(3,3)</size>
+        <statBases>
+            <WorkToBuild>2000</WorkToBuild>
+        </statBases>
+        <tickerType>Normal</tickerType>
+        <rotatable>true</rotatable>
+        <costList>
+            <Steel>3400</Steel>
+            <Plasteel>700</Plasteel>
+            <Chemfuel>450</Chemfuel>
+            <ComponentIndustrial>40</ComponentIndustrial>
+            <ComponentSpacer>4</ComponentSpacer>
+        </costList>
+        <designationCategory>PLA_DesignationCategory_Vehicle</designationCategory>
+        <researchPrerequisites>
+            <li>PLA_ResearchVehicle_VP22Truck</li>
+        </researchPrerequisites>
+        <comps>
+            <li Class="PLA.Vehicle.CompProperties_BuildingToVehicle">
+                <vehicle>PLA_VP22Truck</vehicle>
+            </li>
+        </comps>
+        <uiIconPath>Vehicles/VP22/Icon_VP22</uiIconPath>
+    </ThingDef>
+
+    <ThingDef ParentName="BuildingBase">
+        <defName>PLA_BuildingZTLL11IFV</defName>
+        <label>ZTL-11 infantry fighting vehicle</label>
+        <description>A infantry fighting vehicle.</description>
+        <graphicData>
+            <texPath>Vehicles/ZTL11/ZTL11</texPath>
+            <graphicClass>Graphic_Multi</graphicClass>
+            <drawSize>9</drawSize>
+        </graphicData>
+        <size>(3,3)</size>
+        <statBases>
+            <WorkToBuild>4000</WorkToBuild>
+        </statBases>
+        <tickerType>Normal</tickerType>
+        <rotatable>true</rotatable>
+        <costList>
+            <Steel>3000</Steel>
+            <Plasteel>700</Plasteel>
+            <Chemfuel>360</Chemfuel>
+            <ComponentIndustrial>40</ComponentIndustrial>
+            <ComponentSpacer>4</ComponentSpacer>
+        </costList>
+        <designationCategory>PLA_DesignationCategory_Vehicle</designationCategory>
+        <researchPrerequisites>
+            <li>PLA_ResearchVehicle_ZTL11IFV</li>
+        </researchPrerequisites>
+        <comps>
+            <li Class="PLA.Vehicle.CompProperties_BuildingToVehicle">
+                <vehicle>PLA_ZTL11IFV</vehicle>
+            </li>
+        </comps>
+        <uiIconPath>Vehicles/ZTL11/Icon_ZTL11</uiIconPath>
+    </ThingDef>
+
+    <ThingDef ParentName="BuildingBase">
+        <defName>PLA_BuildingZTZ99A</defName>
+        <label>ZTZ-99A main battle tank</label>
+        <description>A main battle tank with 125mm cannon.</description>
+        <graphicData>
+            <texPath>Vehicles/ZTZ99A/ZTZ99A</texPath>
+            <graphicClass>Graphic_Multi</graphicClass>
+            <drawSize>8</drawSize>
+        </graphicData>
+        <size>(3,3)</size>
+        <statBases>
+            <WorkToBuild>4000</WorkToBuild>
+        </statBases>
+        <tickerType>Normal</tickerType>
+        <rotatable>true</rotatable>
+        <costList>
+            <Steel>4000</Steel>
+            <Plasteel>1000</Plasteel>
+            <Chemfuel>450</Chemfuel>
+            <ComponentIndustrial>50</ComponentIndustrial>
+            <ComponentSpacer>4</ComponentSpacer>
+        </costList>
+        <designationCategory>PLA_DesignationCategory_Vehicle</designationCategory>
+        <researchPrerequisites>
+            <li>PLA_ResearchVehicle_ZTZ99A</li>
+        </researchPrerequisites>
+        <comps>
+            <li Class="PLA.Vehicle.CompProperties_BuildingToVehicle">
+                <vehicle>PLA_ZTZ99ATank</vehicle>
+            </li>
+        </comps>
+        <uiIconPath>Vehicles/ZTZ99A/Icon_ZTZ99A</uiIconPath>
+    </ThingDef>
+
+    <ThingDef ParentName="BuildingBase">
+        <defName>PLA_ParkingLot</defName>
+        <label>parking lot</label>
+        <description>A place for parking the vehicle, the vehicle will return to the parking lot when undrafted.</description>
+        <thingClass>PLA.Vehicle.ParkingLot</thingClass>
+        <graphicData>
+            <texPath>Building/ParkingLot</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>(3,3)</drawSize>
+        </graphicData>
+        <tickerType>Normal</tickerType>
+        <altitudeLayer>FloorEmplacement</altitudeLayer>
+        <statBases>
+            <WorkToBuild>0</WorkToBuild>
+            <WorkTableWorkSpeedFactor>0.5</WorkTableWorkSpeedFactor>
+        </statBases>
+        <scatterableOnMapGen>false</scatterableOnMapGen>
+        <useHitPoints>false</useHitPoints>
+        <size>(1,1)</size>
+        <designationCategory>PLA_DesignationCategory_Vehicle</designationCategory>
+        <passability>Standable</passability>
+        <!--hasInteractionCell>True</hasInteractionCell>
+        <interactionCellOffset>(0,0,-1)</interactionCellOffset-->
+        <uiIconScale>0.17</uiIconScale>
+        <surfaceType>Item</surfaceType>
+    </ThingDef>
+</Defs>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+
+    <PLA_Uninstall>拆除</PLA_Uninstall>
+    <PLA_AnyVehicle>允许任意载具</PLA_AnyVehicle>
+    <PLA_Allow>只允许</PLA_Allow>
+    <PLA_SelectVehicleDesc>设定该停车点所允许的载具</PLA_SelectVehicleDesc>
+    <PLA_VehicleSection>载具</PLA_VehicleSection>
+</LanguageData>

@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+    <ThingDef ParentName="PLA_BaseVehicle">
+        <defName>PLA_ZTL11IFV</defName>
+        <label>ZTL-11 infantry fighting vehicle</label>
+        <description>A infantry fighting vehicle.</description>
+        <statBases>
+            <MarketValue>250000</MarketValue>
+            <MoveSpeed>5</MoveSpeed>
+            <ArmorRating_Blunt>1.7</ArmorRating_Blunt>
+            <ArmorRating_Sharp>1.25</ArmorRating_Sharp>
+            <PsychicSensitivity>0</PsychicSensitivity>
+            <CaravanRidingSpeedFactor>5</CaravanRidingSpeedFactor>
+            <CarryingCapacity>2000</CarryingCapacity>
+            <Mass>3280</Mass>
+        </statBases>
+        <tools>
+            <li>
+                <label>Body</label>
+                <capacities>
+                    <li>Blunt</li>
+                </capacities>
+                <power>50.7</power>
+                <cooldownTime>2.6</cooldownTime>
+            </li>
+        </tools>
+        <race>
+            <deathActionWorkerClass>PLA.Vehicle.DeathActionWorker_VehicleExplosion</deathActionWorkerClass>
+            <baseBodySize>7</baseBodySize>
+            <baseHealthScale>2.5</baseHealthScale>
+            <body>PLA_VehicleTank</body>
+        </race>
+        <butcherProducts>
+            <Steel>600</Steel>
+            <Plasteel>250</Plasteel>
+        </butcherProducts>
+        <killedLeavings>
+            <Steel>600</Steel>
+            <Plasteel>250</Plasteel>
+        </killedLeavings>
+        <comps>
+            <li Class="PLA.Vehicle.CompProperties_VehicleWeapon">
+                <turretRotationFollowPawn>true</turretRotationFollowPawn>
+                <defaultWeapon>PLA_TurretGun105mmCannon</defaultWeapon>
+            </li>
+            <li Class="CompProperties_Refuelable">
+                <fuelConsumptionRate>12</fuelConsumptionRate>
+                <fuelCapacity>360</fuelCapacity>
+                <fuelFilter>
+                    <thingDefs>
+                        <li>Chemfuel</li>
+                    </thingDefs>
+                </fuelFilter>
+                <showAllowAutoRefuelToggle>false</showAllowAutoRefuelToggle>
+                <autoRefuelPercent>0.75</autoRefuelPercent>
+                <initialFuelPercent>1</initialFuelPercent>
+            </li>
+        </comps>
+        <uiIconPath>Vehicles/ZTL11/Icon_ZTL11</uiIconPath>
+        <modExtensions>
+            <li Class="PLA.Vehicle.VehicleExtension">
+                <allowVechicleInCaravan>true</allowVechicleInCaravan>
+                <carryWeightInCaravan>980</carryWeightInCaravan>
+                <explosionRadius>4</explosionRadius>
+            </li>
+        </modExtensions>
+    </ThingDef>
+
+    <PawnKindDef ParentName="PLA_BaseVehiclePawnKind">
+        <defName>PLA_ZTL11IFV</defName>
+        <label>ZTL-11 infantry fighting vehicle</label>
+        <race>PLA_ZTL11IFV</race>
+        <lifeStages>
+            <li>
+                <bodyGraphicData>
+                    <texPath>Vehicles/ZTL11/ZTL11</texPath>
+                    <graphicClass>Graphic_Multi</graphicClass>
+                    <drawSize>9</drawSize>
+                </bodyGraphicData>
+            </li>
+        </lifeStages>
+    </PawnKindDef>
+
+    <ThingDef ParentName="BaseWeaponTurret">
+        <defName>PLA_TurretGun105mmCannon</defName>
+        <label>105mm cannon</label>
+        <description>...</description>
+        <graphicData>
+            <texPath>Vehicles/ZTL11/Turret105mm</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>(9,9)</drawSize>
+        </graphicData>
+        <uiIconScale>0.23</uiIconScale>
+        <statBases>
+            <MarketValue>9000</MarketValue>
+            <AccuracyTouch>0.65</AccuracyTouch>
+            <AccuracyShort>0.69</AccuracyShort>
+            <AccuracyMedium>0.81</AccuracyMedium>
+            <AccuracyLong>0.76</AccuracyLong>
+            <RangedWeapon_Cooldown>3</RangedWeapon_Cooldown>
+            <Mass>80</Mass>
+        </statBases>
+        <costList>
+            <PLA_VehicleWeapon105mmCannon>1</PLA_VehicleWeapon105mmCannon>
+        </costList>
+        <verbs>
+            <li>
+                <verbClass>Verb_Shoot</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <defaultProjectile>PLA_ZTL105mmShell_HEAT</defaultProjectile>
+                <warmupTime>4.5</warmupTime>
+                <range>42</range>
+                <soundCast>PLA_Shot125mmCannon</soundCast>
+                <soundCastTail>GunTail_Heavy</soundCastTail>
+                <muzzleFlashScale>33</muzzleFlashScale>
+                <consumeFuelPerShot>1</consumeFuelPerShot>
+                <forcedMissRadius>1.5</forcedMissRadius>
+                <minRange>3</minRange>
+            </li>
+        </verbs>
+        <comps>
+            <li Class="PLA.Vehicle.CompProperties_SecondaryVerb">
+                <secondaryAttackVerb>
+                    <verbClass>Verb_Shoot</verbClass>
+                    <hasStandardCommand>true</hasStandardCommand>
+                    <defaultProjectile>Bullet_LMG</defaultProjectile>
+                    <warmupTime>1.5</warmupTime>
+                    <range>41</range>
+                    <ticksBetweenBurstShots>7</ticksBetweenBurstShots>
+                    <burstShotCount>8</burstShotCount>
+                    <soundCast>PLA_Shot89HMG</soundCast>
+                    <soundCastTail>GunTail_Heavy</soundCastTail>
+                    <muzzleFlashScale>13</muzzleFlashScale>
+                    <consumeFuelPerShot>1</consumeFuelPerShot>
+                </secondaryAttackVerb>
+                <mainWeaponLabel>Use main cannon</mainWeaponLabel>
+                <secondaryWeaponLabel>Use coaxial machine gun</secondaryWeaponLabel>
+                <mainWeaponIcon>UI/UI_AmmoCannon</mainWeaponIcon>
+                <secondaryWeaponIcon>UI/UI_AmmoBullet</secondaryWeaponIcon>
+            </li>
+        </comps>
+        <tools>
+            <li>
+                <label>barrel</label>
+                <capacities>
+                    <li>Blunt</li>
+                </capacities>
+                <power>40.7</power>
+                <cooldownTime>2.6</cooldownTime>
+            </li>
+        </tools>
+        <weaponTags>
+            <li>PLA_TurretZTL11</li>
+        </weaponTags>
+        <relicChance>0</relicChance>
+    </ThingDef>
+    <ThingDef ParentName="BaseBullet">
+        <defName>PLA_ZTL105mmShell_HEAT</defName>
+        <label>105mm shell</label>
+        <graphicData>
+            <texPath>Things/Projectile/Bullet_Big</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>TransparentPostLight</shaderType>
+        </graphicData>
+        <thingClass>Projectile_Explosive</thingClass>
+        <projectile>
+            <damageDef>Bomb</damageDef>
+            <explosionRadius>1.8</explosionRadius>
+            <speed>140</speed>
+            <damageAmountBase>90</damageAmountBase>
+            <flyOverhead>true</flyOverhead>
+            <explosionDelay>5</explosionDelay>
+            <stoppingPower>4</stoppingPower>
+        </projectile>
+    </ThingDef>
+
+    <ThingDef ParentName="BaseWeaponTurret">
+        <defName>PLA_TurretGun40mmAutoCannon</defName>
+        <label>40mm auto CT cannon</label>
+        <description>...</description>
+        <graphicData>
+            <texPath>Vehicles/ZTL11/Turret40mm</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>(9,9)</drawSize>
+        </graphicData>
+        <uiIconScale>0.23</uiIconScale>
+        <statBases>
+            <MarketValue>1400</MarketValue>
+            <AccuracyTouch>0.68</AccuracyTouch>
+            <AccuracyShort>0.71</AccuracyShort>
+            <AccuracyMedium>0.83</AccuracyMedium>
+            <AccuracyLong>0.79</AccuracyLong>
+            <RangedWeapon_Cooldown>1.4</RangedWeapon_Cooldown>
+            <Mass>80</Mass>
+        </statBases>
+        <costList>
+            <PLA_VehicleWeapon40mmAutoCannon>1</PLA_VehicleWeapon40mmAutoCannon>
+        </costList>
+        <verbs>
+            <li>
+                <verbClass>Verb_Shoot</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <defaultProjectile>PLA_Bullet_40mmCTA</defaultProjectile>
+                <ticksBetweenBurstShots>20</ticksBetweenBurstShots>
+                <burstShotCount>3</burstShotCount>
+                <forcedMissRadius>1</forcedMissRadius>
+                <warmupTime>2.1</warmupTime>
+                <range>39</range>
+                <soundCast>PLA_Shot40mmCT</soundCast>
+                <soundCastTail>GunTail_Heavy</soundCastTail>
+                <muzzleFlashScale>13</muzzleFlashScale>
+                <consumeFuelPerShot>1</consumeFuelPerShot>
+                <minRange>2</minRange>
+            </li>
+        </verbs>
+        <comps>
+            <li Class="PLA.Vehicle.CompProperties_SecondaryVerb">
+                <secondaryAttackVerb>
+                    <verbClass>Verb_Shoot</verbClass>
+                    <hasStandardCommand>true</hasStandardCommand>
+                    <defaultProjectile>Bullet_LMG</defaultProjectile>
+                    <warmupTime>1.5</warmupTime>
+                    <range>41</range>
+                    <ticksBetweenBurstShots>7</ticksBetweenBurstShots>
+                    <burstShotCount>8</burstShotCount>
+                    <soundCast>PLA_Shot89HMG</soundCast>
+                    <soundCastTail>GunTail_Heavy</soundCastTail>
+                    <muzzleFlashScale>13</muzzleFlashScale>
+                    <consumeFuelPerShot>1</consumeFuelPerShot>
+                </secondaryAttackVerb>
+                <mainWeaponLabel>Use auto cannon</mainWeaponLabel>
+                <secondaryWeaponLabel>Use coaxial machine gun</secondaryWeaponLabel>
+                <mainWeaponIcon>UI/UI_AmmoCannon</mainWeaponIcon>
+                <secondaryWeaponIcon>UI/UI_AmmoBullet</secondaryWeaponIcon>
+            </li>
+        </comps>
+        <tools>
+            <li>
+                <label>barrel</label>
+                <capacities>
+                    <li>Blunt</li>
+                </capacities>
+                <power>11.7</power>
+                <cooldownTime>2.6</cooldownTime>
+            </li>
+        </tools>
+        <relicChance>0</relicChance>
+    </ThingDef>
+</Defs>

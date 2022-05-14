@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+    <ThingDef Class="CombatExtended.AmmoDef" ParentName="BaseFragment">
+        <defName>PLA_MetalJet_CannonShell</defName>
+        <label>metal jet</label>
+        <graphicData>
+            <texPath>Things/Projectile/MetalJet</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <projectile Class="CombatExtended.ProjectilePropertiesCE">
+            <damageDef>Fragment</damageDef>
+            <damageAmountBase>8</damageAmountBase>
+            <speed>40</speed>
+            <secondaryDamage>
+                <li>
+                    <def>Flame_Secondary</def>
+                    <amount>23</amount>
+                </li>
+            </secondaryDamage>
+            <armorPenetrationSharp>8</armorPenetrationSharp>
+            <armorPenetrationBlunt>3</armorPenetrationBlunt>
+            <gravityFactor>32</gravityFactor>
+        </projectile>
+    </ThingDef>
+</Defs>

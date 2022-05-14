@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+	<WorkGiverDef>
+		<defName>PLA_DoBilModifyVehicle</defName>
+		<label>modify vehicle</label>
+		<giverClass>WorkGiver_DoBill</giverClass>
+		<workType>Construction</workType>
+		<priorityInType>41</priorityInType>
+		<fixedBillGiverDefs>
+			<li>PLA_CSZ181OffRoad</li>
+            <li>PLA_Lynx6x6UltraLight</li>
+            <li>PLA_ZTZ99ATank</li>
+			<li>PLA_ZTL11IFV</li>
+		</fixedBillGiverDefs>
+		<verb>modify</verb>
+		<gerund>modifying</gerund>
+		<requiredCapacities>
+		  <li>Manipulation</li>
+		</requiredCapacities>
+		<prioritizeSustains>true</prioritizeSustains>
+	  </WorkGiverDef>
+
+	<WorkGiverDef>
+		<defName>PLA_WorkGiverRepairVehicle</defName>
+		<label>repair vehicle</label>
+		<giverClass>PLA.Vehicle.WorkGiver_RepairVehicle</giverClass>
+		<workType>Construction</workType>
+		<priorityInType>40</priorityInType>
+		<verb>repair</verb>
+		<gerund>repairing</gerund>
+		<requiredCapacities>
+			<li>Manipulation</li>
+		</requiredCapacities>
+		<nonColonistsCanDo>true</nonColonistsCanDo>
+	</WorkGiverDef>
+
+	<JobDef>
+		<defName>PLA_RepairVehicle</defName>
+		<driverClass>PLA.Vehicle.JobDriver_RepairVehicle</driverClass>
+		<reportString>Repairing vehicle.</reportString>
+	</JobDef>
+</Defs>

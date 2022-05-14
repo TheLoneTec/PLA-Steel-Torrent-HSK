@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+    <!-- 23mm autocannon-->
+    <ThingDef ParentName="PLA_VehicleModWeaponBase">
+        <defName>PLA_VehicleWeapon23mmAutocannon</defName>
+        <label>vehicle modification kit - 23mm autocannon</label>
+        <description>A modification toolkit that can be used to install the 23mm autocannon on vehicle.</description>
+        <descriptionHyperlinks>
+            <RecipeDef>PLA_InstallWeapon23mmAutocannon</RecipeDef>
+            <ThingDef>PLA_Gun23mmAutocannon</ThingDef>
+            <ThingDef>PLA_Lynx6x6UltraLight</ThingDef>
+        </descriptionHyperlinks>
+        <costList>
+            <Steel>180</Steel>
+            <ComponentIndustrial>12</ComponentIndustrial>
+        </costList>
+        <statBases>
+            <Mass>41</Mass>
+        </statBases>
+        <researchPrerequisites>
+            <li>PLA_ResearchVehicle_VehicleModification</li>
+            <li>PLA_ResearchVehicle_Lynx</li>
+        </researchPrerequisites>
+    </ThingDef>
+
+    <RecipeDef ParentName="PLA_RecipeInstallVehicleWeapon">
+        <defName>PLA_InstallWeapon23mmAutocannon</defName>
+        <label>install 23mm autocannon</label>
+        <description>Install the 23mm autocannon.</description>
+        <descriptionHyperlinks>
+            <ThingDef>PLA_VehicleWeapon23mmAutocannon</ThingDef>
+            <ThingDef>PLA_Gun23mmAutocannon</ThingDef>
+            <ThingDef>PLA_Lynx6x6UltraLight</ThingDef>
+        </descriptionHyperlinks>
+        <jobString>Installing 23mm autocannon</jobString>
+        <recipeUsers>
+            <li>PLA_Lynx6x6UltraLight</li>
+        </recipeUsers>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>PLA_VehicleWeapon23mmAutocannon</li>
+                    </thingDefs>
+                </filter>
+                <count>1</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>PLA_VehicleWeapon23mmAutocannon</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <appliedOnFixedBodyParts>
+            <li>PLA_VehicleTurret</li>
+        </appliedOnFixedBodyParts>
+        <modExtensions>
+            <li Class="PLA.Vehicle.RecipeModifyVehicleProps">
+                <weaponToInstall>PLA_Gun23mmAutocannon</weaponToInstall>
+            </li>
+        </modExtensions>
+    </RecipeDef>
+
+    <!-- 40mm CT-->
+
+    <ThingDef ParentName="PLA_VehicleModWeaponBase">
+        <defName>PLA_VehicleWeapon40mmCannon</defName>
+        <label>vehicle modification kit - 40mm CT cannon</label>
+        <description>A modification toolkit that can be used to install the 40mm CT cannon on vehicle.</description>
+        <descriptionHyperlinks>
+            <ThingDef>PLA_Gun40mmCannon</ThingDef>
+            <RecipeDef>PLA_InstallWeapon40mmCannon</RecipeDef>
+            <ThingDef>PLA_Lynx6x6UltraLight</ThingDef>
+        </descriptionHyperlinks>
+        <costList>
+            <Steel>220</Steel>
+            <ComponentIndustrial>15</ComponentIndustrial>
+        </costList>
+        <statBases>
+            <Mass>41</Mass>
+        </statBases>
+        <researchPrerequisites>
+            <li>PLA_ResearchVehicle_VehicleModification</li>
+            <li>PLA_ResearchVehicle_Lynx</li>
+        </researchPrerequisites>
+    </ThingDef>
+
+    <RecipeDef ParentName="PLA_RecipeInstallVehicleWeapon">
+        <defName>PLA_InstallWeapon40mmCannon</defName>
+        <label>install 40mm CT cannon</label>
+        <description>Install the 40mm CT cannon on vehicle.</description>
+        <descriptionHyperlinks>
+            <ThingDef>PLA_VehicleWeapon40mmCannon</ThingDef>
+            <ThingDef>PLA_Gun40mmCannon</ThingDef>
+            <ThingDef>PLA_Lynx6x6UltraLight</ThingDef>
+        </descriptionHyperlinks>
+        <jobString>Installing 40mm CT cannon</jobString>
+        <recipeUsers>
+            <li>PLA_Lynx6x6UltraLight</li>
+        </recipeUsers>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>PLA_VehicleWeapon40mmCannon</li>
+                    </thingDefs>
+                </filter>
+                <count>1</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>PLA_VehicleWeapon40mmCannon</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <appliedOnFixedBodyParts>
+            <li>PLA_VehicleTurret</li>
+        </appliedOnFixedBodyParts>
+        <modExtensions>
+            <li Class="PLA.Vehicle.RecipeModifyVehicleProps">
+                <weaponToInstall>PLA_Gun40mmCannon</weaponToInstall>
+            </li>
+        </modExtensions>
+    </RecipeDef>
+
+    <!-- 107mm rocket-->
+
+    <ThingDef ParentName="PLA_VehicleModWeaponBase">
+        <defName>PLA_VehicleWeapon107mmRocketLauncher</defName>
+        <label>vehicle modification kit - 107mm rocket launcher</label>
+        <description>A modification toolkit that can be used to install the 107mm rocket launcher on vehicle.</description>
+        <descriptionHyperlinks>
+            <ThingDef>PLA_Gun107mmRocketLauncher</ThingDef>
+            <RecipeDef>PLA_InstallWeapon40mmCannon</RecipeDef>
+            <ThingDef>PLA_Lynx6x6UltraLight</ThingDef>
+        </descriptionHyperlinks>
+        <costList>
+            <Steel>280</Steel>
+            <ComponentIndustrial>15</ComponentIndustrial>
+        </costList>
+        <statBases>
+            <Mass>41</Mass>
+        </statBases>
+        <researchPrerequisites>
+            <li>PLA_ResearchVehicle_VehicleModification</li>
+            <li>PLA_ResearchVehicle_Lynx</li>
+        </researchPrerequisites>
+    </ThingDef>
+
+    <RecipeDef ParentName="PLA_RecipeInstallVehicleWeapon">
+        <defName>PLA_InstallWeapon107mmRocketLauncher</defName>
+        <label>install 107mm rocket launcher</label>
+        <description>Install the 107mm rocket launcher on vehicle.</description>
+        <descriptionHyperlinks>
+            <ThingDef>PLA_VehicleWeapon107mmRocketLauncher</ThingDef>
+            <ThingDef>PLA_Gun107mmRocketLauncher</ThingDef>
+            <ThingDef>PLA_Lynx6x6UltraLight</ThingDef>
+        </descriptionHyperlinks>
+        <jobString>Installing 107mm rocket launcher</jobString>
+        <recipeUsers>
+            <li>PLA_Lynx6x6UltraLight</li>
+        </recipeUsers>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>PLA_VehicleWeapon107mmRocketLauncher</li>
+                    </thingDefs>
+                </filter>
+                <count>1</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>PLA_VehicleWeapon107mmRocketLauncher</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <appliedOnFixedBodyParts>
+            <li>PLA_VehicleTurret</li>
+        </appliedOnFixedBodyParts>
+        <modExtensions>
+            <li Class="PLA.Vehicle.RecipeModifyVehicleProps">
+                <weaponToInstall>PLA_Gun107mmRocketLauncher</weaponToInstall>
+            </li>
+        </modExtensions>
+    </RecipeDef>
+</Defs>

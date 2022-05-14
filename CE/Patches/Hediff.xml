@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+    <!-- Car -->
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>/Defs/HediffDef[defName = "PLA_CompositeArmor"]/stages</xpath>
+        <value>
+            <stages>
+                <li>
+                    <capMods>
+                        <li>
+                            <capacity>Moving</capacity>
+                            <postFactor>0.95</postFactor>
+                        </li>
+                    </capMods>
+                    <statOffsets>
+                        <ArmorRating_Sharp>5</ArmorRating_Sharp>
+                        <ArmorRating_Blunt>15</ArmorRating_Blunt>
+                        <ArmorRating_Heat>0.2</ArmorRating_Heat>
+                    </statOffsets>
+                </li>
+            </stages>
+        </value>
+    </Operation>
+</Patch>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+    <RecipeDef Name="PLA_VehicleAmmoRecipeBase" ParentName="AmmoRecipeBase" Abstract="true">
+        <recipeUsers>
+            <li>TableMachining</li>
+        </recipeUsers>
+    </RecipeDef>
+
+    <RecipeDef Name="PLA_VehicleAdvancedAmmoRecipeBase" ParentName="AdvancedAmmoRecipeBase" Abstract="true">
+        <recipeUsers>
+            <li>TableMachining</li>
+        </recipeUsers>
+    </RecipeDef>
+</Defs>

@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Defs>
+
+	<ThingCategoryDef>
+		<defName>Ammo125mmShell</defName>
+		<label>125mm Shell</label>
+		<parent>AmmoShells</parent>
+		<iconPath>Things/Ammo/Cannon/120mmTank/Sabot</iconPath>
+	</ThingCategoryDef>
+
+	<!-- ==================== AmmoSet ========================== -->
+
+	<CombatExtended.AmmoSetDef>
+		<defName>AmmoSet_125mmShell</defName>
+		<label>125mm Shells</label>
+		<ammoTypes>
+			<Ammo_125mmShell_HE>Bullet_125mmShell_HE</Ammo_125mmShell_HE>
+			<Ammo_125mmShell_APFSDS>Bullet_125mmShell_APFSDS</Ammo_125mmShell_APFSDS>
+		</ammoTypes>
+	</CombatExtended.AmmoSetDef>
+
+	<!-- ==================== Ammo ========================== -->
+
+	<ThingDef Class="CombatExtended.AmmoDef" Name="125mmShellBase" ParentName="AmmoBase" Abstract="True">
+		<description>125mm cannon shell used in tank.</description>
+		<statBases>
+			<MaxHitPoints>300</MaxHitPoints>
+		</statBases>
+		<tradeTags>
+			<li>CE_AutoEnableTrade</li>
+			<li>CE_AutoEnableCrafting_TableMachining</li>
+		</tradeTags>
+		<thingCategories>
+			<li>Ammo125mmShell</li>
+		</thingCategories>
+		<stackLimit>25</stackLimit>
+		<cookOffFlashScale>25</cookOffFlashScale>
+		<cookOffSound>MortarBomb_Explode</cookOffSound>
+	</ThingDef>
+
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="125mmShellBase">
+		<defName>Ammo_125mmShell_HE</defName>
+		<label>125mm Shell (HE)</label>
+		<graphicData>
+			<texPath>Things/Ammo/Cannon/120mmTank/HE</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+			<MaxHitPoints>250</MaxHitPoints>
+			<Mass>25.3</Mass>
+			<Bulk>66.09</Bulk>
+		</statBases>
+		<ammoClass>GrenadeHE</ammoClass>
+		<detonateProjectile>Bullet_125mmShell_HE</detonateProjectile>
+	</ThingDef>
+
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="125mmShellBase">
+		<defName>Ammo_125mmShell_APFSDS</defName>
+		<label>125mm Shell (APFSDS)</label>
+		<graphicData>
+			<texPath>Things/Ammo/Cannon/120mmTank/Sabot</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+			<MaxHitPoints>250</MaxHitPoints>
+			<Mass>24.3</Mass>
+			<Bulk>66.09</Bulk>
+		</statBases>
+		<ammoClass>Sabot</ammoClass>
+		<detonateProjectile>Bullet_125mmShell_APFSDS</detonateProjectile>
+	</ThingDef>
+
+	<!-- ================== Projectiles ================== -->
+
+	<ThingDef Class="CombatExtended.AmmoDef" Name="Base125mmShell" ParentName="BaseBullet" Abstract="true">
+		<graphicData>
+			<shaderType>TransparentPostLight</shaderType>
+		</graphicData>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<speed>280</speed>
+			<casingMoteDefname>Mote_BigShell</casingMoteDefname>
+		</projectile>
+	</ThingDef>
+
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="Base125mmShell">
+		<defName>Bullet_125mmShell_HE</defName>
+		<thingClass>CombatExtended.ProjectileCE_Explosive</thingClass>
+		<label>125mm Shell (HE)</label>
+		<graphicData>
+			<texPath>Things/Projectile/Cannon/120mmTank/HE</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<damageDef>Bomb</damageDef>
+			<damageAmountBase>331</damageAmountBase>
+			<armorPenetrationBlunt>122</armorPenetrationBlunt>
+			<explosionRadius>6</explosionRadius>
+			<soundExplode>MortarIncendiary_Explode</soundExplode>
+			<soundHitThickRoof>Artillery_HitThickRoof</soundHitThickRoof>
+			<soundImpactAnticipate>MortarRound_PreImpact</soundImpactAnticipate>
+			<soundAmbient>MortarRound_Ambient</soundAmbient>
+			<applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
+			<ai_IsIncendiary>true</ai_IsIncendiary>
+		</projectile>
+        <comps>
+			<li Class="CombatExtended.CompProperties_Fragments">
+				<fragments>
+					<Fragment_Large>55</Fragment_Large>
+				</fragments>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="Base125mmShell">
+		<defName>Bullet_125mmShell_APFSDS</defName>
+		<label>125mm Shell (APFSDS)</label>
+		<graphicData>
+			<texPath>Things/Projectile/Cannon/120mmTank/Sabot</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<damageDef>Bullet</damageDef>
+			<damageAmountBase>450</damageAmountBase>
+			<armorPenetrationSharp>600</armorPenetrationSharp>
+			<armorPenetrationBlunt>100.44</armorPenetrationBlunt>
+		</projectile>
+		<comps>
+			<li Class="CombatExtended.CompProperties_ExplosiveCE">
+				<damageAmountBase>200</damageAmountBase>
+				<explosiveDamageType>Bomb</explosiveDamageType>
+				<explosiveRadius>1.5</explosiveRadius>
+				<explosionSound>MortarBomb_Explode</explosionSound>
+				<applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
+			</li>
+			<li Class="CombatExtended.CompProperties_Fragments">
+				<fragments>
+					<PLA_MetalJet_CannonShell>22</PLA_MetalJet_CannonShell>
+					<Fragment_Large>25</Fragment_Large>
+				</fragments>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<!-- ==================== Recipes ========================== -->
+
+	<RecipeDef ParentName="PLA_VehicleAmmoRecipeBase">
+		<defName>MakeAmmo_125mmShell_HE</defName>
+		<label>make 125mm cannon shells (HE) x2</label>
+		<description>Craft 2 125mm cannon shells (HE).</description>
+		<jobString>Making 125mm cannon shells (HE).</jobString>
+		<workAmount>20400</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Steel</li>
+					</thingDefs>
+				</filter>
+				<count>86</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ComponentIndustrial</li>
+					</thingDefs>
+				</filter>
+				<count>2</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>FSX</li>
+					</thingDefs>
+				</filter>
+				<count>8</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Steel</li>
+				<li>ComponentIndustrial</li>
+				<li>FSX</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<Ammo_125mmShell_HE>2</Ammo_125mmShell_HE>
+		</products>
+	</RecipeDef>
+
+	<RecipeDef ParentName="PLA_VehicleAmmoRecipeBase">
+		<defName>MakeAmmo_125mmShell_APFSDS</defName>
+		<label>make 125mm cannon shells (APFSDS) x2</label>
+		<description>Craft 2 cannon shells (APFSDS).</description>
+		<jobString>Making 125mm cannon shells (APFSDS).</jobString>
+		<workAmount>20400</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Steel</li>
+					</thingDefs>
+				</filter>
+				<count>86</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ComponentIndustrial</li>
+					</thingDefs>
+				</filter>
+				<count>2</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>FSX</li>
+					</thingDefs>
+				</filter>
+				<count>14</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Steel</li>
+				<li>ComponentIndustrial</li>
+				<li>FSX</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<Ammo_125mmShell_APFSDS>2</Ammo_125mmShell_APFSDS>
+		</products>
+	</RecipeDef>
+
+</Defs>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+  <PawnKindDef Name="PLA_BaseVehiclePawnKind" Abstract="True">
+    <defaultFactionType>PlayerColony</defaultFactionType>
+    <aiAvoidCover>true</aiAvoidCover>
+    <destroyGearOnDrop>true</destroyGearOnDrop>
+    <combatPower>99999</combatPower>
+    <backstoryFilters></backstoryFilters>
+    <forcedTraits>
+      <PLA_TraitWarMachine>0</PLA_TraitWarMachine>
+    </forcedTraits>
+  </PawnKindDef>
+
+  <TraitDef>
+    <defName>PLA_TraitWarMachine</defName>
+    <label>war machine</label>
+    <disabledWorkTypes>
+      <li>Mining</li>
+      <li>Growing</li>
+      <li>Construction</li>
+      <li>Warden</li>
+      <li>Doctor</li>
+      <li>Firefighter</li>
+      <li>Hunting</li>
+      <li>Handling</li>
+      <li>Crafting</li>
+      <li>Hauling</li>
+      <li>Research</li>
+      <li>Art</li>
+      <li>PlantCutting</li>
+    </disabledWorkTypes>
+    <commonality>0</commonality>
+    <degreeDatas>
+      <li>
+        <label>war machine</label>
+        <description>This is a machine.</description>
+        <degree>0</degree>
+      </li>
+    </degreeDatas>
+  </TraitDef>
+</Defs>

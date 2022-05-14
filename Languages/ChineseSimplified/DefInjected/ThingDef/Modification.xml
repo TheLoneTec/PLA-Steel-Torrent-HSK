@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+    <PLA_AdvancedFireControlComputer.label>车辆改装套件-高级火控计算机</PLA_AdvancedFireControlComputer.label>
+    <PLA_AdvancedFireControlComputer.description>应用于载具的高级火控计算机，可以提升载具的射击准度</PLA_AdvancedFireControlComputer.description>
+
+    <PLA_CompositeArmor.label>车辆改装套件-复合装甲</PLA_CompositeArmor.label>
+    <PLA_CompositeArmor.description>用于车辆的复合装甲，可以增加防护能力</PLA_CompositeArmor.description>
+
+    <PLA_VehicleWeapon89HMG.label>车辆改装套件-89式重机枪</PLA_VehicleWeapon89HMG.label>
+    <PLA_VehicleWeapon89HMG.description>可以安装在载具上的89式重机枪。\n可安装在猛士突击车上。</PLA_VehicleWeapon89HMG.description>
+
+    <PLA_VehicleWeapon04GL.label>车辆改装套件-04式榴弹发射器</PLA_VehicleWeapon04GL.label>
+    <PLA_VehicleWeapon04GL.description>可以安装在载具上的04式榴弹发射器。\n可安装在猛士突击车上。</PLA_VehicleWeapon04GL.description>
+
+    <PLA_VehicleWeapon30mmAutocannon.label>车辆改装套件-30mm机炮</PLA_VehicleWeapon30mmAutocannon.label>
+    <PLA_VehicleWeapon30mmAutocannon.description>可以安装在载具上的30mm机炮。\n可安装在猛士突击车上。</PLA_VehicleWeapon30mmAutocannon.description>
+
+    <PLA_VehicleWeapon23mmAutocannon.label>车辆改装套件-23mm机炮</PLA_VehicleWeapon23mmAutocannon.label>
+    <PLA_VehicleWeapon23mmAutocannon.description>可以安装在载具上的23mm机炮。\n可安装在山猫全地形车上。</PLA_VehicleWeapon23mmAutocannon.description>
+
+    <PLA_VehicleWeapon40mmCannon.label>车辆改装套件-40mm埋头弹炮</PLA_VehicleWeapon40mmCannon.label>
+    <PLA_VehicleWeapon40mmCannon.description>可以安装在载具上的40mm埋头弹炮。\n可安装在山猫全地形车上。</PLA_VehicleWeapon40mmCannon.description>
+
+    <PLA_VehicleWeapon107mmRocketLauncher.label>车辆改装套件-107mm火箭炮</PLA_VehicleWeapon107mmRocketLauncher.label>
+    <PLA_VehicleWeapon107mmRocketLauncher.description>可以安装在载具上的107mm火箭炮。\n可安装在山猫全地形车上。</PLA_VehicleWeapon107mmRocketLauncher.description>
+
+
+    <PLA_VehicleWeapon105mmCannon.label>车辆改装套件-105mm火炮</PLA_VehicleWeapon105mmCannon.label>
+    <PLA_VehicleWeapon105mmCannon.description>可以安装在载具上的105mm火炮。\n可安装在ZTL-11轮式突击炮上。</PLA_VehicleWeapon105mmCannon.description>
+
+    <PLA_VehicleWeapon40mmAutoCannon.label>车辆改装套件-40mm埋头弹自动炮</PLA_VehicleWeapon40mmAutoCannon.label>
+    <PLA_VehicleWeapon40mmAutoCannon.description>可以安装在载具上的40mm埋头弹自动炮。\n可安装在ZTL-11轮式突击炮上。</PLA_VehicleWeapon40mmAutoCannon.description>
+
+</LanguageData>

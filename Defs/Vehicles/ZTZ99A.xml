@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+  <ThingDef ParentName="PLA_BaseVehicle">
+    <defName>PLA_ZTZ99ATank</defName>
+    <label>ZTZ-99A main battle tank</label>
+    <description>A main battle tank with 125mm cannon.</description>
+    <statBases>
+      <MarketValue>400000</MarketValue>
+      <MoveSpeed>4</MoveSpeed>
+      <ArmorRating_Blunt>2</ArmorRating_Blunt>
+      <ArmorRating_Sharp>1.4</ArmorRating_Sharp>
+      <PsychicSensitivity>0</PsychicSensitivity>
+      <CaravanRidingSpeedFactor>4</CaravanRidingSpeedFactor>
+      <CarryingCapacity>2000</CarryingCapacity>
+      <Mass>6500</Mass>
+    </statBases>
+    <tools>
+      <li>
+        <label>Body</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>50.7</power>
+        <cooldownTime>2.6</cooldownTime>
+      </li>
+    </tools>
+    <race>
+      <deathActionWorkerClass>PLA.Vehicle.DeathActionWorker_VehicleExplosion</deathActionWorkerClass>
+      <baseBodySize>8</baseBodySize>
+      <baseHealthScale>3</baseHealthScale>
+      <body>PLA_VehicleTank</body>
+    </race>
+    <butcherProducts>
+      <Steel>2300</Steel>
+      <Plasteel>500</Plasteel>
+    </butcherProducts>
+    <killedLeavings>
+      <Steel>750</Steel>
+      <Plasteel>310</Plasteel>
+    </killedLeavings>
+    <comps>
+      <li Class="PLA.Vehicle.CompProperties_VehicleWeapon">
+        <turretRotationFollowPawn>true</turretRotationFollowPawn>
+        <defaultWeapon>PLA_TurretGun99A</defaultWeapon>
+      </li>
+      <li Class="CompProperties_Refuelable">
+        <fuelConsumptionRate>15</fuelConsumptionRate>
+        <fuelCapacity>450</fuelCapacity>
+        <fuelFilter>
+          <thingDefs>
+            <li>Chemfuel</li>
+          </thingDefs>
+        </fuelFilter>
+        <showAllowAutoRefuelToggle>false</showAllowAutoRefuelToggle>
+        <autoRefuelPercent>0.75</autoRefuelPercent>
+        <initialFuelPercent>1</initialFuelPercent>
+      </li>
+    </comps>
+    <uiIconPath>Vehicles/ZTZ99A/Icon_ZTZ99A</uiIconPath>
+    <modExtensions>
+      <li Class="PLA.Vehicle.VehicleExtension">
+        <allowVechicleInCaravan>true</allowVechicleInCaravan>
+        <carryWeightInCaravan>400</carryWeightInCaravan>
+        <explosionRadius>5</explosionRadius>
+      </li>
+    </modExtensions>
+  </ThingDef>
+
+  <PawnKindDef ParentName="PLA_BaseVehiclePawnKind">
+    <defName>PLA_ZTZ99ATank</defName>
+    <label>ZTZ-99A main battle tank</label>
+    <race>PLA_ZTZ99ATank</race>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Vehicles/ZTZ99A/ZTZ99A</texPath>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>8</drawSize>
+        </bodyGraphicData>
+      </li>
+    </lifeStages>
+  </PawnKindDef>
+
+  <ThingDef ParentName="BaseWeaponTurret">
+    <defName>PLA_TurretGun99A</defName>
+    <label>125mm cannon</label>
+    <description>...</description>
+    <graphicData>
+      <texPath>Vehicles/ZTZ99A/Turret99A</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(12,12)</drawSize>
+    </graphicData>
+    <uiIconScale>0.2</uiIconScale>
+    <statBases>
+      <MarketValue>9000</MarketValue>
+      <AccuracyTouch>0.68</AccuracyTouch>
+      <AccuracyShort>0.71</AccuracyShort>
+      <AccuracyMedium>0.83</AccuracyMedium>
+      <AccuracyLong>0.79</AccuracyLong>
+      <RangedWeapon_Cooldown>3</RangedWeapon_Cooldown>
+      <Mass>80</Mass>
+    </statBases>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>PLA_99AShell_HEAT</defaultProjectile>
+        <warmupTime>4.5</warmupTime>
+        <range>42</range>
+        <soundCast>PLA_Shot125mmCannon</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>33</muzzleFlashScale>
+        <consumeFuelPerShot>1</consumeFuelPerShot>
+        <forcedMissRadius>1.5</forcedMissRadius>
+        <minRange>3</minRange>
+      </li>
+    </verbs>
+    <comps>
+      <li Class="PLA.Vehicle.CompProperties_SecondaryVerb">
+        <secondaryAttackVerb>
+          <verbClass>Verb_Shoot</verbClass>
+          <hasStandardCommand>true</hasStandardCommand>
+          <defaultProjectile>Bullet_LMG</defaultProjectile>
+          <warmupTime>1.5</warmupTime>
+          <range>42</range>
+          <ticksBetweenBurstShots>7</ticksBetweenBurstShots>
+          <burstShotCount>12</burstShotCount>
+          <soundCast>PLA_Shot89HMG</soundCast>
+          <soundCastTail>GunTail_Heavy</soundCastTail>
+          <muzzleFlashScale>13</muzzleFlashScale>
+          <consumeFuelPerShot>1</consumeFuelPerShot>
+        </secondaryAttackVerb>
+        <mainWeaponLabel>Use main cannon</mainWeaponLabel>
+        <secondaryWeaponLabel>Use coaxial machine gun</secondaryWeaponLabel>
+        <mainWeaponIcon>UI/UI_AmmoCannon</mainWeaponIcon>
+        <secondaryWeaponIcon>UI/UI_AmmoBullet</secondaryWeaponIcon>
+      </li>
+    </comps>
+    <tools>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>40.7</power>
+        <cooldownTime>2.6</cooldownTime>
+      </li>
+    </tools>
+    <weaponTags>
+      <li>PLA_Turret99A</li>
+    </weaponTags>
+    <relicChance>0</relicChance>
+  </ThingDef>
+  <ThingDef ParentName="BaseBullet">
+    <defName>PLA_99AShell_HEAT</defName>
+    <label>125mm shell</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Big</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>TransparentPostLight</shaderType>
+    </graphicData>
+    <thingClass>Projectile_Explosive</thingClass>
+    <projectile>
+      <damageDef>Bomb</damageDef>
+      <explosionRadius>1.8</explosionRadius>
+      <speed>180</speed>
+      <damageAmountBase>160</damageAmountBase>
+      <flyOverhead>true</flyOverhead>
+      <explosionDelay>5</explosionDelay>
+      <stoppingPower>4</stoppingPower>
+    </projectile>
+  </ThingDef>
+</Defs>

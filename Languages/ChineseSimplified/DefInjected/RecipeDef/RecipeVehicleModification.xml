@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <PLA_InstallAdvancedFireControlComputer.label>安装高级火控计算机</PLA_InstallAdvancedFireControlComputer.label>
+  <PLA_InstallAdvancedFireControlComputer.labelNoun>安装高级火控计算机</PLA_InstallAdvancedFireControlComputer.labelNoun>
+
+  <PLA_InstallCompositeArmor.label>安装复合装甲</PLA_InstallCompositeArmor.label>
+  <PLA_InstallCompositeArmor.labelNoun>安装复合装甲</PLA_InstallCompositeArmor.labelNoun>
+
+
+
+  <PLA_InstallWeapon89HMG.label>安装89式重机枪</PLA_InstallWeapon89HMG.label>
+  <PLA_InstallWeapon89HMG.labelNoun>安装89式重机枪。</PLA_InstallWeapon89HMG.labelNoun>
+
+  <PLA_InstallWeapon04GL.label>安装04式榴弹发射器</PLA_InstallWeapon04GL.label>
+  <PLA_InstallWeapon04GL.labelNoun>安装04式榴弹发射器。</PLA_InstallWeapon04GL.labelNoun>
+
+  <PLA_InstallWeapon30mmAutocannon.label>安装30mm机炮</PLA_InstallWeapon30mmAutocannon.label>
+  <PLA_InstallWeapon30mmAutocannon.labelNoun>安装30mm机炮。</PLA_InstallWeapon30mmAutocannon.labelNoun>
+
+  <PLA_InstallWeapon23mmAutocannon.label>安装23mm机炮</PLA_InstallWeapon23mmAutocannon.label>
+  <PLA_InstallWeapon23mmAutocannon.labelNoun>安装23mm机炮</PLA_InstallWeapon23mmAutocannon.labelNoun>
+
+  <PLA_InstallWeapon40mmCannon.label>安装40mm埋头弹炮</PLA_InstallWeapon40mmCannon.label>
+  <PLA_InstallWeapon40mmCannon.labelNoun>安装40mm埋头弹炮</PLA_InstallWeapon40mmCannon.labelNoun>
+
+  <PLA_InstallWeapon107mmRocketLauncher.label>安装107mm火箭炮</PLA_InstallWeapon107mmRocketLauncher.label>
+  <PLA_InstallWeapon107mmRocketLauncher.labelNoun>安装107mm火箭炮</PLA_InstallWeapon107mmRocketLauncher.labelNoun>
+
+  <PLA_InstallWeapon105mmCannon.label>安装105mm火炮</PLA_InstallWeapon105mmCannon.label>
+  <PLA_InstallWeapon105mmCannon.labelNoun>安装105mm火炮</PLA_InstallWeapon105mmCannon.labelNoun>
+
+  <PLA_InstallWeapon40mmAutoCannon.label>安装40mm埋头弹自动炮</PLA_InstallWeapon40mmAutoCannon.label>
+  <PLA_InstallWeapon40mmAutoCannon.labelNoun>安装40mm埋头弹自动炮</PLA_InstallWeapon40mmAutoCannon.labelNoun>
+
+
+</LanguageData>

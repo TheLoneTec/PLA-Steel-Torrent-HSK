@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <PLA_Uninstall>Uninstall </PLA_Uninstall>
+    <PLA_AnyVehicle>Allow any vehicle</PLA_AnyVehicle>
+    <PLA_Allow>Only allow</PLA_Allow>
+    <PLA_SelectVehicleDesc>Set the allows the vehicle for the parking lot</PLA_SelectVehicleDesc>
+    <PLA_VehicleSection>Vehicles</PLA_VehicleSection>
+</LanguageData>

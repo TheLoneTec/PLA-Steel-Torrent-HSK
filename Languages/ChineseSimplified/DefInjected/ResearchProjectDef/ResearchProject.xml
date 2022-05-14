@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <PLA_ResearchVehicle_Lynx.label>山猫全地形车</PLA_ResearchVehicle_Lynx.label>
+  <PLA_ResearchVehicle_Lynx.description>允许建造山猫全地形车。</PLA_ResearchVehicle_Lynx.description>
+
+  <PLA_ResearchVehicle_CSZ181OffRoad.label>猛士突击车</PLA_ResearchVehicle_CSZ181OffRoad.label>
+  <PLA_ResearchVehicle_CSZ181OffRoad.description>允许建造猛士突击车。</PLA_ResearchVehicle_CSZ181OffRoad.description>
+
+  <PLA_ResearchVehicle_VP22Truck.label>装甲运输车</PLA_ResearchVehicle_VP22Truck.label>
+  <PLA_ResearchVehicle_VP22Truck.description>允许建造装甲运输车。</PLA_ResearchVehicle_VP22Truck.description>
+
+  <PLA_ResearchVehicle_ZTL11IFV.label>轮式突击炮</PLA_ResearchVehicle_ZTL11IFV.label>
+  <PLA_ResearchVehicle_ZTL11IFV.description>允许建造ZTL-11轮式突击炮。</PLA_ResearchVehicle_ZTL11IFV.description>
+
+  <PLA_ResearchVehicle_ZTZ99A.label>99A主战坦克</PLA_ResearchVehicle_ZTZ99A.label>
+  <PLA_ResearchVehicle_ZTZ99A.description>允许建造99A主战坦克。</PLA_ResearchVehicle_ZTZ99A.description>
+
+  <PLA_ResearchVehicle_VehicleModification.label>车辆改装</PLA_ResearchVehicle_VehicleModification.label>
+  <PLA_ResearchVehicle_VehicleModification.description>允许改装车辆的配件和武器。</PLA_ResearchVehicle_VehicleModification.description>
+
+
+</LanguageData>

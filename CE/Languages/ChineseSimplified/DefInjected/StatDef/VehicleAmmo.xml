@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <PLA_VehicleCaliber.label>弹药口径</PLA_VehicleCaliber.label>
+  <PLA_VehicleCaliber.description>这把武器上所使用的弹药类型。</PLA_VehicleCaliber.description>
+</LanguageData>

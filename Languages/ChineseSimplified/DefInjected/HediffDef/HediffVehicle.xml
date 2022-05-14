@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <PLA_AdvancedFireControlComputer.label>高级火控计算机</PLA_AdvancedFireControlComputer.label>
+  <PLA_AdvancedFireControlComputer.labelNoun>高级火控计算机</PLA_AdvancedFireControlComputer.labelNoun>
+  <PLA_AdvancedFireControlComputer.description>应用于载具的高级火控计算机，可以提升载具的射击准度</PLA_AdvancedFireControlComputer.description>
+
+  <PLA_CompositeArmor.label>复合装甲</PLA_CompositeArmor.label>
+  <PLA_CompositeArmor.labelNoun>复合装甲</PLA_CompositeArmor.labelNoun>
+  <PLA_CompositeArmor.description>用于车辆的复合装甲，可以增加防护能力</PLA_CompositeArmor.description>
+
+</LanguageData>

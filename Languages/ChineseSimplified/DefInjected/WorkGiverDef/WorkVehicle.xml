@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+    <PLA_WorkGiverRepairVehicle.verb>维修</PLA_WorkGiverRepairVehicle.verb>
+    <PLA_WorkGiverRepairVehicle.gerund>维修中</PLA_WorkGiverRepairVehicle.gerund>
+
+    <PLA_DoBilModifyVehicle.verb>改装</PLA_DoBilModifyVehicle.verb>
+    <PLA_DoBilModifyVehicle.gerund>改装中</PLA_DoBilModifyVehicle.gerund>
+
+</LanguageData>

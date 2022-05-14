@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+  <ThingDef ParentName="PLA_BaseVehicle">
+    <defName>PLA_CSZ181OffRoad</defName>
+    <label>CSZ-181 off-road</label>
+    <description>A off-road vehicles developed by Dongfeng Motor Group.</description>
+    <statBases>
+      <MoveSpeed>6</MoveSpeed>
+      <ArmorRating_Blunt>1.2</ArmorRating_Blunt>
+      <ArmorRating_Sharp>0.9</ArmorRating_Sharp>
+      <PsychicSensitivity>0</PsychicSensitivity>
+      <CaravanRidingSpeedFactor>6</CaravanRidingSpeedFactor>
+      <CarryingCapacity>2000</CarryingCapacity>
+      <MarketValue>160000</MarketValue>
+      <Mass>800</Mass>
+    </statBases>
+    <tools>
+      <li>
+        <label>Body</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>50.7</power>
+        <cooldownTime>2.6</cooldownTime>
+      </li>
+    </tools>
+    <race>
+      <deathActionWorkerClass>PLA.Vehicle.DeathActionWorker_VehicleExplosionFlame</deathActionWorkerClass>
+      <baseBodySize>6</baseBodySize>
+      <baseHealthScale>2</baseHealthScale>
+      <body>PLA_VehicleCar</body>
+    </race>
+    <butcherProducts>
+      <Steel>1200</Steel>
+      <Plasteel>300</Plasteel>
+    </butcherProducts>
+    <killedLeavings>
+      <Steel>450</Steel>
+      <Plasteel>140</Plasteel>
+    </killedLeavings>
+    <comps>
+      <li Class="PLA.Vehicle.CompProperties_VehicleWeapon">
+        <turretRotationFollowPawn>true</turretRotationFollowPawn>
+        <defaultWeapon>PLA_Gun89HMGForVehicle</defaultWeapon>
+      </li>
+      <li Class="CompProperties_Refuelable">
+        <fuelConsumptionRate>10</fuelConsumptionRate>
+        <fuelCapacity>300.0</fuelCapacity>
+        <fuelFilter>
+          <thingDefs>
+            <li>Chemfuel</li>
+          </thingDefs>
+        </fuelFilter>
+        <showAllowAutoRefuelToggle>false</showAllowAutoRefuelToggle>
+        <autoRefuelPercent>0.75</autoRefuelPercent>
+        <initialFuelPercent>1</initialFuelPercent>
+      </li>
+    </comps>
+    <uiIconPath>Vehicles/CSZ181/Icon_CSZ181</uiIconPath>
+    <modExtensions>
+      <li Class="PLA.Vehicle.VehicleExtension">
+        <allowVechicleInCaravan>true</allowVechicleInCaravan>
+        <carryWeightInCaravan>2400</carryWeightInCaravan>
+        <explosionRadius>3.9</explosionRadius>
+      </li>
+    </modExtensions>
+  </ThingDef>
+
+  <PawnKindDef ParentName="PLA_BaseVehiclePawnKind">
+    <defName>PLA_CSZ181OffRoad</defName>
+    <label>CSZ-181 off-road</label>
+    <race>PLA_CSZ181OffRoad</race>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Vehicles/CSZ181/CSZ181</texPath>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>7</drawSize>
+        </bodyGraphicData>
+      </li>
+    </lifeStages>
+  </PawnKindDef>
+
+  <!-- 89 HMG -->
+
+  <ThingDef ParentName="BaseWeaponTurret">
+    <defName>PLA_Gun89HMGForVehicle</defName>
+    <label>type 89 heavy machine gun</label>
+    <description>...</description>
+    <graphicData>
+      <texPath>Vehicles/CSZ181/Type89VehicleHMG</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(1.5,1.5)</drawSize>
+    </graphicData>
+    <statBases>
+      <MarketValue>1400</MarketValue>
+      <AccuracyTouch>0.68</AccuracyTouch>
+      <AccuracyShort>0.71</AccuracyShort>
+      <AccuracyMedium>0.63</AccuracyMedium>
+      <AccuracyLong>0.43</AccuracyLong>
+      <RangedWeapon_Cooldown>1.2</RangedWeapon_Cooldown>
+      <Mass>18.6</Mass>
+    </statBases>
+    <costList>
+      <PLA_VehicleWeapon89HMG>1</PLA_VehicleWeapon89HMG>
+    </costList>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>PLA_Bullet_89HMG</defaultProjectile>
+        <warmupTime>1.5</warmupTime>
+        <range>36</range>
+        <ticksBetweenBurstShots>6</ticksBetweenBurstShots>
+        <burstShotCount>6</burstShotCount>
+        <soundCast>PLA_Shot89HMG</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>13</muzzleFlashScale>
+        <consumeFuelPerShot>1</consumeFuelPerShot>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>11.7</power>
+        <cooldownTime>2.6</cooldownTime>
+      </li>
+    </tools>
+    <weaponTags>
+      <li>PLA_WeaponVehicleHMG</li>
+    </weaponTags>
+    <relicChance>0</relicChance>
+  </ThingDef>
+  <ThingDef ParentName="BaseBullet">
+    <defName>PLA_Bullet_89HMG</defName>
+    <label>Anti material bullet</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Big</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>27</damageAmountBase>
+      <stoppingPower>2</stoppingPower>
+      <armorPenetrationBase>0.52</armorPenetrationBase>
+      <speed>100</speed>
+    </projectile>
+  </ThingDef>
+
+  <!-- 04 GN -->
+
+  <ThingDef ParentName="BaseWeaponTurret">
+    <defName>PLA_Gun04GLForVehicle</defName>
+    <label>type 04 grenade launcher</label>
+    <description>...</description>
+    <graphicData>
+      <texPath>Vehicles/CSZ181/Type04VehicleGL</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(1.5,1.5)</drawSize>
+    </graphicData>
+    <statBases>
+      <MarketValue>1400</MarketValue>
+      <AccuracyTouch>0.8</AccuracyTouch>
+      <AccuracyShort>0.5</AccuracyShort>
+      <AccuracyMedium>0.7</AccuracyMedium>
+      <AccuracyLong>0.3</AccuracyLong>
+      <RangedWeapon_Cooldown>1.2</RangedWeapon_Cooldown>
+      <Mass>41.6</Mass>
+    </statBases>
+    <costList>
+      <PLA_VehicleWeapon04GL>1</PLA_VehicleWeapon04GL>
+    </costList>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>PLA_Grenade_04GL</defaultProjectile>
+        <forcedMissRadius>1</forcedMissRadius>
+        <warmupTime>1.4</warmupTime>
+        <range>32</range>
+        <ticksBetweenBurstShots>12</ticksBetweenBurstShots>
+        <burstShotCount>2</burstShotCount>
+        <soundCast>PLA_Shot04GL</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <targetParams>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+        <muzzleFlashScale>13</muzzleFlashScale>
+        <consumeFuelPerShot>1</consumeFuelPerShot>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>11.7</power>
+        <cooldownTime>2.6</cooldownTime>
+      </li>
+    </tools>
+    <relicChance>0</relicChance>
+  </ThingDef>
+  <ThingDef ParentName="BaseBullet">
+    <defName>PLA_Grenade_04GL</defName>
+    <label>high-explosive grenade</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Big</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <thingClass>Projectile_Explosive</thingClass>
+    <projectile>
+      <damageDef>Bomb</damageDef>
+      <explosionRadius>1</explosionRadius>
+      <speed>60</speed>
+      <damageAmountBase>28</damageAmountBase>
+      <flyOverhead>true</flyOverhead>
+      <explosionDelay>5</explosionDelay>
+      <stoppingPower>4</stoppingPower>
+      <armorPenetrationBase>0.4</armorPenetrationBase>
+    </projectile>
+  </ThingDef>
+
+  <!-- 30mm autocannon-->
+
+  <ThingDef ParentName="BaseWeaponTurret">
+    <defName>PLA_Gun30mmAutocannon</defName>
+    <label>30mm autocannon</label>
+    <description>...</description>
+    <graphicData>
+      <texPath>Vehicles/CSZ181/30mmAutocannon</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(7,7)</drawSize>
+    </graphicData>
+    <uiIconScale>0.5</uiIconScale>
+    <statBases>
+      <MarketValue>1400</MarketValue>
+      <AccuracyTouch>0.62</AccuracyTouch>
+      <AccuracyShort>0.79</AccuracyShort>
+      <AccuracyMedium>0.87</AccuracyMedium>
+      <AccuracyLong>0.83</AccuracyLong>
+      <RangedWeapon_Cooldown>1.4</RangedWeapon_Cooldown>
+      <Mass>52.6</Mass>
+    </statBases>
+    <costList>
+      <PLA_VehicleWeapon30mmAutocannon>1</PLA_VehicleWeapon30mmAutocannon>
+    </costList>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>PLA_Bullet_30mmShell</defaultProjectile>
+        <warmupTime>1.8</warmupTime>
+        <range>38</range>
+        <ticksBetweenBurstShots>12</ticksBetweenBurstShots>
+        <burstShotCount>4</burstShotCount>
+        <soundCast>PLA_ShotAutoconnon</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <targetParams>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+        <muzzleFlashScale>13</muzzleFlashScale>
+        <consumeFuelPerShot>1</consumeFuelPerShot>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>11.7</power>
+        <cooldownTime>2.6</cooldownTime>
+      </li>
+    </tools>
+    <relicChance>0</relicChance>
+  </ThingDef>
+  <ThingDef ParentName="BaseBullet">
+    <defName>PLA_Bullet_30mmShell</defName>
+    <label>30mm shell</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Big</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>38</damageAmountBase>
+      <stoppingPower>2</stoppingPower>
+      <armorPenetrationBase>0.63</armorPenetrationBase>
+      <speed>120</speed>
+    </projectile>
+  </ThingDef>
+</Defs>

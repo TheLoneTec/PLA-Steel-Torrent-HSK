@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+    <ThingDef ParentName="PLA_BaseVehicle">
+        <defName>PLA_VP22Truck</defName>
+        <label>VP-22 truck</label>
+        <description>A transport vehicle developed by NORINCO.</description>
+        <statBases>
+          <MarketValue>240000</MarketValue>
+          <MoveSpeed>5</MoveSpeed>
+          <ArmorRating_Blunt>1.7</ArmorRating_Blunt>
+          <ArmorRating_Sharp>1.3</ArmorRating_Sharp>
+          <PsychicSensitivity>0</PsychicSensitivity>
+          <CaravanRidingSpeedFactor>5.5</CaravanRidingSpeedFactor>
+          <CarryingCapacity>8400</CarryingCapacity>
+          <Mass>3000</Mass>
+        </statBases>
+        <tools>
+          <li>
+            <label>Body</label>
+            <capacities>
+              <li>Blunt</li>
+            </capacities>
+            <power>50.7</power>
+            <cooldownTime>2.6</cooldownTime>
+          </li>
+        </tools>
+        <race>
+          <deathActionWorkerClass>PLA.Vehicle.DeathActionWorker_VehicleExplosion</deathActionWorkerClass>
+          <baseBodySize>7</baseBodySize>
+          <baseHealthScale>3</baseHealthScale>
+          <body>PLA_VehicleCar</body>
+        </race>
+        <butcherProducts>
+          <Steel>2300</Steel>
+          <Plasteel>500</Plasteel>
+        </butcherProducts>
+        <killedLeavings>
+          <Steel>750</Steel>
+          <Plasteel>310</Plasteel>
+        </killedLeavings>
+        <comps>
+          <li Class="CompProperties_Refuelable">
+            <fuelConsumptionRate>15</fuelConsumptionRate>
+            <fuelCapacity>450</fuelCapacity>
+            <fuelFilter>
+              <thingDefs>
+                <li>Chemfuel</li>
+              </thingDefs>
+            </fuelFilter>
+            <showAllowAutoRefuelToggle>false</showAllowAutoRefuelToggle>
+            <autoRefuelPercent>0.75</autoRefuelPercent>
+            <initialFuelPercent>1</initialFuelPercent>
+          </li>
+        </comps>
+        <uiIconPath>Vehicles/VP22/Icon_VP22</uiIconPath>
+        <modExtensions>
+          <li Class="PLA.Vehicle.VehicleExtension">
+            <allowVechicleInCaravan>true</allowVechicleInCaravan>
+            <carryWeightInCaravan>8400</carryWeightInCaravan>
+            <explosionRadius>6</explosionRadius>
+          </li>
+        </modExtensions>
+      </ThingDef>
+
+      <PawnKindDef ParentName="PLA_BaseVehiclePawnKind">
+        <defName>PLA_VP22Truck</defName>
+        <label>VP-22 truck</label>
+        <race>PLA_VP22Truck</race>
+        <lifeStages>
+          <li>
+            <bodyGraphicData>
+              <texPath>Vehicles/VP22/VP22</texPath>
+              <graphicClass>Graphic_Multi</graphicClass>
+              <drawSize>10</drawSize>
+            </bodyGraphicData>
+          </li>
+        </lifeStages>
+      </PawnKindDef>
+</Defs>
