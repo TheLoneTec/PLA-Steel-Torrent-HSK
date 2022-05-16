@@ -23,19 +23,6 @@
     <statBases>
       <WorkToMake>26000</WorkToMake>
     </statBases>
-    <recipeMaker>
-      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
-      <workSkill>Crafting</workSkill>
-      <effectWorking>Smith</effectWorking>
-      <soundWorking>Recipe_Smith</soundWorking>
-      <unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
-      <skillRequirements>
-        <Crafting>8</Crafting>
-      </skillRequirements>
-      <recipeUsers>
-        <li>FabricationBench</li>
-      </recipeUsers>
-    </recipeMaker>
   </ThingDef>
 
   <ThingDef Name="PLA_VehicleModComponentBase" ParentName="PLA_VehicleModificationBase" Abstract="True">

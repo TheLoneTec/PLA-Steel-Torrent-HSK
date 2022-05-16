@@ -209,13 +209,13 @@
     <Operation Class="PatchOperationReplace">
         <xpath>Defs/ThingDef[defName="PLA_ZTZ99ATank"]/statBases/ArmorRating_Sharp</xpath>
         <value>
-            <ArmorRating_Sharp>100</ArmorRating_Sharp>
+            <ArmorRating_Sharp>60</ArmorRating_Sharp>
         </value>
     </Operation>
     <Operation Class="PatchOperationReplace">
         <xpath>Defs/ThingDef[defName="PLA_ZTZ99ATank"]/statBases/ArmorRating_Blunt</xpath>
         <value>
-            <ArmorRating_Blunt>650</ArmorRating_Blunt>
+            <ArmorRating_Blunt>300</ArmorRating_Blunt>
         </value>
     </Operation>
     <Operation Class="PatchOperationReplace">

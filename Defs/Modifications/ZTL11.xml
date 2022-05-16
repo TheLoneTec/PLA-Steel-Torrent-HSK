@@ -16,10 +16,9 @@
         <statBases>
             <Mass>80</Mass>
         </statBases>
-        <researchPrerequisites>
-            <li>PLA_ResearchVehicle_VehicleModification</li>
-            <li>PLA_ResearchVehicle_ZTL11IFV</li>
-        </researchPrerequisites>
+		<researchPrerequisites>
+			<li>PLA_ResearchVehicle_ZTL11IFV</li>
+		</researchPrerequisites>
     </ThingDef>
 
     <RecipeDef ParentName="PLA_RecipeInstallVehicleWeapon">
@@ -58,6 +57,9 @@
                 <weaponToInstall>PLA_TurretGun105mmCannon</weaponToInstall>
             </li>
         </modExtensions>
+		<researchPrerequisite>
+			<li>PLA_ResearchVehicle_VehicleModification</li>
+		</researchPrerequisite>
     </RecipeDef>
 
     <!--40mm-->
@@ -78,10 +80,9 @@
         <statBases>
             <Mass>80</Mass>
         </statBases>
-        <researchPrerequisites>
-            <li>PLA_ResearchVehicle_VehicleModification</li>
-            <li>PLA_ResearchVehicle_ZTL11IFV</li>
-        </researchPrerequisites>
+		<researchPrerequisites>
+			<li>PLA_ResearchVehicle_ZTL11IFV</li>
+		</researchPrerequisites>
     </ThingDef>
 
     <RecipeDef ParentName="PLA_RecipeInstallVehicleWeapon">
@@ -120,5 +121,8 @@
                 <weaponToInstall>PLA_TurretGun40mmAutoCannon</weaponToInstall>
             </li>
         </modExtensions>
+		<researchPrerequisite>
+			<li>PLA_ResearchVehicle_VehicleModification</li>
+		</researchPrerequisite>
     </RecipeDef>
 </Defs>

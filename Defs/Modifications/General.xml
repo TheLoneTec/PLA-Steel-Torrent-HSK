@@ -38,9 +38,9 @@
     <statBases>
       <Mass>15</Mass>
     </statBases>
-    <researchPrerequisites>
-      <li>PLA_ResearchVehicle_VehicleModification</li>
-  </researchPrerequisites>
+	<researchPrerequisites>
+		<li>PLA_ResearchVehicle_VehicleModification</li>
+	</researchPrerequisites>
   </ThingDef>
 
   <RecipeDef ParentName="PLA_RecipeInstallVehiclePart">
@@ -77,6 +77,9 @@
       <li>PLA_SightSensor</li>
     </appliedOnFixedBodyParts>
     <addsHediff>PLA_AdvancedFireControlComputer</addsHediff>
+	<researchPrerequisite>
+		<li>PLA_ResearchVehicle_VehicleModification</li>
+	</researchPrerequisite>
   </RecipeDef>
 
   <!-- composite armor  -->
@@ -130,9 +133,9 @@
     <statBases>
       <Mass>15</Mass>
     </statBases>
-    <researchPrerequisites>
-      <li>PLA_ResearchVehicle_VehicleModification</li>
-  </researchPrerequisites>
+	<researchPrerequisites>
+		<li>PLA_ResearchVehicle_VehicleModification</li>
+	</researchPrerequisites>
   </ThingDef>
 
   <RecipeDef ParentName="PLA_RecipeInstallVehicleAttachment">
@@ -167,6 +170,9 @@
       <li>PLA_VehicleArmor</li>
     </appliedOnFixedBodyParts>
     <addsHediff>PLA_CompositeArmor</addsHediff>
+	<researchPrerequisite>
+		<li>PLA_ResearchVehicle_VehicleModification</li>
+	</researchPrerequisite>
   </RecipeDef>
 
 </Defs>

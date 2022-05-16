@@ -17,10 +17,9 @@
         <statBases>
             <Mass>41</Mass>
         </statBases>
-        <researchPrerequisites>
-            <li>PLA_ResearchVehicle_VehicleModification</li>
-            <li>PLA_ResearchVehicle_CSZ181OffRoad</li>
-        </researchPrerequisites>
+		<researchPrerequisites>
+			<li>PLA_ResearchVehicle_CSZ181OffRoad</li>
+		</researchPrerequisites>
     </ThingDef>
 
     <RecipeDef ParentName="PLA_RecipeInstallVehicleWeapon">
@@ -59,6 +58,9 @@
                 <weaponToInstall>PLA_Gun89HMGForVehicle</weaponToInstall>
             </li>
         </modExtensions>
+		<researchPrerequisite>
+			<li>PLA_ResearchVehicle_VehicleModification</li>
+		</researchPrerequisite>
     </RecipeDef>
 
     <ThingDef ParentName="PLA_VehicleModWeaponBase">
@@ -77,10 +79,9 @@
         <statBases>
             <Mass>41</Mass>
         </statBases>
-        <researchPrerequisites>
-            <li>PLA_ResearchVehicle_VehicleModification</li>
-            <li>PLA_ResearchVehicle_CSZ181OffRoad</li>
-        </researchPrerequisites>
+		<researchPrerequisites>
+			<li>PLA_ResearchVehicle_CSZ181OffRoad</li>
+		</researchPrerequisites>
     </ThingDef>
     <RecipeDef ParentName="PLA_RecipeInstallVehicleWeapon">
         <defName>PLA_InstallWeapon04GL</defName>
@@ -118,6 +119,9 @@
                 <weaponToInstall>PLA_Gun04GLForVehicle</weaponToInstall>
             </li>
         </modExtensions>
+		<researchPrerequisite>
+			<li>PLA_ResearchVehicle_VehicleModification</li>
+		</researchPrerequisite>
     </RecipeDef>
 
 
@@ -137,10 +141,9 @@
         <statBases>
             <Mass>41</Mass>
         </statBases>
-        <researchPrerequisites>
-            <li>PLA_ResearchVehicle_VehicleModification</li>
-            <li>PLA_ResearchVehicle_CSZ181OffRoad</li>
-        </researchPrerequisites>
+		<researchPrerequisites>
+			<li>PLA_ResearchVehicle_CSZ181OffRoad</li>
+		</researchPrerequisites>
     </ThingDef>
     <RecipeDef ParentName="PLA_RecipeInstallVehicleWeapon">
         <defName>PLA_InstallWeapon30mmAutocannon</defName>
@@ -178,5 +181,8 @@
                 <weaponToInstall>PLA_Gun30mmAutocannon</weaponToInstall>
             </li>
         </modExtensions>
+		<researchPrerequisite>
+			<li>PLA_ResearchVehicle_VehicleModification</li>
+		</researchPrerequisite>
     </RecipeDef>
 </Defs>

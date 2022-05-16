@@ -18,10 +18,9 @@
         <statBases>
             <Mass>41</Mass>
         </statBases>
-        <researchPrerequisites>
-            <li>PLA_ResearchVehicle_VehicleModification</li>
-            <li>PLA_ResearchVehicle_Lynx</li>
-        </researchPrerequisites>
+		<researchPrerequisites>
+			<li>PLA_ResearchVehicle_Lynx</li>
+		</researchPrerequisites>
     </ThingDef>
 
     <RecipeDef ParentName="PLA_RecipeInstallVehicleWeapon">
@@ -60,6 +59,9 @@
                 <weaponToInstall>PLA_Gun23mmAutocannon</weaponToInstall>
             </li>
         </modExtensions>
+		<researchPrerequisite>
+			<li>PLA_ResearchVehicle_VehicleModification</li>
+		</researchPrerequisite>
     </RecipeDef>
 
     <!-- 40mm CT-->
@@ -80,10 +82,9 @@
         <statBases>
             <Mass>41</Mass>
         </statBases>
-        <researchPrerequisites>
-            <li>PLA_ResearchVehicle_VehicleModification</li>
-            <li>PLA_ResearchVehicle_Lynx</li>
-        </researchPrerequisites>
+		<researchPrerequisites>
+			<li>PLA_ResearchVehicle_Lynx</li>
+		</researchPrerequisites>
     </ThingDef>
 
     <RecipeDef ParentName="PLA_RecipeInstallVehicleWeapon">
@@ -122,6 +123,9 @@
                 <weaponToInstall>PLA_Gun40mmCannon</weaponToInstall>
             </li>
         </modExtensions>
+		<researchPrerequisite>
+			<li>PLA_ResearchVehicle_VehicleModification</li>
+		</researchPrerequisite>
     </RecipeDef>
 
     <!-- 107mm rocket-->
@@ -142,10 +146,9 @@
         <statBases>
             <Mass>41</Mass>
         </statBases>
-        <researchPrerequisites>
-            <li>PLA_ResearchVehicle_VehicleModification</li>
-            <li>PLA_ResearchVehicle_Lynx</li>
-        </researchPrerequisites>
+		<researchPrerequisites>
+			<li>PLA_ResearchVehicle_Lynx</li>
+		</researchPrerequisites>
     </ThingDef>
 
     <RecipeDef ParentName="PLA_RecipeInstallVehicleWeapon">
@@ -184,5 +187,8 @@
                 <weaponToInstall>PLA_Gun107mmRocketLauncher</weaponToInstall>
             </li>
         </modExtensions>
+		<researchPrerequisite>
+			<li>PLA_ResearchVehicle_VehicleModification</li>
+		</researchPrerequisite>
     </RecipeDef>
 </Defs>

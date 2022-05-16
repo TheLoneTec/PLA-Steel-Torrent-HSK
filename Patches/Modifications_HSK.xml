@@ -1,0 +1,546 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+	<Operation Class="PatchOperationFindMod">
+	<mods>
+		<li>PLA Steel Torrent</li>
+	</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+
+				<!-- ========== 23mm AutoCannon ========== -->
+
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="PLA_VehicleWeapon23mmAutocannon"]</xpath>
+				<value>
+				<recipeMaker>
+					<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+					<workSkill>Crafting</workSkill>
+					<effectWorking>Smith</effectWorking>
+					<soundWorking>Recipe_Smith</soundWorking>
+					<unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
+					<skillRequirements>
+						<Crafting>8</Crafting>
+					</skillRequirements>
+					<recipeUsers>
+						<li>FabricationBench</li>
+						<li>AdvToolBench</li>
+					</recipeUsers>
+					<researchPrerequisite>
+						<li>Heavy_turrets_C3</li>
+					</researchPrerequisite>
+				</recipeMaker>
+				</value>
+			</li>
+
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="PLA_VehicleWeapon23mmAutocannon"]/costList</xpath>
+				<value>
+				<costList>
+					<Weapon_Parts>22</Weapon_Parts>
+					<Cannon_Component>1</Cannon_Component>
+					<Rubber>30</Rubber>
+				</costList>
+				</value>
+			</li>
+
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/ThingDef[defName = "PLA_VehicleWeapon23mmAutocannon"]</xpath>
+				<value>
+					<stuffCategories>
+						<li>HF</li>
+						<li>SolidMetallic</li>
+						<li>RareMetallic</li>
+						<li>StrongMetallic</li>
+					</stuffCategories>
+					<costStuffCount>50</costStuffCount>
+				</value>
+			</li>
+			
+			<!-- =========== 40mm Cannon ============ -->
+			
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="PLA_VehicleWeapon40mmCannon"]</xpath>
+				<value>
+				<recipeMaker>
+					<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+					<workSkill>Crafting</workSkill>
+					<effectWorking>Smith</effectWorking>
+					<soundWorking>Recipe_Smith</soundWorking>
+					<unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
+					<skillRequirements>
+						<Crafting>8</Crafting>
+					</skillRequirements>
+					<recipeUsers>
+						<li>FabricationBench</li>
+						<li>AdvToolBench</li>
+					</recipeUsers>
+					<researchPrerequisite>
+						<li>Grenade_launchers_C2</li>
+					</researchPrerequisite>
+				</recipeMaker>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="PLA_VehicleWeapon40mmCannon"]/costList</xpath>
+				<value>
+				<costList>
+					<Weapon_Parts>12</Weapon_Parts>
+					<Cannon_Component>1</Cannon_Component>
+				</costList>
+				</value>
+			</li>
+
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/ThingDef[defName = "PLA_VehicleWeapon40mmCannon"]</xpath>
+				<value>
+					<stuffCategories>
+						<li>HF</li>
+						<li>SolidMetallic</li>
+						<li>RareMetallic</li>
+						<li>StrongMetallic</li>
+					</stuffCategories>
+					<costStuffCount>30</costStuffCount>
+				</value>
+			</li>
+			
+			<!-- =========== 107mm Rocket Launcher ============ -->
+			
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="PLA_VehicleWeapon107mmRocketLauncher"]</xpath>
+				<value>
+				<recipeMaker>
+					<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+					<workSkill>Crafting</workSkill>
+					<effectWorking>Smith</effectWorking>
+					<soundWorking>Recipe_Smith</soundWorking>
+					<unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
+					<skillRequirements>
+						<Crafting>8</Crafting>
+					</skillRequirements>
+					<recipeUsers>
+						<li>FabricationBench</li>
+						<li>AdvToolBench</li>
+					</recipeUsers>
+					<researchPrerequisite>
+						<li>Rockets_C2</li>
+					</researchPrerequisite>
+				</recipeMaker>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="PLA_VehicleWeapon107mmRocketLauncher"]/costList</xpath>
+				<value>
+				<costList>
+					<Weapon_Parts>15</Weapon_Parts>
+					<Launcher_Component>1</Launcher_Component>
+				</costList>
+				</value>
+			</li>
+
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/ThingDef[defName = "PLA_VehicleWeapon107mmRocketLauncher"]</xpath>
+				<value>
+					<stuffCategories>
+						<li>HF</li>
+						<li>SolidMetallic</li>
+						<li>RareMetallic</li>
+						<li>StrongMetallic</li>
+					</stuffCategories>
+					<costStuffCount>25</costStuffCount>
+				</value>
+			</li>
+		
+			<!-- =========== 105mm Cannon ============ -->
+			
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="PLA_VehicleWeapon105mmCannon"]</xpath>
+				<value>
+				<recipeMaker>
+					<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+					<workSkill>Crafting</workSkill>
+					<effectWorking>Smith</effectWorking>
+					<soundWorking>Recipe_Smith</soundWorking>
+					<unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
+					<skillRequirements>
+						<Crafting>8</Crafting>
+					</skillRequirements>
+					<recipeUsers>
+						<li>FabricationBench</li>
+						<li>AdvToolBench</li>
+					</recipeUsers>
+					<researchPrerequisite>
+						<li>Artillery_C2</li>
+					</researchPrerequisite>
+				</recipeMaker>
+				</value>
+			</li>
+
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="PLA_VehicleWeapon105mmCannon"]/costList</xpath>
+				<value>
+				<costList>
+					<Weapon_Parts>12</Weapon_Parts>
+					<Cannon_Component>2</Cannon_Component>
+					<Rubber>20</Rubber>
+				</costList>
+				</value>
+			</li>
+
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/ThingDef[defName = "PLA_VehicleWeapon105mmCannon"]</xpath>
+				<value>
+					<stuffCategories>
+						<li>HF</li>
+						<li>SolidMetallic</li>
+						<li>RareMetallic</li>
+						<li>StrongMetallic</li>
+					</stuffCategories>
+					<costStuffCount>45</costStuffCount>
+				</value>
+			</li>
+		
+			<!-- =========== 40mm AutoCannon ============ -->
+			
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="PLA_VehicleWeapon40mmAutoCannon"]</xpath>
+				<value>
+				<recipeMaker>
+					<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+					<workSkill>Crafting</workSkill>
+					<effectWorking>Smith</effectWorking>
+					<soundWorking>Recipe_Smith</soundWorking>
+					<unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
+					<skillRequirements>
+						<Crafting>8</Crafting>
+					</skillRequirements>
+					<recipeUsers>
+						<li>FabricationBench</li>
+						<li>AdvToolBench</li>
+					</recipeUsers>
+					<researchPrerequisite>
+						<li>Grenade_launchers_C2</li>
+					</researchPrerequisite>
+				</recipeMaker>
+				</value>
+			</li>
+
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="PLA_VehicleWeapon40mmAutoCannon"]/costList</xpath>
+				<value>
+				<costList>
+					<Weapon_Parts>15</Weapon_Parts>
+					<Cannon_Component>1</Cannon_Component>
+				</costList>
+				</value>
+			</li>
+
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/ThingDef[defName = "PLA_VehicleWeapon40mmAutoCannon"]</xpath>
+				<value>
+					<stuffCategories>
+						<li>HF</li>
+						<li>SolidMetallic</li>
+						<li>RareMetallic</li>
+						<li>StrongMetallic</li>
+					</stuffCategories>
+					<costStuffCount>40</costStuffCount>
+				</value>
+			</li>
+		
+				<!-- ========== 89 HMG ========== -->
+
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="PLA_VehicleWeapon89HMG"]</xpath>
+				<value>
+				<recipeMaker>
+					<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+					<workSkill>Crafting</workSkill>
+					<effectWorking>Smith</effectWorking>
+					<soundWorking>Recipe_Smith</soundWorking>
+					<unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
+					<skillRequirements>
+						<Crafting>8</Crafting>
+					</skillRequirements>
+					<recipeUsers>
+						<li>FabricationBench</li>
+						<li>AdvToolBench</li>
+					</recipeUsers>
+					<researchPrerequisite>
+						<li>Heavy_turrets_C2</li>
+					</researchPrerequisite>
+				</recipeMaker>
+				</value>
+			</li>
+
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="PLA_VehicleWeapon89HMG"]/costList</xpath>
+				<value>
+				<costList>
+					<Weapon_Parts>14</Weapon_Parts>
+					<Heavy_Component>1</Heavy_Component>
+				</costList>
+				</value>
+			</li>
+
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/ThingDef[defName = "PLA_VehicleWeapon89HMG"]</xpath>
+				<value>
+					<stuffCategories>
+						<li>HF</li>
+						<li>SolidMetallic</li>
+						<li>RareMetallic</li>
+						<li>StrongMetallic</li>
+					</stuffCategories>
+					<costStuffCount>40</costStuffCount>
+				</value>
+			</li>
+		
+			<!-- =========== 04 GL ============ -->
+			
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="PLA_VehicleWeapon04GL"]</xpath>
+				<value>
+				<recipeMaker>
+					<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+					<workSkill>Crafting</workSkill>
+					<effectWorking>Smith</effectWorking>
+					<soundWorking>Recipe_Smith</soundWorking>
+					<unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
+					<skillRequirements>
+						<Crafting>8</Crafting>
+					</skillRequirements>
+					<recipeUsers>
+						<li>FabricationBench</li>
+						<li>AdvToolBench</li>
+					</recipeUsers>
+					<researchPrerequisite>
+						<li>Grenade_launchers_C2</li>
+					</researchPrerequisite>
+				</recipeMaker>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="PLA_VehicleWeapon04GL"]/costList</xpath>
+				<value>
+				<costList>
+					<Weapon_Parts>12</Weapon_Parts>
+					<Cannon_Component>1</Cannon_Component>
+				</costList>
+				</value>
+			</li>
+
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/ThingDef[defName = "PLA_VehicleWeapon04GL"]</xpath>
+				<value>
+					<stuffCategories>
+						<li>HF</li>
+						<li>SolidMetallic</li>
+						<li>RareMetallic</li>
+						<li>StrongMetallic</li>
+					</stuffCategories>
+					<costStuffCount>30</costStuffCount>
+				</value>
+			</li>
+		
+			<!-- =========== 30mm AutoCannon ============ -->
+			
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="PLA_VehicleWeapon30mmAutocannon"]</xpath>
+				<value>
+				<recipeMaker>
+					<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+					<workSkill>Crafting</workSkill>
+					<effectWorking>Smith</effectWorking>
+					<soundWorking>Recipe_Smith</soundWorking>
+					<unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
+					<skillRequirements>
+						<Crafting>8</Crafting>
+					</skillRequirements>
+					<recipeUsers>
+						<li>FabricationBench</li>
+						<li>AdvToolBench</li>
+					</recipeUsers>
+					<researchPrerequisite>
+						<li>Grenade_launchers_C2</li>
+					</researchPrerequisite>
+				</recipeMaker>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="PLA_VehicleWeapon30mmAutocannon"]/costList</xpath>
+				<value>
+				<costList>
+					<Weapon_Parts>15</Weapon_Parts>
+					<Cannon_Component>1</Cannon_Component>
+				</costList>
+				</value>
+			</li>
+
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/ThingDef[defName = "PLA_VehicleWeapon30mmAutocannon"]</xpath>
+				<value>
+					<stuffCategories>
+						<li>HF</li>
+						<li>SolidMetallic</li>
+						<li>RareMetallic</li>
+						<li>StrongMetallic</li>
+					</stuffCategories>
+					<costStuffCount>30</costStuffCount>
+				</value>
+			</li>
+		
+			<!-- =========== 125mm Cannon ============ -->
+		
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs</xpath>
+				<value>
+					<ThingDef ParentName="PLA_VehicleModWeaponBase">
+						<defName>PLA_VehicleWeapon125mmCannon</defName>
+						<label>component for the ZTZ99A Tank</label>
+						<description>A component used to build the ZTZ99A Tank.</description>
+						<descriptionHyperlinks>
+							<ThingDef>PLA_ZTZ99ATank</ThingDef>
+						</descriptionHyperlinks>
+						<costList>
+							<Weapon_Parts>15</Weapon_Parts>
+							<Cannon_Component>2</Cannon_Component>
+							<Rubber>25</Rubber>
+						</costList>
+						<stuffCategories>
+							<li>HF</li>
+							<li>RareMetallic</li>
+							<li>StrongMetallic</li>
+						</stuffCategories>
+						<costStuffCount>65</costStuffCount>
+						<statBases>
+							<Mass>41</Mass>
+						</statBases>
+					<recipeMaker>
+						<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+						<workSkill>Crafting</workSkill>
+						<effectWorking>Smith</effectWorking>
+						<soundWorking>Recipe_Smith</soundWorking>
+						<unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
+						<skillRequirements>
+							<Crafting>8</Crafting>
+						</skillRequirements>
+						<recipeUsers>
+							<li>FabricationBench</li>
+							<li>AdvToolBench</li>
+						</recipeUsers>
+						<researchPrerequisite>
+							<li>PLA_ResearchVehicle_ZTZ99A</li>
+						</researchPrerequisite>
+					</recipeMaker>
+					</ThingDef>
+				</value>
+			</li>
+
+			<!-- =========== Fire Control Computer ============ -->
+	
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="PLA_AdvancedFireControlComputer"]</xpath>
+				<value>
+				<recipeMaker>
+					<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+					<workSkill>Crafting</workSkill>
+					<effectWorking>Smith</effectWorking>
+					<soundWorking>Recipe_Smith</soundWorking>
+					<unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
+					<skillRequirements>
+						<Crafting>8</Crafting>
+					</skillRequirements>
+					<recipeUsers>
+						<li>FabricationBench</li>
+						<li>AdvToolBench</li>
+					</recipeUsers>
+					<researchPrerequisite>
+						<li>Autoturrets_D2</li>
+					</researchPrerequisite>
+				</recipeMaker>
+				</value>
+			</li>
+
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="PLA_AdvancedFireControlComputer"]/costList</xpath>
+				<value>
+				<costList>
+					<Glass>125</Glass>
+					<Plastic>100</Plastic>
+					<Wire>100</Wire>			
+					<ComponentSpacer>4</ComponentSpacer>
+					<Microchips>2</Microchips>
+				</costList>
+				</value>
+			</li>
+
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/ThingDef[defName = "PLA_AdvancedFireControlComputer"]</xpath>
+				<value>
+					<stuffCategories>
+						<li>HF</li>
+						<li>SolidMetallic</li>
+						<li>RareMetallic</li>
+						<li>StrongMetallic</li>
+					</stuffCategories>
+					<costStuffCount>30</costStuffCount>
+				</value>
+			</li>
+		
+			<!-- =========== FComposite Armor ============ -->
+			
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="PLA_CompositeArmor"]</xpath>
+				<value>
+				<recipeMaker>
+					<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+					<workSkill>Crafting</workSkill>
+					<effectWorking>Smith</effectWorking>
+					<soundWorking>Recipe_Smith</soundWorking>
+					<unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
+					<skillRequirements>
+						<Crafting>8</Crafting>
+					</skillRequirements>
+					<recipeUsers>
+						<li>FabricationBench</li>
+						<li>AdvToolBench</li>
+					</recipeUsers>
+					<researchPrerequisite>
+						<li>Oil_Industry_C6</li>
+					</researchPrerequisite>
+				</recipeMaker>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="PLA_CompositeArmor"]/costList</xpath>
+				<value>
+				<costList>
+					<Compaste>50</Compaste>		
+					<Carbon>20</Carbon>
+				</costList>
+				</value>
+			</li>
+
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/ThingDef[defName = "PLA_CompositeArmor"]</xpath>
+				<value>
+					<stuffCategories>
+						<li>HF</li>
+						<li>RareMetallic</li>
+						<li>StrongMetallic</li>
+					</stuffCategories>
+					<costStuffCount>200</costStuffCount>
+				</value>
+			</li>
+		
+			</operations>
+		</match>
+    </Operation>
+	
+</Patch>

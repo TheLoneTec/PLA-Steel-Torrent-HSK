@@ -17,32 +17,19 @@
 						<label>PLA Vechicles</label>
 						<description>Vehicles and Tanks for combat and travel.</description>
 						<defNames>
+							<li>PLA_ParkingLot</li>
 							<li>PLA_BuildingLynx6x6UL</li>
 							<li>PLA_BuildingCSZ181OffRoad</li>
 							<li>PLA_BuildingVP22Truck</li>
 							<li>PLA_BuildingZTLL11IFV</li>
 							<li>PLA_BuildingZTZ99A</li>
-							<li>PLA_ParkingLot</li>
 						</defNames>
 						<designationCategory>Ship</designationCategory>
 						<debug>false</debug>
 					</ArchitectSense.DesignationSubCategoryDef>
 				</value>
 			</li>
-<!--
-			<li Class="PatchOperationFindMod">
-				<mods>
-					<li>[TMC] Steel Torrent addon - T34 tank</li>
-				</mods>
-				<nomatch Class="PatchOperationSequence">
-					<operations>
-						<li Class="PatchOperationRemove">
-							<xpath>Defs/DesignationCategoryDef[defName="PLA_DesignationCategory_Vehicle"]</xpath>
-						</li>
-					</operations>
-				</nomatch>
-			</li>
--->
+
 				<!-- ========== Ammo ========== -->
 
 			<li Class="PatchOperationAdd">
@@ -201,6 +188,14 @@
 					<li>
 						<filter>
 							<thingDefs>
+								<li>DepletedUranium</li>
+							</thingDefs>
+						</filter>
+						<count>5</count>
+					</li>
+					<li>
+						<filter>
+							<thingDefs>
 								<li>Powder</li>
 								<li>FSX</li>
 							</thingDefs>
@@ -229,6 +224,7 @@
 						<li>HeavyBar</li>
 					</categories>
 					<thingDefs>
+						<li>DepletedUranium</li>
 						<li>Powder</li>
 						<li>FSX</li>
 						<li>ComponentIndustrial</li>
@@ -335,6 +331,14 @@
 					<li>
 						<filter>
 							<thingDefs>
+								<li>DepletedUranium</li>
+							</thingDefs>
+						</filter>
+						<count>10</count>
+					</li>
+					<li>
+						<filter>
+							<thingDefs>
 								<li>Powder</li>
 								<li>FSX</li>
 							</thingDefs>
@@ -363,6 +367,7 @@
 						<li>HeavyBar</li>
 					</categories>
 					<thingDefs>
+						<li>DepletedUranium</li>
 						<li>Powder</li>
 						<li>FSX</li>
 						<li>ComponentIndustrial</li>
@@ -370,7 +375,14 @@
 				</fixedIngredientFilter>
 				</value>
 			</li>	
-			
+		
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="Bullet_125mmShell_APFSDS"]/projectile/damageAmountBase</xpath>
+				<value>
+				<damageAmountBase>350</damageAmountBase>
+				</value>
+			</li>	
+		
 			<li Class="PatchOperationAdd">
 				<xpath>Defs/RecipeDef[defName="MakeAmmo_40mmCT_APFSDS"]</xpath>
 				<value>
@@ -398,6 +410,14 @@
 							</categories>
 						</filter>
 						<count>5</count>
+					</li>
+					<li>
+						<filter>
+							<thingDefs>
+								<li>DepletedUranium</li>
+							</thingDefs>
+						</filter>
+						<count>10</count>
 					</li>
 					<li>
 						<filter>
@@ -430,6 +450,7 @@
 						<li>HeavyBar</li>
 					</categories>
 					<thingDefs>
+						<li>DepletedUranium</li>
 						<li>Powder</li>
 						<li>FSX</li>
 						<li>ComponentIndustrial</li>
@@ -569,6 +590,17 @@
 				</value>
 			</li>
 		
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="Bullet_23x115mmSoviet_FMJ"]/projectile</xpath>
+				<value>
+				<projectile Class="CombatExtended.ProjectilePropertiesCE">
+					<damageAmountBase>50</damageAmountBase>
+					<armorPenetrationSharp>26</armorPenetrationSharp>
+					<armorPenetrationBlunt>600</armorPenetrationBlunt>
+				</projectile>
+				</value>
+			</li>
+		
 			<li Class="PatchOperationAdd">
 				<xpath>Defs/RecipeDef[defName="MakeAmmo_23x115mmSoviet_Incendiary"]</xpath>
 				<value>
@@ -631,6 +663,23 @@
 						<li>Prometheum</li>
 					</thingDefs>
 				</fixedIngredientFilter>
+				</value>
+			</li>
+
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="Bullet_23x115mmSoviet_Incendiary"]/projectile</xpath>
+				<value>
+				<projectile Class="CombatExtended.ProjectilePropertiesCE">
+					<damageAmountBase>40</damageAmountBase>
+					<armorPenetrationSharp>52</armorPenetrationSharp>
+					<armorPenetrationBlunt>600</armorPenetrationBlunt>
+					<secondaryDamage>
+						<li>
+							<def>Flame_Secondary</def>
+							<amount>22</amount>
+						</li>
+					</secondaryDamage>
+				</projectile>
 				</value>
 			</li>
 
@@ -698,7 +747,24 @@
 				</fixedIngredientFilter>
 				</value>
 			</li>
-			
+		
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="Bullet_23x115mmSoviet_HE"]/projectile</xpath>
+				<value>
+				<projectile Class="CombatExtended.ProjectilePropertiesCE">
+					<damageAmountBase>40</damageAmountBase>
+					<armorPenetrationSharp>26</armorPenetrationSharp>
+					<armorPenetrationBlunt>600</armorPenetrationBlunt>
+					<secondaryDamage>
+						<li>
+							<def>Bomb_Secondary</def>
+							<amount>30</amount>
+						</li>
+					</secondaryDamage>
+				</projectile>
+				</value>
+			</li>
+		
 			<li Class="PatchOperationAdd">
 				<xpath>Defs/RecipeDef[defName="MakeAmmo_23x115mmSoviet_Sabot"]</xpath>
 				<value>
@@ -751,6 +817,17 @@
 						<li>Powder</li>
 					</thingDefs>
 				</fixedIngredientFilter>
+				</value>
+			</li>
+		
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="Bullet_23x115mmSoviet_Sabot"]/projectile</xpath>
+				<value>
+				<projectile Class="CombatExtended.ProjectilePropertiesCE">
+					<damageAmountBase>23</damageAmountBase>
+					<armorPenetrationSharp>92</armorPenetrationSharp>
+					<armorPenetrationBlunt>750</armorPenetrationBlunt>
+				</projectile>
 				</value>
 			</li>
 		
@@ -820,6 +897,17 @@
 				</value>
 			</li>
 		
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="Bullet_30x165mmSoviet_FMJ"]/projectile</xpath>
+				<value>
+				<projectile Class="CombatExtended.ProjectilePropertiesCE">
+					<damageAmountBase>62</damageAmountBase>
+					<armorPenetrationSharp>30</armorPenetrationSharp>
+					<armorPenetrationBlunt>650</armorPenetrationBlunt>
+				</projectile>
+				</value>
+			</li>
+		
 			<li Class="PatchOperationAdd">
 				<xpath>Defs/RecipeDef[defName="MakeAmmo_30x165mmSoviet_Incendiary"]</xpath>
 				<value>
@@ -885,6 +973,23 @@
 				</value>
 			</li>
 
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="Bullet_30x165mmSoviet_Incendiary"]/projectile</xpath>
+				<value>
+				<projectile Class="CombatExtended.ProjectilePropertiesCE">
+					<damageAmountBase>45</damageAmountBase>
+					<armorPenetrationSharp>62</armorPenetrationSharp>
+					<armorPenetrationBlunt>650</armorPenetrationBlunt>
+					<secondaryDamage>
+						<li>
+							<def>Flame_Secondary</def>
+							<amount>28</amount>
+						</li>
+					</secondaryDamage>
+				</projectile>
+				</value>
+			</li>
+			
 			<li Class="PatchOperationAdd">
 				<xpath>Defs/RecipeDef[defName="MakeAmmo_30x165mmSoviet_HE"]</xpath>
 				<value>
@@ -950,6 +1055,23 @@
 				</value>
 			</li>
 			
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="Bullet_30x165mmSoviet_HE"]/projectile</xpath>
+				<value>
+				<projectile Class="CombatExtended.ProjectilePropertiesCE">
+					<damageAmountBase>45</damageAmountBase>
+					<armorPenetrationSharp>32</armorPenetrationSharp>
+					<armorPenetrationBlunt>650</armorPenetrationBlunt>
+					<secondaryDamage>
+						<li>
+							<def>Bomb_Secondary</def>
+							<amount>35</amount>
+						</li>
+					</secondaryDamage>
+				</projectile>
+				</value>
+			</li>
+			
 			<li Class="PatchOperationAdd">
 				<xpath>Defs/RecipeDef[defName="MakeAmmo_30x165mmSoviet_Sabot"]</xpath>
 				<value>
@@ -1005,16 +1127,29 @@
 				</value>
 			</li>
 		
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="Bullet_30x165mmSoviet_Sabot"]/projectile</xpath>
+				<value>
+				<projectile Class="CombatExtended.ProjectilePropertiesCE">
+					<damageAmountBase>28</damageAmountBase>
+					<armorPenetrationSharp>110</armorPenetrationSharp>
+					<armorPenetrationBlunt>800</armorPenetrationBlunt>
+				</projectile>
+				</value>
+			</li>
+		
 				<!-- ========== Lynx6x6 ultra light ========== -->
 			<li Class="PatchOperationReplace">
 				<xpath>Defs/ThingDef[defName="PLA_BuildingLynx6x6UL"]/costList</xpath>
 				<value>
 				<costList>
+					<Wire>25</Wire>
 					<Mechanism>8</Mechanism>
 					<ElectronicComponents>5</ElectronicComponents>
 					<Rubber>100</Rubber>
 					<ReinforcedGlass>35</ReinforcedGlass>
-					<ComponentIndustrial>12</ComponentIndustrial>
+					<PLA_VehicleWeapon23mmAutocannon>1</PLA_VehicleWeapon23mmAutocannon>
+					<ComponentIndustrial>10</ComponentIndustrial>
 					<ComponentSpacer>4</ComponentSpacer>
 				</costList>
 				</value>
@@ -1050,10 +1185,12 @@
 				<xpath>Defs/ThingDef[defName="PLA_Lynx6x6UltraLight"]/butcherProducts</xpath>
 				<value>
 				<butcherProducts>
+					<Wire>15</Wire>
 					<Mechanism>6</Mechanism>
 					<ElectronicComponents>3</ElectronicComponents>
 					<Rubber>70</Rubber>
 					<ReinforcedGlass>25</ReinforcedGlass>
+					<PLA_VehicleWeapon23mmAutocannon>1</PLA_VehicleWeapon23mmAutocannon>
 					<ComponentIndustrial>8</ComponentIndustrial>
 					<ComponentSpacer>2</ComponentSpacer>
 				</butcherProducts>
@@ -1064,6 +1201,7 @@
 				<xpath>Defs/ThingDef[defName="PLA_Lynx6x6UltraLight"]/killedLeavings</xpath>
 				<value>
 				<killedLeavings>
+					<Wire>8</Wire>
 					<Mechanism>4</Mechanism>
 					<ElectronicComponents>3</ElectronicComponents>
 					<Rubber>30</Rubber>
@@ -1079,11 +1217,13 @@
 				<xpath>Defs/ThingDef[defName="PLA_BuildingCSZ181OffRoad"]/costList</xpath>
 				<value>
 				<costList>
+					<Wire>35</Wire>
 					<Mechanism>17</Mechanism>
 					<ElectronicComponents>10</ElectronicComponents>
 					<Rubber>150</Rubber>
 					<ReinforcedGlass>35</ReinforcedGlass>
-					<ComponentIndustrial>32</ComponentIndustrial>
+					<PLA_VehicleWeapon89HMG>1</PLA_VehicleWeapon89HMG>
+					<ComponentIndustrial>28</ComponentIndustrial>
 					<ComponentSpacer>4</ComponentSpacer>
 				</costList>
 				</value>
@@ -1119,11 +1259,13 @@
 				<xpath>Defs/ThingDef[defName="PLA_CSZ181OffRoad"]/butcherProducts</xpath>
 				<value>
 				<butcherProducts>
+					<Wire>25</Wire>
 					<Mechanism>6</Mechanism>
 					<ElectronicComponents>3</ElectronicComponents>
 					<Rubber>70</Rubber>
 					<ReinforcedGlass>25</ReinforcedGlass>
-					<ComponentIndustrial>8</ComponentIndustrial>
+					<PLA_VehicleWeapon89HMG>1</PLA_VehicleWeapon89HMG>
+					<ComponentIndustrial>15</ComponentIndustrial>
 					<ComponentSpacer>2</ComponentSpacer>
 				</butcherProducts>
 				</value>
@@ -1133,6 +1275,7 @@
 				<xpath>Defs/ThingDef[defName="PLA_CSZ181OffRoad"]/killedLeavings</xpath>
 				<value>
 				<killedLeavings>
+					<Wire>10</Wire>
 					<Mechanism>4</Mechanism>
 					<ElectronicComponents>3</ElectronicComponents>
 					<Rubber>30</Rubber>
@@ -1148,11 +1291,12 @@
 				<xpath>Defs/ThingDef[defName="PLA_BuildingVP22Truck"]/costList</xpath>
 				<value>
 				<costList>
+					<Wire>45</Wire>
 					<Mechanism>20</Mechanism>
 					<ElectronicComponents>12</ElectronicComponents>
 					<Rubber>150</Rubber>
 					<ReinforcedGlass>25</ReinforcedGlass>
-					<ComponentIndustrial>40</ComponentIndustrial>
+					<ComponentIndustrial>35</ComponentIndustrial>
 					<ComponentSpacer>4</ComponentSpacer>
 				</costList>
 				</value>
@@ -1188,6 +1332,7 @@
 				<xpath>Defs/ThingDef[defName="PLA_VP22Truck"]/butcherProducts</xpath>
 				<value>
 				<butcherProducts>
+					<Wire>35</Wire>
 					<Mechanism>12</Mechanism>
 					<ElectronicComponents>8</ElectronicComponents>
 					<Rubber>85</Rubber>
@@ -1202,6 +1347,7 @@
 				<xpath>Defs/ThingDef[defName="PLA_VP22Truck"]/killedLeavings</xpath>
 				<value>
 				<killedLeavings>
+					<Wire>15</Wire>
 					<Mechanism>6</Mechanism>
 					<ElectronicComponents>4</ElectronicComponents>
 					<Rubber>40</Rubber>
@@ -1217,13 +1363,14 @@
 				<xpath>Defs/ThingDef[defName="PLA_BuildingZTLL11IFV"]/costList</xpath>
 				<value>
 				<costList>
+					<Wire>60</Wire>
 					<Mechanism>20</Mechanism>
 					<ElectronicComponents>12</ElectronicComponents>
 					<Rubber>150</Rubber>
 					<ReinforcedGlass>15</ReinforcedGlass>
 					<SyntheticFibers>15</SyntheticFibers>
-					<ReinforcedBarrel>1</ReinforcedBarrel>
-					<ComponentIndustrial>40</ComponentIndustrial>
+					<PLA_VehicleWeapon105mmCannon>1</PLA_VehicleWeapon105mmCannon>
+					<ComponentIndustrial>36</ComponentIndustrial>
 					<ComponentSpacer>4</ComponentSpacer>
 				</costList>
 				</value>
@@ -1259,12 +1406,13 @@
 				<xpath>Defs/ThingDef[defName="PLA_ZTL11IFV"]/butcherProducts</xpath>
 				<value>
 				<butcherProducts>
+					<Wire>40</Wire>
 					<Mechanism>12</Mechanism>
 					<ElectronicComponents>8</ElectronicComponents>
 					<Rubber>85</Rubber>
 					<SyntheticFibers>10</SyntheticFibers>
 					<ReinforcedGlass>25</ReinforcedGlass>
-					<ReinforcedBarrel>1</ReinforcedBarrel>
+					<PLA_VehicleWeapon105mmCannon>1</PLA_VehicleWeapon105mmCannon>
 					<ComponentIndustrial>28</ComponentIndustrial>
 					<ComponentSpacer>2</ComponentSpacer>
 				</butcherProducts>
@@ -1275,6 +1423,7 @@
 				<xpath>Defs/ThingDef[defName="PLA_ZTL11IFV"]/killedLeavings</xpath>
 				<value>
 				<killedLeavings>
+					<Wire>20</Wire>
 					<Mechanism>6</Mechanism>
 					<ElectronicComponents>4</ElectronicComponents>
 					<Rubber>40</Rubber>
@@ -1291,13 +1440,14 @@
 				<xpath>Defs/ThingDef[defName="PLA_BuildingZTZ99A"]/costList</xpath>
 				<value>
 				<costList>
+					<Wire>80</Wire>
 					<Mechanism>25</Mechanism>
 					<ElectronicComponents>12</ElectronicComponents>
 					<Rubber>180</Rubber>
 					<ReinforcedGlass>5</ReinforcedGlass>
 					<SyntheticFibers>25</SyntheticFibers>
-					<ReinforcedBarrel>1</ReinforcedBarrel>
-					<ComponentIndustrial>50</ComponentIndustrial>
+					<PLA_VehicleWeapon125mmCannon>1</PLA_VehicleWeapon125mmCannon>
+					<ComponentIndustrial>45</ComponentIndustrial>
 					<ComponentSpacer>4</ComponentSpacer>
 				</costList>
 				</value>
@@ -1333,12 +1483,13 @@
 				<xpath>Defs/ThingDef[defName="PLA_ZTZ99ATank"]/butcherProducts</xpath>
 				<value>
 				<butcherProducts>
+					<Wire>60</Wire>
 					<Mechanism>12</Mechanism>
 					<ElectronicComponents>8</ElectronicComponents>
 					<Rubber>85</Rubber>
 					<ReinforcedGlass>25</ReinforcedGlass>
 					<SyntheticFibers>15</SyntheticFibers>
-					<ReinforcedBarrel>1</ReinforcedBarrel>
+					<PLA_VehicleWeapon125mmCannon>1</PLA_VehicleWeapon125mmCannon>
 					<ComponentIndustrial>28</ComponentIndustrial>
 					<ComponentSpacer>2</ComponentSpacer>
 				</butcherProducts>
@@ -1349,6 +1500,7 @@
 				<xpath>Defs/ThingDef[defName="PLA_ZTZ99ATank"]/killedLeavings</xpath>
 				<value>
 				<killedLeavings>
+					<Wire>25</Wire>
 					<Mechanism>6</Mechanism>
 					<ElectronicComponents>4</ElectronicComponents>
 					<Rubber>40</Rubber>
