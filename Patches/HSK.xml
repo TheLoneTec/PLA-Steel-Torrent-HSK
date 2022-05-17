@@ -1175,9 +1175,16 @@
 			</li>
 			
 			<li Class="PatchOperationReplace">
-				<xpath>Defs/ThingDef[defName="PLA_Lynx6x6UltraLight"]/comps/li/initialFuelPercent</xpath>
+				<xpath>Defs/ThingDef[defName="PLA_Lynx6x6UltraLight"]/comps/li[@Class="CompProperties_Refuelable"]/initialFuelPercent</xpath>
 				<value>
 				<initialFuelPercent>0</initialFuelPercent>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="PLA_Lynx6x6UltraLight"]/comps/li[@Class="CompProperties_Refuelable"]/showAllowAutoRefuelToggle</xpath>
+				<value>
+				<showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>
 				</value>
 			</li>
 			
@@ -1249,9 +1256,23 @@
 			</li>
 			
 			<li Class="PatchOperationReplace">
-				<xpath>Defs/ThingDef[defName="PLA_CSZ181OffRoad"]/comps/li/initialFuelPercent</xpath>
+				<xpath>Defs/ThingDef[defName="PLA_CSZ181OffRoad"]/comps/li[@Class="CompProperties_Refuelable"]/initialFuelPercent</xpath>
 				<value>
 				<initialFuelPercent>0</initialFuelPercent>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="PLA_CSZ181OffRoad"]/comps/li[@Class="CompProperties_Refuelable"]/showAllowAutoRefuelToggle</xpath>
+				<value>
+				<showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="PLA_CSZ181OffRoad"]/comps/li[@Class="CompProperties_Refuelable"]/showAllowAutoRefuelToggle</xpath>
+				<value>
+				<showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>
 				</value>
 			</li>
 		
@@ -1322,9 +1343,16 @@
 			</li>
 			
 			<li Class="PatchOperationReplace">
-				<xpath>Defs/ThingDef[defName="PLA_VP22Truck"]/comps/li/initialFuelPercent</xpath>
+				<xpath>Defs/ThingDef[defName="PLA_VP22Truck"]/comps/li[@Class="CompProperties_Refuelable"]/initialFuelPercent</xpath>
 				<value>
 				<initialFuelPercent>0</initialFuelPercent>
+				</value>
+			</li>
+		
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="PLA_VP22Truck"]/comps/li[@Class="CompProperties_Refuelable"]/showAllowAutoRefuelToggle</xpath>
+				<value>
+				<showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>
 				</value>
 			</li>
 		
@@ -1396,9 +1424,16 @@
 			</li>
 			
 			<li Class="PatchOperationReplace">
-				<xpath>Defs/ThingDef[defName="PLA_ZTL11IFV"]/comps/li/initialFuelPercent</xpath>
+				<xpath>Defs/ThingDef[defName="PLA_ZTL11IFV"]/comps/li[@Class="CompProperties_Refuelable"]/initialFuelPercent</xpath>
 				<value>
 				<initialFuelPercent>0</initialFuelPercent>
+				</value>
+			</li>
+		
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="PLA_ZTL11IFV"]/comps/li[@Class="CompProperties_Refuelable"]/showAllowAutoRefuelToggle</xpath>
+				<value>
+				<showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>
 				</value>
 			</li>
 		
@@ -1473,9 +1508,16 @@
 			</li>
 			
 			<li Class="PatchOperationReplace">
-				<xpath>Defs/ThingDef[defName="PLA_ZTZ99ATank"]/comps/li/initialFuelPercent</xpath>
+				<xpath>Defs/ThingDef[defName="PLA_ZTZ99ATank"]/comps/li[@Class="CompProperties_Refuelable"]/initialFuelPercent</xpath>
 				<value>
 				<initialFuelPercent>0</initialFuelPercent>
+				</value>
+			</li>
+		
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="PLA_ZTZ99ATank"]/comps/li[@Class="CompProperties_Refuelable"]/showAllowAutoRefuelToggle</xpath>
+				<value>
+				<showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>
 				</value>
 			</li>
 		

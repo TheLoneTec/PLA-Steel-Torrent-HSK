@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+	<Operation Class="PatchOperationFindMod">
+	<mods>
+		<li>What the hack?!</li>
+	</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[@Name = "PLA_BaseVehicle"]/race/fleshType</xpath>
+				<value>
+					<fleshType>PLAVehicleFlesh</fleshType>
+				</value>
+			</li>
+				
+			<li Class="PatchOperationRemove">
+				<xpath>/Defs/ThingDef[@Name = "PLA_BaseVehiclePawn"]/inspectorTabs/li[text()="ITab_Pawn_Needs"]</xpath>
+			</li>
+				
+			<li Class="PatchOperationRemove">
+				<xpath>/Defs/ThingDef[@Name = "PLA_BaseVehiclePawn"]/inspectorTabs/li[text()="ITab_Pawn_Training"]</xpath>
+			</li>
+			
+			<li Class="PatchOperationRemove">
+				<xpath>/Defs/ThingDef[@Name = "PLA_BaseVehiclePawn"]/inspectorTabs/li[text()="ITab_Pawn_Social"]</xpath>
+			</li>
+
+			<li Class="PatchOperationRemove">
+				<xpath>/Defs/ThingDef[@Name = "PLA_BaseVehiclePawn"]/inspectorTabs/li[text()="ITab_Pawn_Guest"]</xpath>
+			</li>			
+			
+			</operations>
+		</match>
+    </Operation>
+	
+</Patch>
