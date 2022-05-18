@@ -1563,6 +1563,15 @@
 				</value>
 			</li>
 	
+			<li Class="PatchOperationFindMod">
+				<mods>
+					<li>PLA Steel Torrent Addons HSK Patches</li>
+				</mods>
+				<nomatch Class="PatchOperationRemove">
+				<xpath>Defs/DesignationCategoryDef[defName="PLA_DesignationCategory_Vehicle"]</xpath>
+				</nomatch>
+			</li>
+	
 			</operations>
 		</match>
     </Operation>
