@@ -30,6 +30,16 @@
 				</value>
 			</li>
 
+				<!-- ========== PawnDefKinds ========== -->
+
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[@Name="PLA_BaseVehiclePawn"]/statBases</xpath>
+				<value>
+					<ToxicSensitivity>0</ToxicSensitivity>
+					<ImmunityGainSpeed>10</ImmunityGainSpeed>
+				</value>
+			</li>
+
 				<!-- ========== Ammo ========== -->
 
 			<li Class="PatchOperationAdd">
