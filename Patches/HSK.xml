@@ -37,6 +37,7 @@
 				<value>
 					<ToxicSensitivity>0</ToxicSensitivity>
 					<ImmunityGainSpeed>10</ImmunityGainSpeed>
+					<PainShockThreshold>5</PainShockThreshold>
 				</value>
 			</li>
 

@@ -4,6 +4,7 @@
 	<Operation Class="PatchOperationFindMod">
 	<mods>
 		<li>What the hack?!</li>
+		<li>Mechanoid Foundry</li>
 	</mods>
 		<match Class="PatchOperationSequence">
 			<operations>
