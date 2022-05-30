@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+ <HediffDef>
+    <defName>Vehicle</defName>
+    <label>Vehicle (Non-Living)</label>
+    <labelNoun>unfeeling</labelNoun>
+    <description>naturally immune to pain</description>
+	<everCurableByItem>false</everCurableByItem>
+	<isBad>false</isBad>
+    <stages>
+      <li>
+        <painFactor>0</painFactor>
+		<makeImmuneTo>
+			<li>Malaria</li>
+			<li>SleepingSickness</li>
+			<li>Plague</li>
+		</makeImmuneTo>
+      </li>
+    </stages>
+  </HediffDef>
+</Defs>
