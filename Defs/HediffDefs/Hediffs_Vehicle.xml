@@ -2,6 +2,7 @@
 <Defs>
  <HediffDef>
     <defName>Vehicle</defName>
+	<hediffClass>HediffWithComps</hediffClass>
     <label>Vehicle (Non-Living)</label>
     <labelNoun>unfeeling</labelNoun>
     <description>naturally immune to pain</description>
