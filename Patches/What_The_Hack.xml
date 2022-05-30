@@ -15,7 +15,14 @@
 					<fleshType>PLAVehicleFlesh</fleshType>
 				</value>
 			</li>
-				
+			
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/ThingDef[@Name = "PLA_BaseVehicle"]/race</xpath>
+				<value>
+					<useMeatFrom>Human</useMeatFrom>
+				</value>
+			</li>
+
 			<li Class="PatchOperationRemove">
 				<xpath>/Defs/ThingDef[@Name = "PLA_BaseVehiclePawn"]/inspectorTabs/li[text()="ITab_Pawn_Needs"]</xpath>
 			</li>
