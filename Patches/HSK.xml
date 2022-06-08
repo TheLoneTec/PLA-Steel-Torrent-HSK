@@ -1155,14 +1155,14 @@
 				<!-- ========== 7.62 x 54mm Soviet ========== -->
 				
 			<li Class="PatchOperationAdd">
-				<xpath>Defs/RecipeDef[defName="MakeAmmo_762x54mmR_FMJ"]</xpath>
+				<xpath>Defs/RecipeDef[defName="MakeAmmo_762x54mmR_FMJ_Bulk"]</xpath>
 				<value>
 					<researchPrerequisite>Range_C2</researchPrerequisite>
 				</value>
 			</li>
 		
 			<li Class="PatchOperationReplace">
-				<xpath>Defs/RecipeDef[defName="MakeAmmo_762x54mmR_FMJ"]/ingredients</xpath>
+				<xpath>Defs/RecipeDef[defName="MakeAmmo_762x54mmR_FMJ_Bulk"]/ingredients</xpath>
 				<value>
 				<ingredients>
 					<li>
@@ -1195,7 +1195,7 @@
 			</li>
 			
 			<li Class="PatchOperationReplace">
-				<xpath>Defs/RecipeDef[defName="MakeAmmo_762x54mmR_FMJ"]/fixedIngredientFilter</xpath>
+				<xpath>Defs/RecipeDef[defName="MakeAmmo_762x54mmR_FMJ_Bulk"]/fixedIngredientFilter</xpath>
 				<value>
 				<fixedIngredientFilter>
 					<categories>
@@ -1398,14 +1398,14 @@
 			</li>
 
 			<li Class="PatchOperationAdd">
-				<xpath>Defs/RecipeDef[defName="MakeAmmo_762x54mmR_HP"]</xpath>
+				<xpath>Defs/RecipeDef[defName="MakeAmmo_762x54mmR_HP_Bulk"]</xpath>
 				<value>
 					<researchPrerequisite>Range_C2</researchPrerequisite>
 				</value>
 			</li>
 		
 			<li Class="PatchOperationReplace">
-				<xpath>Defs/RecipeDef[defName="MakeAmmo_762x54mmR_HP"]/ingredients</xpath>
+				<xpath>Defs/RecipeDef[defName="MakeAmmo_762x54mmR_HP_Bulk"]/ingredients</xpath>
 				<value>
 				<ingredients>
 					<li>
@@ -1441,7 +1441,7 @@
 			</li>
 			
 			<li Class="PatchOperationReplace">
-				<xpath>Defs/RecipeDef[defName="MakeAmmo_762x54mmR_HP"]/fixedIngredientFilter</xpath>
+				<xpath>Defs/RecipeDef[defName="MakeAmmo_762x54mmR_HP_Bulk"]/fixedIngredientFilter</xpath>
 				<value>
 				<fixedIngredientFilter>
 					<categories>
@@ -1456,14 +1456,14 @@
 			</li>
 			
 			<li Class="PatchOperationAdd">
-				<xpath>Defs/RecipeDef[defName="MakeAmmo_762x54mmR_AP"]</xpath>
+				<xpath>Defs/RecipeDef[defName="MakeAmmo_762x54mmR_AP_Bulk"]</xpath>
 				<value>
 					<researchPrerequisite>Range_C2</researchPrerequisite>
 				</value>
 			</li>
 		
 			<li Class="PatchOperationReplace">
-				<xpath>Defs/RecipeDef[defName="MakeAmmo_762x54mmR_AP"]/ingredients</xpath>
+				<xpath>Defs/RecipeDef[defName="MakeAmmo_762x54mmR_AP_Bulk"]/ingredients</xpath>
 				<value>
 				<ingredients>
 					<li>
@@ -1497,7 +1497,7 @@
 			</li>
 			
 			<li Class="PatchOperationReplace">
-				<xpath>Defs/RecipeDef[defName="MakeAmmo_762x54mmR_AP"]/fixedIngredientFilter</xpath>
+				<xpath>Defs/RecipeDef[defName="MakeAmmo_762x54mmR_AP_Bulk"]/fixedIngredientFilter</xpath>
 				<value>
 				<fixedIngredientFilter>
 					<categories>
