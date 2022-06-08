@@ -215,7 +215,7 @@
 	<!-- ==================== Recipes ========================== -->
 
 	<RecipeDef ParentName="AmmoRecipeBase">
-		<defName>MakeAmmo_762x54mmR_FMJ</defName>
+		<defName>MakeAmmo_762x54mmR_FMJ_Bulk</defName>
 		<label>make 7.62x54mmR (FMJ) cartridge x500</label>
 		<description>Craft 500 7.62x54mmR (FMJ) cartridges.</description>
 		<jobString>Making 7.62x54mmR (FMJ) cartridges.</jobString>
@@ -241,7 +241,7 @@
 	</RecipeDef>
 
 	<RecipeDef ParentName="AmmoRecipeBase">
-		<defName>MakeAmmo_762x54mmR_AP</defName>
+		<defName>MakeAmmo_762x54mmR_AP_Bulk</defName>
 		<label>make 7.62x54mmR (AP) cartridge x500</label>
 		<description>Craft 500 7.62x54mmR (AP) cartridges.</description>
 		<jobString>Making 7.62x54mmR (AP) cartridges.</jobString>
@@ -267,7 +267,7 @@
 	</RecipeDef>
 
 	<RecipeDef ParentName="AmmoRecipeBase">
-		<defName>MakeAmmo_762x54mmR_HP</defName>
+		<defName>MakeAmmo_762x54mmR_HP_Bulk</defName>
 		<label>make 7.62x54mmR (HP) cartridge x500</label>
 		<description>Craft 500 7.62x54mmR (HP) cartridges.</description>
 		<jobString>Making 7.62x54mmR (HP) cartridges.</jobString>
