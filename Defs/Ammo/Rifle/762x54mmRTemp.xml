@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!-- ==================== AmmoSet ========================== -->
+
+	<CombatExtended.AmmoSetDef>
+		<defName>AmmoSet_762x54mmRTemp</defName>
+		<label>7.62x54mmR</label>
+		<ammoTypes>
+			<Ammo_762x54mmR_FMJ>Bullet_762x54mmR_FMJ</Ammo_762x54mmR_FMJ>
+			<!--<Ammo_762x54mmR_AP>Bullet_762x54mmR_AP</Ammo_762x54mmR_AP>
+			<Ammo_762x54mmR_HP>Bullet_762x54mmR_HP</Ammo_762x54mmR_HP>
+			<Ammo_762x54mmR_Incendiary>Bullet_762x54mmR_Incendiary</Ammo_762x54mmR_Incendiary>
+			<Ammo_762x54mmR_HE>Bullet_762x54mmR_HE</Ammo_762x54mmR_HE>
+			<Ammo_762x54mmR_Sabot>Bullet_762x54mmR_Sabot</Ammo_762x54mmR_Sabot>-->			
+		</ammoTypes>
+	</CombatExtended.AmmoSetDef>
+
+</Defs>

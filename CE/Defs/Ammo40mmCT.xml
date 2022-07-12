@@ -82,7 +82,7 @@
 		<defName>Bullet_40mmCT_APFSDS</defName>
 		<label>40mm CT shell (APFSDS)</label>
 		<projectile Class="CombatExtended.ProjectilePropertiesCE">
-			<damageAmountBase>65</damageAmountBase>
+			<damageAmountBase>25</damageAmountBase>
 			<secondaryDamage>
 				<li>
 				  <def>Bomb_Secondary</def>

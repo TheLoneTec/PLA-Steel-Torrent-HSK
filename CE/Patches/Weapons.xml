@@ -27,7 +27,7 @@
         <AmmoUser>
             <magazineSize>60</magazineSize>
             <reloadTime>8.5</reloadTime>
-            <ammoSet>AmmoSet_127x108mm</ammoSet>
+            <ammoSet>AmmoSet_127x108mmTemp</ammoSet>
         </AmmoUser>
         <FireModes>
             <aimedBurstShotCount>5</aimedBurstShotCount>
@@ -133,7 +133,7 @@
         <xpath>Defs/ThingDef[defName="PLA_Gun23mmAutocannon"]/comps</xpath>
         <value>
             <li Class="PLA.CE.Vehicle.CompProperties_AmmoUserVehicle">
-                <ammoSet>AmmoSet_23x115mmSoviet</ammoSet>
+                <ammoSet>AmmoSet_23x115mmSovietTemp</ammoSet>
                 <magazineSize>120</magazineSize>
                 <reloadTime>14</reloadTime>
             </li>
@@ -197,7 +197,7 @@
         <xpath>Defs/ThingDef[defName="PLA_Gun40mmCannon"]/comps</xpath>
         <value>
             <li Class="PLA.CE.Vehicle.CompProperties_AmmoUserVehicle">
-                <ammoSet>AmmoSet_40mmCT</ammoSet>
+                <ammoSet>AmmoSet_40mmCTTemp</ammoSet>
                 <magazineSize>40</magazineSize>
                 <reloadTime>12</reloadTime>
             </li>
@@ -343,7 +343,7 @@
         <xpath>Defs/ThingDef[defName="PLA_Gun89HMGForVehicle"]/comps</xpath>
         <value>
             <li Class="PLA.CE.Vehicle.CompProperties_AmmoUserVehicle">
-                <ammoSet>AmmoSet_127x108mm</ammoSet>
+                <ammoSet>AmmoSet_127x108mmTemp</ammoSet>
                 <magazineSize>200</magazineSize>
                 <reloadTime>16</reloadTime>
             </li>
@@ -411,7 +411,7 @@
         <xpath>Defs/ThingDef[defName="PLA_Gun04GLForVehicle"]/comps</xpath>
         <value>
             <li Class="PLA.CE.Vehicle.CompProperties_AmmoUserVehicle">
-                <ammoSet>AmmoSet_35x32mmSRGrenade</ammoSet>
+                <ammoSet>AmmoSet_35x32mmSRGrenadeTemp</ammoSet>
                 <magazineSize>60</magazineSize>
                 <reloadTime>16</reloadTime>
             </li>
@@ -479,7 +479,7 @@
         <xpath>Defs/ThingDef[defName="PLA_Gun30mmAutocannon"]/comps</xpath>
         <value>
             <li Class="PLA.CE.Vehicle.CompProperties_AmmoUserVehicle">
-                <ammoSet>AmmoSet_30x165mmSoviet</ammoSet>
+                <ammoSet>AmmoSet_30x165mmSovietTemp</ammoSet>
                 <magazineSize>120</magazineSize>
                 <reloadTime>14</reloadTime>
             </li>
@@ -522,7 +522,7 @@
             <recoilAmount>0.6</recoilAmount>
             <verbClass>PLA.CE.Vehicle.Verb_ShootVehicleCE</verbClass>
             <hasStandardCommand>true</hasStandardCommand>
-            <defaultProjectile>Bullet_125mmShell_APFSDS</defaultProjectile>
+            <defaultProjectile>Bullet_125mmShell_HE</defaultProjectile>
             <warmupTime>4</warmupTime>
             <range>75</range>
             <soundCast>PLA_Shot125mmCannon</soundCast>
@@ -543,7 +543,7 @@
         <xpath>Defs/ThingDef[defName="PLA_TurretGun99A"]/comps</xpath>
         <value>
             <li Class="PLA.CE.Vehicle.CompProperties_AmmoUserVehicle">
-                <ammoSet>AmmoSet_125mmShell</ammoSet>
+                <ammoSet>AmmoSet_125mmShellTemp</ammoSet>
                 <magazineSize>22</magazineSize>
                 <secondaryAttackVerb>
                     <recoilAmount>0.6</recoilAmount>
@@ -558,7 +558,7 @@
                     <soundCastTail>GunTail_Heavy</soundCastTail>
                     <muzzleFlashScale>19</muzzleFlashScale>
                 </secondaryAttackVerb>
-                <secondaryAmmoSet>AmmoSet_762x54mmR</secondaryAmmoSet>
+                <secondaryAmmoSet>AmmoSet_762x54mmRTemp</secondaryAmmoSet>
                 <secondaryMagazineSize>1200</secondaryMagazineSize>
                 <reloadTime>24</reloadTime>
                 <mainWeaponLabel>Use main cannon</mainWeaponLabel>
@@ -630,7 +630,7 @@
         <xpath>Defs/ThingDef[defName="PLA_TurretGun105mmCannon"]/comps</xpath>
         <value>
             <li Class="PLA.CE.Vehicle.CompProperties_AmmoUserVehicle">
-                <ammoSet>AmmoSet_105mmShell</ammoSet>
+                <ammoSet>AmmoSet_105mmShellTemp</ammoSet>
                 <magazineSize>40</magazineSize>
                 <secondaryAttackVerb>
                     <recoilAmount>0.6</recoilAmount>
@@ -645,7 +645,7 @@
                     <soundCastTail>GunTail_Heavy</soundCastTail>
                     <muzzleFlashScale>19</muzzleFlashScale>
                 </secondaryAttackVerb>
-                <secondaryAmmoSet>AmmoSet_762x54mmR</secondaryAmmoSet>
+                <secondaryAmmoSet>AmmoSet_762x54mmRTemp</secondaryAmmoSet>
                 <secondaryMagazineSize>1200</secondaryMagazineSize>
                 <reloadTime>24</reloadTime>
                 <mainWeaponLabel>Use main cannon</mainWeaponLabel>
@@ -719,7 +719,7 @@
         <xpath>Defs/ThingDef[defName="PLA_TurretGun40mmAutoCannon"]/comps</xpath>
         <value>
             <li Class="PLA.CE.Vehicle.CompProperties_AmmoUserVehicle">
-                <ammoSet>AmmoSet_40mmCT</ammoSet>
+                <ammoSet>AmmoSet_40mmCTTemp</ammoSet>
                 <magazineSize>120</magazineSize>
                 <secondaryAttackVerb>
                     <recoilAmount>0.6</recoilAmount>
@@ -734,7 +734,7 @@
                     <soundCastTail>GunTail_Heavy</soundCastTail>
                     <muzzleFlashScale>19</muzzleFlashScale>
                 </secondaryAttackVerb>
-                <secondaryAmmoSet>AmmoSet_762x54mmR</secondaryAmmoSet>
+                <secondaryAmmoSet>AmmoSet_762x54mmRTemp</secondaryAmmoSet>
                 <secondaryMagazineSize>1200</secondaryMagazineSize>
                 <reloadTime>24</reloadTime>
                 <mainWeaponLabel>Use auto cannon</mainWeaponLabel>

@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!-- ==================== AmmoSet ========================== -->
+
+  <CombatExtended.AmmoSetDef>
+    <defName>AmmoSet_35x32mmSRGrenadeTemp</defName>
+    <label>35x32mmSR Grenades</label>
+    <ammoTypes>
+      <Ammo_35x32mmSRGrenade_HE>Bullet_35x32mmSRGrenade_HE</Ammo_35x32mmSRGrenade_HE>
+      <!--<Ammo_35x32mmSRGrenade_HEDP>Bullet_35x32mmSRGrenade_HEDP</Ammo_35x32mmSRGrenade_HEDP>
+      <Ammo_35x32mmSRGrenade_EMP>Bullet_35x32mmSRGrenade_EMP</Ammo_35x32mmSRGrenade_EMP>
+      <Ammo_35x32mmSRGrenade_Smoke>Bullet_35x32mmSRGrenade_Smoke</Ammo_35x32mmSRGrenade_Smoke>-->	        
+    </ammoTypes>
+  </CombatExtended.AmmoSetDef>
+
+</Defs>

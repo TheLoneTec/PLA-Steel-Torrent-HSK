@@ -13,7 +13,7 @@
     <researchViewX>10</researchViewX>
     <researchViewY>5.7</researchViewY>
   </ResearchProjectDef>
-
+<!--
   <ResearchProjectDef>
     <defName>CE_AdvancedLaunchers</defName>
     <label>advanced launchers</label>
@@ -31,7 +31,7 @@
     <researchViewX>14</researchViewX>
     <researchViewY>5.7</researchViewY>
   </ResearchProjectDef>
-
+-->
   <ResearchProjectDef>
     <defName>CE_AdvancedAmmo</defName>
     <label>advanced ammunition</label>
@@ -45,7 +45,7 @@
     <researchViewX>12</researchViewX>
     <researchViewY>4.6</researchViewY>
   </ResearchProjectDef>
-
+<!--
   <ResearchProjectDef>
     <defName>CE_SimpleNV</defName>
     <label>basic optoelectronics</label>
@@ -72,4 +72,5 @@
     <researchViewX>10.00</researchViewX>
     <researchViewY>4.70</researchViewY>
   </ResearchProjectDef>
+  -->
 </Defs>

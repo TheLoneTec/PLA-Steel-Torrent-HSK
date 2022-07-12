@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Defs>
+
+	<!-- ==================== AmmoSet ========================== -->
+
+	<CombatExtended.AmmoSetDef>
+		<defName>AmmoSet_125mmShellTemp</defName>
+		<label>125mm Shells</label>
+		<ammoTypes>
+			<Ammo_125mmShell_HE>Bullet_125mmShell_HE</Ammo_125mmShell_HE>
+			<!--<Ammo_125mmShell_APFSDS>Bullet_125mmShell_APFSDS</Ammo_125mmShell_APFSDS>-->
+		</ammoTypes>
+	</CombatExtended.AmmoSetDef>
+
+</Defs>

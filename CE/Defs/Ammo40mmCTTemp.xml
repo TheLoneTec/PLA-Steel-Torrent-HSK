@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<!-- ==================== AmmoSet ========================== -->
+
+	<CombatExtended.AmmoSetDef>
+		<defName>AmmoSet_40mmCTTemp</defName>
+		<label>40mm CT</label>
+		<ammoTypes>
+			<Ammo_40mmCT_APFSDS>Bullet_40mmCT_APFSDS</Ammo_40mmCT_APFSDS>
+			<!--<Ammo_40mmCT_EMP>Bullet_40mmCT_EMP</Ammo_40mmCT_EMP>-->
+		</ammoTypes>
+	</CombatExtended.AmmoSetDef>
+
+</Defs>

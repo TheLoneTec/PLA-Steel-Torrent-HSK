@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<!-- ==================== AmmoSet ========================== -->
+
+	<CombatExtended.AmmoSetDef>
+		<defName>AmmoSet_30x165mmSovietTemp</defName>
+		<label>30x165mm Soviet</label>
+		<ammoTypes>
+			<Ammo_30x165mmSoviet_FMJ>Bullet_30x165mmSoviet_FMJ</Ammo_30x165mmSoviet_FMJ>
+			<!--<Ammo_30x165mmSoviet_Incendiary>Bullet_30x165mmSoviet_Incendiary</Ammo_30x165mmSoviet_Incendiary>
+			<Ammo_30x165mmSoviet_HE>Bullet_30x165mmSoviet_HE</Ammo_30x165mmSoviet_HE>
+			<Ammo_30x165mmSoviet_Sabot>Bullet_30x165mmSoviet_Sabot</Ammo_30x165mmSoviet_Sabot>-->
+		</ammoTypes>
+	</CombatExtended.AmmoSetDef>
+
+</Defs>

@@ -393,6 +393,20 @@
 				</value>
 			</li>	
 		
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="Bullet_125mmShell_HE"]/projectile/armorPenetrationSharp</xpath>
+				<value>
+					<armorPenetrationSharp>120</armorPenetrationSharp>
+				</value>
+			</li>	
+			
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="Bullet_125mmShell_HE"]/projectile/armorPenetrationBlunt</xpath>
+				<value>
+					<armorPenetrationBlunt>350</armorPenetrationBlunt>
+				</value>
+			</li>
+
 			<li Class="PatchOperationAdd">
 				<xpath>Defs/RecipeDef[defName="MakeAmmo_40mmCT_APFSDS"]</xpath>
 				<value>

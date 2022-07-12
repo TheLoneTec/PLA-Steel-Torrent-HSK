@@ -8,7 +8,7 @@
 
 	<FleshTypeDef>
 		<defName>PLAVehicleFlesh</defName>
-		<corpseCategory>PLAVehicleCorpse</corpseCategory>
+		<corpseCategory>CorpsesMechanoid</corpseCategory>
 		<damageEffecter>Damage_HitMechanoid</damageEffecter>
 		<genericWounds>
 			<li>
