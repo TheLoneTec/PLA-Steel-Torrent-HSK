@@ -9,4 +9,7 @@
   <PLA_CompositeArmor.labelNoun>复合装甲</PLA_CompositeArmor.labelNoun>
   <PLA_CompositeArmor.description>用于车辆的复合装甲，可以增加防护能力</PLA_CompositeArmor.description>
 
+  <PLA_VehicleWear.label>车辆磨损</PLA_VehicleWear.label>
+  <PLA_VehicleWear.description>车辆护甲的磨损程度，磨损会减少车辆的防护能力，可以被修理</PLA_VehicleWear.description>
+
 </LanguageData>

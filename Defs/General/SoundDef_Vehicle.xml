@@ -12,8 +12,74 @@
             <clipPath>Vehicle/VehicleEngine</clipPath>
           </li>
         </grains>
-        <volumeRange>16</volumeRange>
+        <volumeRange>12</volumeRange>
         <distRange>10~38</distRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+
+  <SoundDef>
+    <defName>PLA_VehicleDoor</defName>
+    <context>MapOnly</context>
+    <maxSimultaneous>1</maxSimultaneous>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Vehicle/VehicleDoor</clipPath>
+          </li>
+        </grains>
+        <pitchRange>0.936413~1.042391</pitchRange>
+        <paramMappings>
+          <li>
+            <inParam Class="SoundParamSource_CameraAltitude" />
+            <outParam Class="SoundParamTarget_PropertyLowPass">
+              <filterProperty>Cutoff</filterProperty>
+            </outParam>
+            <paramUpdateMode>Constant</paramUpdateMode>
+            <curve>
+              <points>
+                <li>
+                  <loc>
+                    <x>17.08957</x>
+                    <y>21001.8</y>
+                  </loc>
+                </li>
+                <li>
+                  <loc>
+                    <x>24.77761</x>
+                    <y>12701.95</y>
+                  </loc>
+                </li>
+                <li>
+                  <loc>
+                    <x>32.786</x>
+                    <y>7168.717</y>
+                  </loc>
+                </li>
+                <li>
+                  <loc>
+                    <x>45.91975</x>
+                    <y>4270.358</y>
+                  </loc>
+                </li>
+                <li>
+                  <loc>
+                    <x>66.10088</x>
+                    <y>2557.69</y>
+                  </loc>
+                </li>
+              </points>
+            </curve>
+          </li>
+        </paramMappings>
+        <filters>
+          <li Class="SoundFilterLowPass">
+            <cutoffFrequency>10000</cutoffFrequency>
+            <lowpassResonaceQ>1</lowpassResonaceQ>
+          </li>
+        </filters>
+        <sustainLoop>False</sustainLoop>
       </li>
     </subSounds>
   </SoundDef>
@@ -93,6 +159,72 @@
         <grains>
           <li Class="AudioGrain_Clip">
             <clipPath>Weapon/89HMG</clipPath>
+          </li>
+        </grains>
+        <pitchRange>0.936413~1.042391</pitchRange>
+        <paramMappings>
+          <li>
+            <inParam Class="SoundParamSource_CameraAltitude" />
+            <outParam Class="SoundParamTarget_PropertyLowPass">
+              <filterProperty>Cutoff</filterProperty>
+            </outParam>
+            <paramUpdateMode>Constant</paramUpdateMode>
+            <curve>
+              <points>
+                <li>
+                  <loc>
+                    <x>17.08957</x>
+                    <y>21001.8</y>
+                  </loc>
+                </li>
+                <li>
+                  <loc>
+                    <x>24.77761</x>
+                    <y>12701.95</y>
+                  </loc>
+                </li>
+                <li>
+                  <loc>
+                    <x>32.786</x>
+                    <y>7168.717</y>
+                  </loc>
+                </li>
+                <li>
+                  <loc>
+                    <x>45.91975</x>
+                    <y>4270.358</y>
+                  </loc>
+                </li>
+                <li>
+                  <loc>
+                    <x>66.10088</x>
+                    <y>2557.69</y>
+                  </loc>
+                </li>
+              </points>
+            </curve>
+          </li>
+        </paramMappings>
+        <filters>
+          <li Class="SoundFilterLowPass">
+            <cutoffFrequency>10000</cutoffFrequency>
+            <lowpassResonaceQ>1</lowpassResonaceQ>
+          </li>
+        </filters>
+        <sustainLoop>False</sustainLoop>
+      </li>
+    </subSounds>
+  </SoundDef>
+
+  <SoundDef>
+    <defName>PLA_Shot88GPMG</defName>
+    <context>MapOnly</context>
+    <maxSimultaneous>1</maxSimultaneous>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Weapon/88GPMG</clipPath>
           </li>
         </grains>
         <pitchRange>0.936413~1.042391</pitchRange>

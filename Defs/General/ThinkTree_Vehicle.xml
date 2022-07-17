@@ -2,7 +2,7 @@
 <Defs>
 	<ThinkTreeDef>
 		<defName>PLA_RemoteVehicle</defName>
-		<thinkRoot Class="ThinkNode_Priority">
+		<thinkRoot Class="PLA.Vehicle.ThinkNode_VehicleRoot">
 			<subNodes>
 
 				<!-- Drafted -->
@@ -37,7 +37,7 @@
 					</subNodes>
 				</li>
 
-				<li Class="PLA.Vehicle.JobGiver_StandIdle" />
+				<!--li Class="PLA.Vehicle.JobGiver_StandIdle" /-->
 			</subNodes>
 		</thinkRoot>
 	</ThinkTreeDef>
@@ -62,7 +62,7 @@
 											<subNodes>
 												<!-- Exit map and join the caravan -->
 												<li Class="JobGiver_ExitMapBest">
-													<failIfCantJoinOrCreateCaravan>true</failIfCantJoinOrCreateCaravan> <!-- in case the caravan moves before we manage to exit the map -->
+													<failIfCantJoinOrCreateCaravan>true</failIfCantJoinOrCreateCaravan> 
 													<defaultLocomotion>Sprint</defaultLocomotion>
 												</li>
 											</subNodes>

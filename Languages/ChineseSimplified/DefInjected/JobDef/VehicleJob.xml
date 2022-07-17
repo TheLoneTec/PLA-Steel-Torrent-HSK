@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
 
-    <PLA_RepairVehicle.reportString>维修载具</PLA_RepairVehicle.reportString>
+    <PLA_RepairVehicle.reportString>维修载具。</PLA_RepairVehicle.reportString>
+    <PLA_EnterVehicle.reportString>进入载具。</PLA_EnterVehicle.reportString>
+    <PLA_ReturnToParkingLot.reportString>返回。</PLA_ReturnToParkingLot.reportString>
 
 </LanguageData>

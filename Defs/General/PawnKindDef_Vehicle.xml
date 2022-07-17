@@ -14,7 +14,7 @@
 
   <TraitDef>
     <defName>PLA_TraitWarMachine</defName>
-    <label>war machine</label>
+    <label>machine</label>
     <disabledWorkTypes>
       <li>Mining</li>
       <li>Growing</li>

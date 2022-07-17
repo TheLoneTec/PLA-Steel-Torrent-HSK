@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Defs>
 
+  <ThingCategoryDef>
+    <defName>PLA_VehicleParts</defName>
+    <label>vehicle modification kit</label>
+    <parent>Items</parent>
+  </ThingCategoryDef>
+
+  <!-- Hediff base-->
+
   <HediffDef Name="PLA_VehicleAttachmentBase" Abstract="True">
     <hediffClass>Hediff_Implant</hediffClass>
     <defaultLabelColor>(0.6, 0.6, 1.0)</defaultLabelColor>
@@ -15,14 +23,48 @@
     <priceImpact>true</priceImpact>
   </HediffDef>
 
-  <ThingDef Name="PLA_VehicleModificationBase" ParentName="BodyPartBase" Abstract="True">
-    <techLevel>Industrial</techLevel>
-    <thingCategories>
-      <li>BodyPartsBionic</li>
-    </thingCategories>
+  <!-- thingdef base-->
+
+  <ThingDef Name="PLA_VehicleModificationBase" Abstract="True">
+    <thingClass>ThingWithComps</thingClass>
+    <category>Item</category>
+    <drawerType>MapMeshOnly</drawerType>
+    <useHitPoints>true</useHitPoints>
+    <selectable>true</selectable>
+    <altitudeLayer>Item</altitudeLayer>
+    <tickerType>Never</tickerType>
+    <alwaysHaulable>true</alwaysHaulable>
+    <isTechHediff>true</isTechHediff>
+    <pathCost>14</pathCost>
+    <allowedArchonexusCount>1</allowedArchonexusCount>
     <statBases>
+      <MaxHitPoints>50</MaxHitPoints>
+      <Flammability>0.7</Flammability>
+      <Beauty>-4</Beauty>
+      <DeteriorationRate>2.0</DeteriorationRate>
+      <Mass>40</Mass>
       <WorkToMake>26000</WorkToMake>
     </statBases>
+    <comps>
+      <li Class="CompProperties_Forbiddable"/>
+    </comps>
+    <techLevel>Industrial</techLevel>
+    <thingCategories>
+      <li>PLA_VehicleParts</li>
+    </thingCategories>
+    <recipeMaker>
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <effectWorking>Smith</effectWorking>
+      <soundWorking>Recipe_Smith</soundWorking>
+      <unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
+      <skillRequirements>
+        <Crafting>8</Crafting>
+      </skillRequirements>
+      <recipeUsers>
+        <li>TableMachining</li>
+      </recipeUsers>
+    </recipeMaker>
   </ThingDef>
 
   <ThingDef Name="PLA_VehicleModComponentBase" ParentName="PLA_VehicleModificationBase" Abstract="True">

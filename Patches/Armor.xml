@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+    <Operation Class="PatchOperationAdd">
+		<xpath>Defs/StatDef[@Name="ArmorRatingBase"]/parts</xpath>
+		<value>
+			<li Class="PLA.Vehicle.StatPart_VehicleArmor">
+                <priority>200</priority>
+              </li>																									
+		</value>
+	</Operation>
+</Patch>

@@ -1,6 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Defs>
 
+  <RecipeDef ParentName="PLA_RecipeModifyVehicle">
+    <defName>PLA_DismantleVehicle</defName>
+    <label>dismantle</label>
+    <description>dismantle vehicle and recycle the material.</description>
+    <jobString>dismantling vehicle.</jobString>
+    <workerClass>PLA.Vehicle.Recipe_DismantleVehicle</workerClass>
+    <workAmount>3000</workAmount>
+    <soundWorking>Recipe_Smith</soundWorking>
+    <hideBodyPartNames>true</hideBodyPartNames>
+    <targetsBodyPart>false</targetsBodyPart>
+    <surgerySuccessChanceFactor>2</surgerySuccessChanceFactor>
+  </RecipeDef>
+
   <!-- advanced fire control computer  -->
   <HediffDef ParentName="PLA_VehiclePartBase">
     <defName>PLA_AdvancedFireControlComputer</defName>
@@ -18,6 +31,14 @@
       <partEfficiency>1.5</partEfficiency>
       <betterThanNatural>true</betterThanNatural>
     </addedPartProps>
+    <stages>
+      <li>
+        <statOffsets>
+          <ShootingAccuracyPawn>1.5</ShootingAccuracyPawn>
+          <AimingDelayFactor>-0.5</AimingDelayFactor>
+        </statOffsets>
+      </li>
+    </stages>
   </HediffDef>
 
   <ThingDef ParentName="PLA_VehicleModComponentBase">
@@ -38,9 +59,11 @@
     <statBases>
       <Mass>15</Mass>
     </statBases>
-	<researchPrerequisites>
-		<li>PLA_ResearchVehicle_VehicleModification</li>
-	</researchPrerequisites>
+    <recipeMaker>
+      <researchPrerequisites>
+        <li>PLA_ResearchVehicle_VehicleModification</li>
+      </researchPrerequisites>
+    </recipeMaker>
   </ThingDef>
 
   <RecipeDef ParentName="PLA_RecipeInstallVehiclePart">
@@ -133,9 +156,11 @@
     <statBases>
       <Mass>15</Mass>
     </statBases>
-	<researchPrerequisites>
-		<li>PLA_ResearchVehicle_VehicleModification</li>
-	</researchPrerequisites>
+    <recipeMaker>
+      <researchPrerequisites>
+        <li>PLA_ResearchVehicle_VehicleModification</li>
+      </researchPrerequisites>
+    </recipeMaker>
   </ThingDef>
 
   <RecipeDef ParentName="PLA_RecipeInstallVehicleAttachment">

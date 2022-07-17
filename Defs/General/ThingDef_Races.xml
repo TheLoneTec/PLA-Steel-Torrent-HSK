@@ -8,20 +8,22 @@
     <altitudeLayer>Pawn</altitudeLayer>
     <useHitPoints>false</useHitPoints>
     <hasTooltip>true</hasTooltip>
+    <tradeNeverStack>true</tradeNeverStack>
     <soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
     <statBases>
       <Mass>60</Mass>
       <Flammability>0.7</Flammability>
     </statBases>
     <inspectorTabs>
+      <li>PLA.Vehicle.ITab_VehicleCrew</li>
       <li>ITab_Pawn_Health</li>
       <li>ITab_Pawn_Needs</li>
       <li>ITab_Pawn_Training</li>
       <li>ITab_Pawn_Social</li>
       <li>ITab_Pawn_Guest</li>
       <li>ITab_Pawn_FormingCaravan</li>
-      <li>PLA.CE.Vehicle.ITab_VehicleInventory</li>
-      <li>ITab_Pawn_Log</li>
+      <li>ITab_Pawn_Gear</li>
+      <li>PLA.Vehicle.ITab_VehicleTag</li>
     </inspectorTabs>
     <comps>
       <li>
@@ -43,6 +45,7 @@
       <ComfyTemperatureMax>250</ComfyTemperatureMax>
       <MeatAmount>0</MeatAmount>
       <ArmorRating_Heat>2.00</ArmorRating_Heat>
+      <GlobalLearningFactor>0</GlobalLearningFactor>
     </statBases>
     <receivesSignals>true</receivesSignals>
     <building></building>
@@ -74,9 +77,6 @@
     </race>
     <repairEffect>Repair</repairEffect>
     <comps>
-      <li Class="PLA.Vehicle.CompProperties_SoundLoop">
-        <sound>PLA_VehicleEngine_Ambience</sound>
-      </li>
       <li>
         <compClass>PLA.Vehicle.CompVehicleEquipmentGizmo</compClass>
       </li>

@@ -6,7 +6,7 @@
     <description>A off-road vehicles developed by Dongfeng Motor Group.</description>
     <statBases>
       <MoveSpeed>6</MoveSpeed>
-      <ArmorRating_Blunt>1.2</ArmorRating_Blunt>
+      <ArmorRating_Blunt>1.4</ArmorRating_Blunt>
       <ArmorRating_Sharp>0.9</ArmorRating_Sharp>
       <PsychicSensitivity>0</PsychicSensitivity>
       <CaravanRidingSpeedFactor>6</CaravanRidingSpeedFactor>
@@ -31,14 +31,19 @@
       <body>PLA_VehicleCar</body>
     </race>
     <butcherProducts>
-      <Steel>1200</Steel>
-      <Plasteel>300</Plasteel>
+      <Steel>1500</Steel>
+      <Plasteel>225</Plasteel>
+      <ComponentIndustrial>24</ComponentIndustrial>
+      <ComponentSpacer>3</ComponentSpacer>
     </butcherProducts>
     <killedLeavings>
       <Steel>450</Steel>
       <Plasteel>140</Plasteel>
     </killedLeavings>
     <comps>
+      <li Class="PLA.Vehicle.CompProperties_SoundLoop">
+        <sound>PLA_VehicleEngine_Ambience</sound>
+      </li>
       <li Class="PLA.Vehicle.CompProperties_VehicleWeapon">
         <turretRotationFollowPawn>true</turretRotationFollowPawn>
         <defaultWeapon>PLA_Gun89HMGForVehicle</defaultWeapon>
@@ -54,6 +59,7 @@
         <showAllowAutoRefuelToggle>false</showAllowAutoRefuelToggle>
         <autoRefuelPercent>0.75</autoRefuelPercent>
         <initialFuelPercent>1</initialFuelPercent>
+        <consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
       </li>
     </comps>
     <uiIconPath>Vehicles/CSZ181/Icon_CSZ181</uiIconPath>
@@ -62,6 +68,14 @@
         <allowVechicleInCaravan>true</allowVechicleInCaravan>
         <carryWeightInCaravan>2400</carryWeightInCaravan>
         <explosionRadius>3.9</explosionRadius>
+        <durability>6500</durability>
+        <pawnCapacity>7</pawnCapacity>
+        <driverRequired>1</driverRequired>
+        <gunnerRequired>1</gunnerRequired>
+        <soundEnter>PLA_VehicleDoor</soundEnter>
+        <soundLeave>PLA_VehicleDoor</soundLeave>
+        <restEffectiveness>0.8</restEffectiveness>
+        <comfort>0.7</comfort>
       </li>
     </modExtensions>
   </ThingDef>

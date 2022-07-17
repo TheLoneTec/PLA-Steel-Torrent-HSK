@@ -2,13 +2,13 @@
 <Defs>
     <ThingDef ParentName="PLA_BaseVehicle">
         <defName>PLA_ZTL11IFV</defName>
-        <label>ZTL-11 infantry fighting vehicle</label>
+        <label>ZTL-11 IFV</label>
         <description>A infantry fighting vehicle.</description>
         <statBases>
             <MarketValue>250000</MarketValue>
             <MoveSpeed>5</MoveSpeed>
             <ArmorRating_Blunt>1.7</ArmorRating_Blunt>
-            <ArmorRating_Sharp>1.25</ArmorRating_Sharp>
+            <ArmorRating_Sharp>1.3</ArmorRating_Sharp>
             <PsychicSensitivity>0</PsychicSensitivity>
             <CaravanRidingSpeedFactor>5</CaravanRidingSpeedFactor>
             <CarryingCapacity>2000</CarryingCapacity>
@@ -31,14 +31,19 @@
             <body>PLA_VehicleTank</body>
         </race>
         <butcherProducts>
-            <Steel>600</Steel>
-            <Plasteel>250</Plasteel>
+            <Steel>2250</Steel>
+            <Plasteel>525</Plasteel>
+            <ComponentIndustrial>30</ComponentIndustrial>
+            <ComponentSpacer>3</ComponentSpacer>
         </butcherProducts>
         <killedLeavings>
             <Steel>600</Steel>
             <Plasteel>250</Plasteel>
         </killedLeavings>
         <comps>
+            <li Class="PLA.Vehicle.CompProperties_SoundLoop">
+                <sound>PLA_VehicleEngine_Ambience</sound>
+              </li>
             <li Class="PLA.Vehicle.CompProperties_VehicleWeapon">
                 <turretRotationFollowPawn>true</turretRotationFollowPawn>
                 <defaultWeapon>PLA_TurretGun105mmCannon</defaultWeapon>
@@ -54,6 +59,7 @@
                 <showAllowAutoRefuelToggle>false</showAllowAutoRefuelToggle>
                 <autoRefuelPercent>0.75</autoRefuelPercent>
                 <initialFuelPercent>1</initialFuelPercent>
+                <consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
             </li>
         </comps>
         <uiIconPath>Vehicles/ZTL11/Icon_ZTL11</uiIconPath>
@@ -62,6 +68,14 @@
                 <allowVechicleInCaravan>true</allowVechicleInCaravan>
                 <carryWeightInCaravan>980</carryWeightInCaravan>
                 <explosionRadius>4</explosionRadius>
+                <durability>9000</durability>
+                <pawnCapacity>6</pawnCapacity>
+                <driverRequired>1</driverRequired>
+                <gunnerRequired>1</gunnerRequired>
+                <soundEnter>PLA_VehicleDoor</soundEnter>
+                <soundLeave>PLA_VehicleDoor</soundLeave>
+                <restEffectiveness>0.75</restEffectiveness>
+                <comfort>0.65</comfort>
             </li>
         </modExtensions>
     </ThingDef>

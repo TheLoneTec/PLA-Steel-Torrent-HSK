@@ -6,4 +6,31 @@
     <PLA_Allow>只允许</PLA_Allow>
     <PLA_SelectVehicleDesc>设定该停车点所允许的载具</PLA_SelectVehicleDesc>
     <PLA_VehicleSection>载具</PLA_VehicleSection>
+    <PLA_ReducedProtection>减少防护能力</PLA_ReducedProtection>
+    <PLA_EnterVehicle>进入载具</PLA_EnterVehicle>
+    <PLA_CannotEnterVehicle_NoSeat>无法进入载具，座位已满</PLA_CannotEnterVehicle_NoSeat>
+    <PLA_CannotEnterVehicle_OnCaravanLoading>无法进入载具，正在装载货物</PLA_CannotEnterVehicle_OnCaravanLoading>
+    <PLA_Crew>人员</PLA_Crew>
+    <PLA_ReservedCrew>已预定的人员</PLA_ReservedCrew>
+    <PLA_VehicleSetting>解放军载具</PLA_VehicleSetting>
+    <PLA_Settings_UseCrew_Title>使用车载人员（测试功能）</PLA_Settings_UseCrew_Title>
+    <PLA_Settings_UseCrew_Desc>如果开启，部分载具需要驾驶员和炮手操作</PLA_Settings_UseCrew_Desc>
+    <PLA_VehicleRunOutOfFuel>载具没有燃料</PLA_VehicleRunOutOfFuel>
+    <PLA_NeedDriver>需要驾驶员</PLA_NeedDriver>
+    <PLA_NeedGunner>需要炮手</PLA_NeedGunner>
+    <PLA_Undrafted>没有待命</PLA_Undrafted>
+    <PLA_LeaveAllCrew>全员下车</PLA_LeaveAllCrew>
+    <PLA_SpeedLimit>限速</PLA_SpeedLimit>
+    <PLA_VehicleSeatsCapacity>座位容量:</PLA_VehicleSeatsCapacity>
+    <PLA_VehicleDriverRequired>需要驾驶员:</PLA_VehicleDriverRequired>
+    <PLA_VehicleGunnerRequired>需要炮手:</PLA_VehicleGunnerRequired>
+    <PLA_ReserveCrewsForVehicleTitle>预定载具人员</PLA_ReserveCrewsForVehicleTitle>
+    <PLA_ReserveCrewsForVehicleDesc>在需要车辆人员的时候，可以快速召集该车辆预定的人员</PLA_ReserveCrewsForVehicleDesc>
+    <PLA_CrewThatCanReserved>可预定的人员</PLA_CrewThatCanReserved>
+    <PLA_ButtonReserveCrews>预定人员</PLA_ButtonReserveCrews>
+    <PLA_CallReservedCrews>召集预定的人员</PLA_CallReservedCrews>
+    <PLA_DriverNotEnough>驾驶员不足</PLA_DriverNotEnough>
+    <PLA_ColonistInVehicle>殖民者在载具中</PLA_ColonistInVehicle>
+    <PLA_FoodAteInTheVehicle>{0} 在车上吃了 {1}</PLA_FoodAteInTheVehicle>
+    <PLA_DrugUsedTheVehicle>{0} 在车上使用了 {1}</PLA_DrugUsedTheVehicle>
 </LanguageData>

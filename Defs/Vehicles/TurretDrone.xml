@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+  <ThingDef ParentName="PLA_BaseVehicle">
+    <defName>PLA_TurretDrone</defName>
+    <label>turret drone</label>
+    <description>A drone with 5.8mm machine gun turret.</description>
+    <statBases>
+      <MarketValue>4500</MarketValue>
+      <MoveSpeed>4</MoveSpeed>
+      <ArmorRating_Blunt>0.6</ArmorRating_Blunt>
+      <ArmorRating_Sharp>0.4</ArmorRating_Sharp>
+      <PsychicSensitivity>0</PsychicSensitivity>
+      <CaravanRidingSpeedFactor>1.2</CaravanRidingSpeedFactor>
+      <CarryingCapacity>60</CarryingCapacity>
+      <Mass>70</Mass>
+    </statBases>
+    <tools>
+      <li>
+        <label>Body</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>11.7</power>
+        <cooldownTime>2.6</cooldownTime>
+      </li>
+    </tools>
+    <race>
+      <deathActionWorkerClass>PLA.Vehicle.DeathActionWorker_VehicleExplosionFlame</deathActionWorkerClass>
+      <baseBodySize>1</baseBodySize>
+      <baseHealthScale>1</baseHealthScale>
+      <body>PLA_VehicleTank</body>
+      <packAnimal>false</packAnimal>
+    </race>
+    <butcherProducts>
+      <Steel>240</Steel>
+      <ComponentIndustrial>3</ComponentIndustrial>
+    </butcherProducts>
+    <killedLeavings>
+      <Steel>200</Steel>
+    </killedLeavings>
+    <comps>
+      <li Class="PLA.Vehicle.CompProperties_VehicleWeapon">
+        <turretRotationFollowPawn>true</turretRotationFollowPawn>
+        <defaultWeapon>PLA_Gun88GPMGForVehicle</defaultWeapon>
+      </li>
+      <li Class="CompProperties_Refuelable">
+        <fuelConsumptionRate>2</fuelConsumptionRate>
+        <fuelCapacity>60</fuelCapacity>
+        <fuelFilter>
+          <thingDefs>
+            <li>Chemfuel</li>
+          </thingDefs>
+        </fuelFilter>
+        <showAllowAutoRefuelToggle>false</showAllowAutoRefuelToggle>
+        <autoRefuelPercent>0.75</autoRefuelPercent>
+        <initialFuelPercent>1</initialFuelPercent>
+      </li>
+    </comps>
+    <uiIconPath>Vehicles/TurretDrone/Icon_TurretDrone</uiIconPath>
+    <modExtensions>
+      <li Class="PLA.Vehicle.VehicleExtension">
+        <allowVechicleInCaravan>true</allowVechicleInCaravan>
+        <carryWeightInCaravan>45</carryWeightInCaravan>
+        <durability>800</durability>
+        <explosionRadius>0.5</explosionRadius>
+      </li>
+    </modExtensions>
+  </ThingDef>
+
+  <PawnKindDef ParentName="PLA_BaseVehiclePawnKind">
+    <defName>PLA_TurretDrone</defName>
+    <label>turret drone</label>
+    <race>PLA_TurretDrone</race>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Vehicles/TurretDrone/TurretDrone</texPath>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>2</drawSize>
+        </bodyGraphicData>
+      </li>
+    </lifeStages>
+  </PawnKindDef>
+
+  <!-- weapons-->
+
+  <ThingDef ParentName="BaseWeaponTurret">
+    <defName>PLA_Gun88GPMGForVehicle</defName>
+    <label>type 88 light machine gun</label>
+    <description>...</description>
+    <graphicData>
+      <texPath>Vehicles/TurretDrone/Type88GPMGTurret</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>2.6</drawSize>
+    </graphicData>
+    <statBases>
+      <MarketValue>1400</MarketValue>
+      <AccuracyTouch>0.68</AccuracyTouch>
+      <AccuracyShort>0.71</AccuracyShort>
+      <AccuracyMedium>0.63</AccuracyMedium>
+      <AccuracyLong>0.43</AccuracyLong>
+      <RangedWeapon_Cooldown>1.2</RangedWeapon_Cooldown>
+      <Mass>30</Mass>
+    </statBases>
+    <costList>
+      <PLA_VehicleWeapon89HMG>1</PLA_VehicleWeapon89HMG>
+    </costList>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>PLA_Bullet_88GPMG</defaultProjectile>
+        <warmupTime>1.5</warmupTime>
+        <range>31</range>
+        <ticksBetweenBurstShots>8</ticksBetweenBurstShots>
+        <burstShotCount>10</burstShotCount>
+        <soundCast>PLA_Shot88GPMG</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>13</muzzleFlashScale>
+        <consumeFuelPerShot>1</consumeFuelPerShot>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>11.7</power>
+        <cooldownTime>2.6</cooldownTime>
+      </li>
+    </tools>
+    <weaponTags>
+      <li>PLA_WeaponVehicleGPMG</li>
+    </weaponTags>
+    <relicChance>0</relicChance>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseBullet">
+    <defName>PLA_Bullet_88GPMG</defName>
+    <label>assault rifle bullet</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Small</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>11</damageAmountBase>
+      <armorPenetrationBase>0.20</armorPenetrationBase>
+      <speed>60</speed>
+    </projectile>
+  </ThingDef>
+
+</Defs>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+    <HediffDef>
+        <defName>PLA_VehicleWear</defName>
+        <label>vehicle wear</label>
+        <description>The rate of wear and tear of the vehicle, which decreases the protection of the vehicle. It can be repaired.</description>
+        <initialSeverity>1</initialSeverity>
+        <hediffClass>PLA.Vehicle.Hediff_VehicleWear</hediffClass>
+        <isBad>true</isBad>
+        <addedPartProps>
+            <solid>false</solid>
+        </addedPartProps>
+        <injuryProps>
+
+        </injuryProps>
+    </HediffDef>
+</Defs>

@@ -5,6 +5,13 @@
         <xpath>Defs/ThingDef[@Name="PLA_BaseVehicle"]/comps/li[compClass="PLA.Vehicle.CompVehicleEquipmentGizmo"]</xpath>
     </Operation>
 
+    <Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[@Name="PLA_BaseVehiclePawn"]/inspectorTabs/li[.="ITab_Pawn_Gear"]</xpath>
+		<value>
+			<li>PLA.CE.Vehicle.ITab_VehicleInventory</li>
+		</value>
+	</Operation>
+
 	<Operation Class="PatchOperationAdd">
 		<xpath>Defs/ThingDef[@Name="PLA_BaseVehiclePawn"]/comps</xpath>
 		<value>
@@ -39,6 +46,66 @@
         </value>
     </Operation>
 
+    <!-- turret drone-->
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="PLA_TurretDrone"]/statBases</xpath>
+        <value>
+            <CarryBulk>60</CarryBulk>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="PLA_TurretDrone"]/statBases</xpath>
+        <value>
+            <CarryWeight>50</CarryWeight>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="PLA_TurretDrone"]/statBases/ArmorRating_Sharp</xpath>
+        <value>
+            <ArmorRating_Sharp>4</ArmorRating_Sharp>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="PLA_TurretDrone"]/statBases/ArmorRating_Blunt</xpath>
+        <value>
+            <ArmorRating_Blunt>8</ArmorRating_Blunt>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="PLA_TurretDrone"]/race/baseHealthScale</xpath>
+        <value>
+            <baseHealthScale>1</baseHealthScale>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="PLA_TurretDrone"]/modExtensions/li[@Class="PLA.Vehicle.VehicleExtension"]/durability</xpath>
+        <value>
+            <durability>1000</durability>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="PLA_TurretDrone"]/tools</xpath>
+		<value>
+			<tools>
+				<li Class="CombatExtended.ToolCE">
+					<label>head</label>
+					<capacities>
+						<li>Blunt</li>
+					</capacities>
+					<power>15</power>
+					<cooldownTime>3.51</cooldownTime>
+					<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+					<armorPenetrationSharp>0</armorPenetrationSharp>
+					<armorPenetrationBlunt>60</armorPenetrationBlunt>
+					<alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+				</li>
+			</tools>
+		</value>
+	</Operation>
+
+    <!-- Lynx -->
+
     <Operation Class="PatchOperationAdd">
         <xpath>Defs/ThingDef[defName="PLA_Lynx6x6UltraLight"]/statBases</xpath>
         <value>
@@ -70,6 +137,12 @@
         </value>
     </Operation>
     <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="PLA_Lynx6x6UltraLight"]/modExtensions/li[@Class="PLA.Vehicle.VehicleExtension"]/durability</xpath>
+        <value>
+            <durability>7200</durability>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
 		<xpath>Defs/ThingDef[defName="PLA_Lynx6x6UltraLight"]/tools</xpath>
 		<value>
 			<tools>
@@ -88,6 +161,7 @@
 			</tools>
 		</value>
 	</Operation>
+    
     
 
     <Operation Class="PatchOperationAdd">
@@ -118,6 +192,12 @@
         <xpath>Defs/ThingDef[defName="PLA_CSZ181OffRoad"]/race/baseHealthScale</xpath>
         <value>
             <baseHealthScale>4</baseHealthScale>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="PLA_CSZ181OffRoad"]/modExtensions/li[@Class="PLA.Vehicle.VehicleExtension"]/durability</xpath>
+        <value>
+            <durability>11700</durability>
         </value>
     </Operation>
     <Operation Class="PatchOperationReplace">
@@ -173,6 +253,12 @@
         </value>
     </Operation>
     <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="PLA_VP22Truck"]/modExtensions/li[@Class="PLA.Vehicle.VehicleExtension"]/durability</xpath>
+        <value>
+            <durability>13500</durability>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
 		<xpath>Defs/ThingDef[defName="PLA_VP22Truck"]/tools</xpath>
 		<value>
 			<tools>
@@ -209,19 +295,25 @@
     <Operation Class="PatchOperationReplace">
         <xpath>Defs/ThingDef[defName="PLA_ZTZ99ATank"]/statBases/ArmorRating_Sharp</xpath>
         <value>
-            <ArmorRating_Sharp>60</ArmorRating_Sharp>
+            <ArmorRating_Sharp>100</ArmorRating_Sharp>
         </value>
     </Operation>
     <Operation Class="PatchOperationReplace">
         <xpath>Defs/ThingDef[defName="PLA_ZTZ99ATank"]/statBases/ArmorRating_Blunt</xpath>
         <value>
-            <ArmorRating_Blunt>300</ArmorRating_Blunt>
+            <ArmorRating_Blunt>650</ArmorRating_Blunt>
         </value>
     </Operation>
     <Operation Class="PatchOperationReplace">
         <xpath>Defs/ThingDef[defName="PLA_ZTZ99ATank"]/race/baseHealthScale</xpath>
         <value>
             <baseHealthScale>5</baseHealthScale>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="PLA_ZTZ99ATank"]/modExtensions/li[@Class="PLA.Vehicle.VehicleExtension"]/durability</xpath>
+        <value>
+            <durability>19800</durability>
         </value>
     </Operation>
     <Operation Class="PatchOperationReplace">
@@ -274,6 +366,12 @@
         <xpath>Defs/ThingDef[defName="PLA_ZTL11IFV"]/race/baseHealthScale</xpath>
         <value>
             <baseHealthScale>4</baseHealthScale>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="PLA_ZTL11IFV"]/modExtensions/li[@Class="PLA.Vehicle.VehicleExtension"]/durability</xpath>
+        <value>
+            <durability>16200</durability>
         </value>
     </Operation>
     <Operation Class="PatchOperationReplace">

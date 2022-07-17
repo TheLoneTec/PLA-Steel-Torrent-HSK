@@ -7,6 +7,9 @@
     <ST_AntiTankMissleLauncher.label>反坦克导弹</ST_AntiTankMissleLauncher.label>
     <ST_AntiTankMissleLauncher.description>能跟踪载具和机械体的反坦克导弹。</ST_AntiTankMissleLauncher.description>
 
+    <PLA_BuildingTurretDrone.label>移动机枪塔</PLA_BuildingTurretDrone.label>
+    <PLA_BuildingTurretDrone.description>一种安装在小型履带底盘上的机枪炮塔，精度一般，基本没什么防护能力。虽然性能一般，但是可以替代战士去执行一些危险的任务。</PLA_BuildingTurretDrone.description>
+
     <PLA_BuildingLynx6x6UL.label>山猫全地形车</PLA_BuildingLynx6x6UL.label>
     <PLA_BuildingLynx6x6UL.description>山猫VP-16全地形车。由北方工业研制的轻型全地形底盘，用来搭载用于步兵火力支援的武器。</PLA_BuildingLynx6x6UL.description>
 
@@ -24,6 +27,9 @@
 
     <PLA_ParkingLot.label>停车点</PLA_ParkingLot.label>
     <PLA_ParkingLot.description>用于停放载具的区域，载具在非征召情况下会自动驶回停车点。车辆会根据停车点箭头的方向停放。</PLA_ParkingLot.description>
+
+    <PLA_TurretDrone.label>移动机枪塔</PLA_TurretDrone.label>
+    <PLA_TurretDrone.description>一种安装在小型履带底盘上的机枪炮塔，精度一般，基本没什么防护能力。虽然性能一般，但是可以替代战士去执行一些危险的任务。</PLA_TurretDrone.description>
 
     <PLA_Lynx6x6UltraLight.label>山猫全地形车</PLA_Lynx6x6UltraLight.label>
     <PLA_Lynx6x6UltraLight.description>山猫VP-16全地形车。由北方工业研制的轻型全地形底盘，用来搭载用于步兵火力支援的武器。</PLA_Lynx6x6UltraLight.description>
@@ -54,6 +60,9 @@
 
     <PLA_Gun89HMGForVehicle.label>89式重机枪</PLA_Gun89HMGForVehicle.label>
     <PLA_Gun89HMGForVehicle.description>发射12.7x108mm弹药的重机枪。</PLA_Gun89HMGForVehicle.description>
+
+    <PLA_Gun88GPMGForVehicle.label>88式通用机枪</PLA_Gun88GPMGForVehicle.label>
+    <PLA_Gun88GPMGForVehicle.description>发射5.8x42mm弹药的通用机枪。</PLA_Gun88GPMGForVehicle.description>
 
     <PLA_TurretGun105mmCannon.label>105mm加农炮</PLA_TurretGun105mmCannon.label>
     <PLA_TurretGun105mmCannon.description>发射105mm炮弹的加农炮。</PLA_TurretGun105mmCannon.description>

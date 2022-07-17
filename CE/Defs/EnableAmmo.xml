@@ -121,4 +121,26 @@
         </comps>
     </ThingDef>
 
+    <ThingDef ParentName="PLA_EnableAmmo">
+        <defName>PLA_Enable35mmGrenade</defName>
+        <comps>
+            <li Class="CombatExtended.CompProperties_AmmoUser">
+                <magazineSize>60</magazineSize>
+                <reloadTime>9.2</reloadTime>
+                <ammoSet>AmmoSet_35x32mmSRGrenade</ammoSet>
+            </li>
+        </comps>
+    </ThingDef>
+
+    <ThingDef ParentName="PLA_EnableAmmo">
+        <defName>PLA_Enable58mmAmmo</defName>
+        <comps>
+            <li Class="CombatExtended.CompProperties_AmmoUser">
+                <magazineSize>200</magazineSize>
+                <reloadTime>9.2</reloadTime>
+                <ammoSet>AmmoSet_58x42mmDBP10</ammoSet>
+            </li>
+        </comps>
+    </ThingDef>
+
 </Defs>

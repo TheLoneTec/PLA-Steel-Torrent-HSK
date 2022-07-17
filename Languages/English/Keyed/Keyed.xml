@@ -5,4 +5,31 @@
     <PLA_Allow>Only allow</PLA_Allow>
     <PLA_SelectVehicleDesc>Set the allows the vehicle for the parking lot</PLA_SelectVehicleDesc>
     <PLA_VehicleSection>Vehicles</PLA_VehicleSection>
+    <PLA_ReducedProtection>Reduced Protection</PLA_ReducedProtection>
+    <PLA_EnterVehicle>Enter vehicle</PLA_EnterVehicle>
+    <PLA_CannotEnterVehicle_NoSeat>Cannot enter the vehicle, no seat remain.</PLA_CannotEnterVehicle_NoSeat>
+    <PLA_CannotEnterVehicle_OnCaravanLoading>Cannot enter the vehicle, the caravan is loading.</PLA_CannotEnterVehicle_OnCaravanLoading>
+    <PLA_Crew>Crew</PLA_Crew>
+    <PLA_ReservedCrew>Reserved Crews</PLA_ReservedCrew>
+    <PLA_VehicleSetting>PLA Steel Torrent</PLA_VehicleSetting>
+    <PLA_Settings_UseCrew_Title>Use crew (Beta)</PLA_Settings_UseCrew_Title>
+    <PLA_Settings_UseCrew_Desc>Some of the vehicles require a driver and gunners if the option enabled</PLA_Settings_UseCrew_Desc>
+    <PLA_VehicleRunOutOfFuel>Vehicle run out of fuel</PLA_VehicleRunOutOfFuel>
+    <PLA_NeedDriver>Need driver</PLA_NeedDriver>
+    <PLA_NeedGunner>Need gunner</PLA_NeedGunner>
+    <PLA_Undrafted>Undrafted</PLA_Undrafted>
+    <PLA_LeaveAllCrew>Drop all crew</PLA_LeaveAllCrew>
+    <PLA_SpeedLimit>Speed limit</PLA_SpeedLimit>
+    <PLA_VehicleSeatsCapacity>Seats capacity:</PLA_VehicleSeatsCapacity>
+    <PLA_VehicleDriverRequired>Driver required:</PLA_VehicleDriverRequired>
+    <PLA_VehicleGunnerRequired>Gunner required:</PLA_VehicleGunnerRequired>
+    <PLA_ReserveCrewsForVehicleTitle>Reserve crews for vehicle</PLA_ReserveCrewsForVehicleTitle>
+    <PLA_ReserveCrewsForVehicleDesc>When you need the vehicle crew, you can quickly call the reserved crew</PLA_ReserveCrewsForVehicleDesc>
+    <PLA_CrewThatCanReserved>Crew that can be reserved</PLA_CrewThatCanReserved>
+    <PLA_ButtonReserveCrews>Reserve Crews</PLA_ButtonReserveCrews>
+    <PLA_CallReservedCrews>Call reserved crews</PLA_CallReservedCrews>
+    <PLA_DriverNotEnough>Driver not enough</PLA_DriverNotEnough>
+    <PLA_ColonistInVehicle>Colonist in vehicle</PLA_ColonistInVehicle>
+    <PLA_FoodAteInTheVehicle>{0} has ate the {1} in the vehicle</PLA_FoodAteInTheVehicle>
+    <PLA_DrugUsedTheVehicle>{0} has used the {1} in the vehicle</PLA_DrugUsedTheVehicle>
 </LanguageData>

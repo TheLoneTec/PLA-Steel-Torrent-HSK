@@ -2,13 +2,13 @@
 <Defs>
   <ThingDef ParentName="PLA_BaseVehicle">
     <defName>PLA_ZTZ99ATank</defName>
-    <label>ZTZ-99A main battle tank</label>
+    <label>ZTZ-99A MBT</label>
     <description>A main battle tank with 125mm cannon.</description>
     <statBases>
       <MarketValue>400000</MarketValue>
       <MoveSpeed>4</MoveSpeed>
       <ArmorRating_Blunt>2</ArmorRating_Blunt>
-      <ArmorRating_Sharp>1.4</ArmorRating_Sharp>
+      <ArmorRating_Sharp>1.45</ArmorRating_Sharp>
       <PsychicSensitivity>0</PsychicSensitivity>
       <CaravanRidingSpeedFactor>4</CaravanRidingSpeedFactor>
       <CarryingCapacity>2000</CarryingCapacity>
@@ -31,14 +31,19 @@
       <body>PLA_VehicleTank</body>
     </race>
     <butcherProducts>
-      <Steel>2300</Steel>
-      <Plasteel>500</Plasteel>
+      <Steel>3000</Steel>
+      <Plasteel>750</Plasteel>
+      <ComponentIndustrial>37</ComponentIndustrial>
+      <ComponentSpacer>3</ComponentSpacer>
     </butcherProducts>
     <killedLeavings>
       <Steel>750</Steel>
       <Plasteel>310</Plasteel>
     </killedLeavings>
     <comps>
+      <li Class="PLA.Vehicle.CompProperties_SoundLoop">
+        <sound>PLA_VehicleEngine_Ambience</sound>
+      </li>
       <li Class="PLA.Vehicle.CompProperties_VehicleWeapon">
         <turretRotationFollowPawn>true</turretRotationFollowPawn>
         <defaultWeapon>PLA_TurretGun99A</defaultWeapon>
@@ -54,6 +59,7 @@
         <showAllowAutoRefuelToggle>false</showAllowAutoRefuelToggle>
         <autoRefuelPercent>0.75</autoRefuelPercent>
         <initialFuelPercent>1</initialFuelPercent>
+        <consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
       </li>
     </comps>
     <uiIconPath>Vehicles/ZTZ99A/Icon_ZTZ99A</uiIconPath>
@@ -62,6 +68,14 @@
         <allowVechicleInCaravan>true</allowVechicleInCaravan>
         <carryWeightInCaravan>400</carryWeightInCaravan>
         <explosionRadius>5</explosionRadius>
+        <durability>11000</durability>
+        <pawnCapacity>4</pawnCapacity>
+        <driverRequired>1</driverRequired>
+        <gunnerRequired>1</gunnerRequired>
+        <soundEnter>PLA_VehicleDoor</soundEnter>
+        <soundLeave>PLA_VehicleDoor</soundLeave>
+        <restEffectiveness>0.7</restEffectiveness>
+        <comfort>0.6</comfort>
       </li>
     </modExtensions>
   </ThingDef>

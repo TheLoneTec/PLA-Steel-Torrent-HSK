@@ -1,5 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
+  <PLA_ResearchVehicle_Basic.label>无人载具基础</PLA_ResearchVehicle_Basic.label>
+  <PLA_ResearchVehicle_Basic.description>无人载具基础。</PLA_ResearchVehicle_Basic.description>
+
   <PLA_ResearchVehicle_Lynx.label>山猫全地形车</PLA_ResearchVehicle_Lynx.label>
   <PLA_ResearchVehicle_Lynx.description>允许建造山猫全地形车。</PLA_ResearchVehicle_Lynx.description>
 

@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!-- ==================== AmmoSet ========================== -->
+
+	<CombatExtended.AmmoSetDef>
+		<defName>AmmoSet_58x42mmDBP10Temp</defName>
+		<label>5.8x42mm DBP10</label>
+		<ammoTypes>
+			<Ammo_58x42mmDBP10_FMJ>Bullet_58x42mmDBP10_FMJ</Ammo_58x42mmDBP10_FMJ>
+			<!--<Ammo_58x42mmDBP10_AP>Bullet_58x42mmDBP10_AP</Ammo_58x42mmDBP10_AP>
+			<Ammo_58x42mmDBP10_HP>Bullet_58x42mmDBP10_HP</Ammo_58x42mmDBP10_HP>
+		    <Ammo_58x42mmDBP10_Incendiary>Bullet_58x42mmDBP10_Incendiary</Ammo_58x42mmDBP10_Incendiary>
+			<Ammo_58x42mmDBP10_HE>Bullet_58x42mmDBP10_HE</Ammo_58x42mmDBP10_HE>
+			<Ammo_58x42mmDBP10_Sabot>Bullet_58x42mmDBP10_Sabot</Ammo_58x42mmDBP10_Sabot>	-->		
+		</ammoTypes>
+	</CombatExtended.AmmoSetDef>
+
+</Defs>

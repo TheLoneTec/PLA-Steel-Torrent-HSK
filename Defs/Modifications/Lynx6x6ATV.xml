@@ -18,9 +18,11 @@
         <statBases>
             <Mass>41</Mass>
         </statBases>
-		<researchPrerequisites>
-			<li>PLA_ResearchVehicle_Lynx</li>
-		</researchPrerequisites>
+        <recipeMaker>
+            <researchPrerequisites>
+                <li>PLA_ResearchVehicle_Lynx</li>
+            </researchPrerequisites>
+        </recipeMaker>
     </ThingDef>
 
     <RecipeDef ParentName="PLA_RecipeInstallVehicleWeapon">
@@ -59,9 +61,9 @@
                 <weaponToInstall>PLA_Gun23mmAutocannon</weaponToInstall>
             </li>
         </modExtensions>
-		<researchPrerequisite>
+		<researchPrerequisites>
 			<li>PLA_ResearchVehicle_VehicleModification</li>
-		</researchPrerequisite>
+		</researchPrerequisites>
     </RecipeDef>
 
     <!-- 40mm CT-->
@@ -82,9 +84,11 @@
         <statBases>
             <Mass>41</Mass>
         </statBases>
-		<researchPrerequisites>
-			<li>PLA_ResearchVehicle_Lynx</li>
-		</researchPrerequisites>
+        <recipeMaker>
+            <researchPrerequisites>
+                <li>PLA_ResearchVehicle_Lynx</li>
+            </researchPrerequisites>
+        </recipeMaker>
     </ThingDef>
 
     <RecipeDef ParentName="PLA_RecipeInstallVehicleWeapon">
@@ -123,9 +127,9 @@
                 <weaponToInstall>PLA_Gun40mmCannon</weaponToInstall>
             </li>
         </modExtensions>
-		<researchPrerequisite>
+		<researchPrerequisites>
 			<li>PLA_ResearchVehicle_VehicleModification</li>
-		</researchPrerequisite>
+		</researchPrerequisites>
     </RecipeDef>
 
     <!-- 107mm rocket-->
@@ -146,9 +150,11 @@
         <statBases>
             <Mass>41</Mass>
         </statBases>
-		<researchPrerequisites>
-			<li>PLA_ResearchVehicle_Lynx</li>
-		</researchPrerequisites>
+        <recipeMaker>
+            <researchPrerequisites>
+                <li>PLA_ResearchVehicle_Lynx</li>
+            </researchPrerequisites>
+        </recipeMaker>
     </ThingDef>
 
     <RecipeDef ParentName="PLA_RecipeInstallVehicleWeapon">
@@ -187,8 +193,8 @@
                 <weaponToInstall>PLA_Gun107mmRocketLauncher</weaponToInstall>
             </li>
         </modExtensions>
-		<researchPrerequisite>
+		<researchPrerequisites>
 			<li>PLA_ResearchVehicle_VehicleModification</li>
-		</researchPrerequisite>
+		</researchPrerequisites>
     </RecipeDef>
 </Defs>

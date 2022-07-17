@@ -7,18 +7,20 @@
 		<workType>Construction</workType>
 		<priorityInType>41</priorityInType>
 		<fixedBillGiverDefs>
+			<li>PLA_TurretDrone</li>
+			<li>PLA_Lynx6x6UltraLight</li>
 			<li>PLA_CSZ181OffRoad</li>
-            <li>PLA_Lynx6x6UltraLight</li>
-            <li>PLA_ZTZ99ATank</li>
+			<li>PLA_VP22Truck</li>
+			<li>PLA_ZTZ99ATank</li>
 			<li>PLA_ZTL11IFV</li>
 		</fixedBillGiverDefs>
 		<verb>modify</verb>
 		<gerund>modifying</gerund>
 		<requiredCapacities>
-		  <li>Manipulation</li>
+			<li>Manipulation</li>
 		</requiredCapacities>
 		<prioritizeSustains>true</prioritizeSustains>
-	  </WorkGiverDef>
+	</WorkGiverDef>
 
 	<WorkGiverDef>
 		<defName>PLA_WorkGiverRepairVehicle</defName>
@@ -38,5 +40,32 @@
 		<defName>PLA_RepairVehicle</defName>
 		<driverClass>PLA.Vehicle.JobDriver_RepairVehicle</driverClass>
 		<reportString>Repairing vehicle.</reportString>
+	</JobDef>
+
+	<!-- enter vehicle -->
+
+	<!--WorkGiverDef>
+		<defName>PLA_WorkGiverEnterVehicle</defName>
+		<label>enter vehicle</label>
+		<giverClass>PLA.Vehicle.WorkGiver_EnterVehicle</giverClass>
+		<verb>enter</verb>
+		<gerund>entering</gerund>
+		<workType>Handling</workType>
+		<requiredCapacities>
+			<li>Manipulation</li>
+		</requiredCapacities>
+		<nonColonistsCanDo>true</nonColonistsCanDo>
+	</WorkGiverDef-->
+
+	<JobDef>
+		<defName>PLA_EnterVehicle</defName>
+		<driverClass>PLA.Vehicle.JobDriver_EnterVehicle</driverClass>
+		<reportString>entering vehicle.</reportString>
+	</JobDef>
+
+	<JobDef>
+		<defName>PLA_ReturnToParkingLot</defName>
+		<driverClass>PLA.Vehicle.JobDriver_ReturnToParkingLot</driverClass>
+		<reportString>return to parking lot.</reportString>
 	</JobDef>
 </Defs>

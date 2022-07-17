@@ -17,9 +17,11 @@
         <statBases>
             <Mass>41</Mass>
         </statBases>
-		<researchPrerequisites>
-			<li>PLA_ResearchVehicle_CSZ181OffRoad</li>
-		</researchPrerequisites>
+        <recipeMaker>
+            <researchPrerequisites>
+                <li>PLA_ResearchVehicle_CSZ181OffRoad</li>
+            </researchPrerequisites>
+        </recipeMaker>
     </ThingDef>
 
     <RecipeDef ParentName="PLA_RecipeInstallVehicleWeapon">
@@ -79,9 +81,11 @@
         <statBases>
             <Mass>41</Mass>
         </statBases>
-		<researchPrerequisites>
-			<li>PLA_ResearchVehicle_CSZ181OffRoad</li>
-		</researchPrerequisites>
+        <recipeMaker>
+            <researchPrerequisites>
+                <li>PLA_ResearchVehicle_CSZ181OffRoad</li>
+            </researchPrerequisites>
+        </recipeMaker>
     </ThingDef>
     <RecipeDef ParentName="PLA_RecipeInstallVehicleWeapon">
         <defName>PLA_InstallWeapon04GL</defName>
@@ -141,9 +145,11 @@
         <statBases>
             <Mass>41</Mass>
         </statBases>
-		<researchPrerequisites>
-			<li>PLA_ResearchVehicle_CSZ181OffRoad</li>
-		</researchPrerequisites>
+        <recipeMaker>
+            <researchPrerequisites>
+                <li>PLA_ResearchVehicle_CSZ181OffRoad</li>
+            </researchPrerequisites>
+        </recipeMaker>
     </ThingDef>
     <RecipeDef ParentName="PLA_RecipeInstallVehicleWeapon">
         <defName>PLA_InstallWeapon30mmAutocannon</defName>

@@ -2,12 +2,12 @@
 <Defs>
   <ThingDef ParentName="PLA_BaseVehicle">
     <defName>PLA_Lynx6x6UltraLight</defName>
-    <label>Lynx 6x6 all-terrain vehicle</label>
+    <label>Lynx 6x6 ATV</label>
     <description>A vehicle lightweight multi-purpose all-terrain vehicle developed by NORINCO. it was proposed to mount various artillery and rocket weapons on it.</description>
     <statBases>
       <MarketValue>50000</MarketValue>
       <MoveSpeed>5</MoveSpeed>
-      <ArmorRating_Blunt>0.9</ArmorRating_Blunt>
+      <ArmorRating_Blunt>1.1</ArmorRating_Blunt>
       <ArmorRating_Sharp>0.7</ArmorRating_Sharp>
       <PsychicSensitivity>0</PsychicSensitivity>
       <CaravanRidingSpeedFactor>5</CaravanRidingSpeedFactor>
@@ -31,14 +31,19 @@
       <body>PLA_VehicleTank</body>
     </race>
     <butcherProducts>
-      <Steel>450</Steel>
-      <Plasteel>120</Plasteel>
+      <Steel>600</Steel>
+      <Plasteel>75</Plasteel>
+      <ComponentIndustrial>9</ComponentIndustrial>
+      <ComponentSpacer>3</ComponentSpacer>
     </butcherProducts>
     <killedLeavings>
       <Steel>225</Steel>
       <Plasteel>70</Plasteel>
     </killedLeavings>
     <comps>
+      <li Class="PLA.Vehicle.CompProperties_SoundLoop">
+        <sound>PLA_VehicleEngine_Ambience</sound>
+      </li>
       <li Class="PLA.Vehicle.CompProperties_VehicleWeapon">
         <turretRotationFollowPawn>true</turretRotationFollowPawn>
         <defaultWeapon>PLA_Gun23mmAutocannon</defaultWeapon>
@@ -61,6 +66,7 @@
       <li Class="PLA.Vehicle.VehicleExtension">
         <allowVechicleInCaravan>true</allowVechicleInCaravan>
         <carryWeightInCaravan>400</carryWeightInCaravan>
+        <durability>4000</durability>
       </li>
     </modExtensions>
   </ThingDef>

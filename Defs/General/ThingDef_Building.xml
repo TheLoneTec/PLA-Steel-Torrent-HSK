@@ -1,6 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Defs>
     <ThingDef ParentName="BuildingBase">
+        <defName>PLA_BuildingTurretDrone</defName>
+        <label>turret drone</label>
+        <description>A drone with 5.8mm machine gun turret.</description>
+        <graphicData>
+            <texPath>Vehicles/TurretDrone/TurretDrone</texPath>
+            <graphicClass>Graphic_Multi</graphicClass>
+            <drawSize>2</drawSize>
+        </graphicData>
+        <statBases>
+            <WorkToBuild>1000</WorkToBuild>
+        </statBases>
+        <tickerType>Normal</tickerType>
+        <rotatable>true</rotatable>
+        <costList>
+            <Steel>320</Steel>
+            <Chemfuel>60</Chemfuel>
+            <ComponentIndustrial>4</ComponentIndustrial>
+            <ComponentSpacer>1</ComponentSpacer>
+        </costList>
+        <designationCategory>Ship</designationCategory>
+        <researchPrerequisites>
+            <li>PLA_ResearchVehicle_Basic</li>
+        </researchPrerequisites>
+        <comps>
+            <li Class="PLA.Vehicle.CompProperties_BuildingToVehicle">
+                <vehicle>PLA_TurretDrone</vehicle>
+            </li>
+        </comps>
+        <uiIconPath>Vehicles/TurretDrone/Icon_TurretDrone</uiIconPath>
+    </ThingDef>
+
+    <ThingDef ParentName="BuildingBase">
         <defName>PLA_BuildingLynx6x6UL</defName>
         <label>Lynx6x6 ultra light</label>
         <description>A vehicle lightweight multi-purpose all-terrain vehicle developed by NORINCO. it was proposed to mount various artillery and rocket weapons on it.</description>
@@ -16,12 +48,12 @@
         <rotatable>true</rotatable>
         <costList>
             <Steel>800</Steel>
-            <Plasteel>200</Plasteel>
+            <Plasteel>100</Plasteel>
             <Chemfuel>210</Chemfuel>
             <ComponentIndustrial>12</ComponentIndustrial>
             <ComponentSpacer>4</ComponentSpacer>
         </costList>
-        <designationCategory>PLA_DesignationCategory_Vehicle</designationCategory>
+        <designationCategory>Ship</designationCategory>
         <researchPrerequisites>
             <li>PLA_ResearchVehicle_Lynx</li>
         </researchPrerequisites>
@@ -50,12 +82,12 @@
         <rotatable>true</rotatable>
         <costList>
             <Steel>2000</Steel>
-            <Plasteel>500</Plasteel>
+            <Plasteel>300</Plasteel>
             <Chemfuel>300</Chemfuel>
             <ComponentIndustrial>32</ComponentIndustrial>
             <ComponentSpacer>4</ComponentSpacer>
         </costList>
-        <designationCategory>PLA_DesignationCategory_Vehicle</designationCategory>
+        <designationCategory>Ship</designationCategory>
         <researchPrerequisites>
             <li>PLA_ResearchVehicle_CSZ181OffRoad</li>
         </researchPrerequisites>
@@ -83,13 +115,13 @@
         <tickerType>Normal</tickerType>
         <rotatable>true</rotatable>
         <costList>
-            <Steel>3400</Steel>
-            <Plasteel>700</Plasteel>
+            <Steel>3200</Steel>
+            <Plasteel>400</Plasteel>
             <Chemfuel>450</Chemfuel>
             <ComponentIndustrial>40</ComponentIndustrial>
             <ComponentSpacer>4</ComponentSpacer>
         </costList>
-        <designationCategory>PLA_DesignationCategory_Vehicle</designationCategory>
+        <designationCategory>Ship</designationCategory>
         <researchPrerequisites>
             <li>PLA_ResearchVehicle_VP22Truck</li>
         </researchPrerequisites>
@@ -123,7 +155,7 @@
             <ComponentIndustrial>40</ComponentIndustrial>
             <ComponentSpacer>4</ComponentSpacer>
         </costList>
-        <designationCategory>PLA_DesignationCategory_Vehicle</designationCategory>
+        <designationCategory>Ship</designationCategory>
         <researchPrerequisites>
             <li>PLA_ResearchVehicle_ZTL11IFV</li>
         </researchPrerequisites>
@@ -157,7 +189,7 @@
             <ComponentIndustrial>50</ComponentIndustrial>
             <ComponentSpacer>4</ComponentSpacer>
         </costList>
-        <designationCategory>PLA_DesignationCategory_Vehicle</designationCategory>
+        <designationCategory>Ship</designationCategory>
         <researchPrerequisites>
             <li>PLA_ResearchVehicle_ZTZ99A</li>
         </researchPrerequisites>
@@ -188,7 +220,7 @@
         <scatterableOnMapGen>false</scatterableOnMapGen>
         <useHitPoints>false</useHitPoints>
         <size>(1,1)</size>
-        <designationCategory>PLA_DesignationCategory_Vehicle</designationCategory>
+        <designationCategory>Ship</designationCategory>
         <passability>Standable</passability>
         <!--hasInteractionCell>True</hasInteractionCell>
         <interactionCellOffset>(0,0,-1)</interactionCellOffset-->

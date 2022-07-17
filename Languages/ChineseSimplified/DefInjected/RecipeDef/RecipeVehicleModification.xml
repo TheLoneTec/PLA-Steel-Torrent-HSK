@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
 
+  <PLA_DismantleVehicle.label>拆解</PLA_DismantleVehicle.label>
+  <PLA_DismantleVehicle.description>拆解载具并回收资源</PLA_DismantleVehicle.description>
+  <PLA_DismantleVehicle.jobString>拆解载具</PLA_DismantleVehicle.jobString>
+
   <PLA_InstallAdvancedFireControlComputer.label>安装高级火控计算机</PLA_InstallAdvancedFireControlComputer.label>
   <PLA_InstallAdvancedFireControlComputer.labelNoun>安装高级火控计算机</PLA_InstallAdvancedFireControlComputer.labelNoun>
 
