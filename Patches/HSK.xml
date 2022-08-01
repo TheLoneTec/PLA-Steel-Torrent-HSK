@@ -18,6 +18,7 @@
 						<description>Vehicles and Tanks for combat and travel.</description>
 						<defNames>
 							<li>PLA_ParkingLot</li>
+							<li>PLA_BuildingTurretDrone</li>
 							<li>PLA_BuildingLynx6x6UL</li>
 							<li>PLA_BuildingCSZ181OffRoad</li>
 							<li>PLA_BuildingVP22Truck</li>
@@ -1524,6 +1525,699 @@
 						<li>Powder</li>
 					</thingDefs>
 				</fixedIngredientFilter>
+				</value>
+			</li>
+
+				<!-- ========== 58x42mmDBP10 ========== -->
+				
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/RecipeDef[defName="MakeAmmo_58x42mmDBP10_FMJ"]</xpath>
+				<value>
+					<researchPrerequisite>Range_C2</researchPrerequisite>
+				</value>
+			</li>
+		
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/RecipeDef[defName="MakeAmmo_58x42mmDBP10_FMJ"]/ingredients</xpath>
+				<value>
+				<ingredients>
+					<li>
+						<filter>
+							<categories>
+								<li>SLDBar</li>
+								<li>USLDBar</li>
+							</categories>
+						</filter>
+						<count>110</count>
+					</li>
+					<li>
+						<filter>
+							<categories>
+								<li>HeavyBar</li>
+							</categories>
+						</filter>
+						<count>30</count>
+					</li>
+					<li>
+						<filter>
+							<thingDefs>
+								<li>Powder</li>
+							</thingDefs>
+						</filter>
+						<count>30</count>
+					</li>
+				</ingredients>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/RecipeDef[defName="MakeAmmo_58x42mmDBP10_FMJ"]/fixedIngredientFilter</xpath>
+				<value>
+				<fixedIngredientFilter>
+					<categories>
+						<li>SLDBar</li>
+						<li>USLDBar</li>
+						<li>HeavyBar</li>
+					</categories>
+					<thingDefs>
+						<li>Powder</li>
+					</thingDefs>
+				</fixedIngredientFilter>
+				</value>
+			</li>
+		
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/RecipeDef[defName="MakeAmmo_58x42mmDBP10_Incendiary"]</xpath>
+				<value>
+					<researchPrerequisite>Range_C2</researchPrerequisite>
+				</value>
+			</li>
+
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/RecipeDef[defName="MakeAmmo_58x42mmDBP10_Incendiary"]/ingredients</xpath>
+				<value>
+				<ingredients>
+					<li>
+						<filter>
+							<categories>
+								<li>SLDBar</li>
+								<li>USLDBar</li>
+							</categories>
+						</filter>
+						<count>110</count>
+					</li>
+					<li>
+						<filter>
+							<categories>
+								<li>HeavyBar</li>
+							</categories>
+						</filter>
+						<count>30</count>
+					</li>
+					<li>
+						<filter>
+							<thingDefs>
+								<li>Prometheum</li>
+							</thingDefs>
+						</filter>
+						<count>12</count>
+					</li>
+					<li>
+						<filter>
+							<thingDefs>
+								<li>Powder</li>
+							</thingDefs>
+						</filter>
+						<count>30</count>
+					</li>
+				</ingredients>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/RecipeDef[defName="MakeAmmo_58x42mmDBP10_Incendiary"]/fixedIngredientFilter</xpath>
+				<value>
+				<fixedIngredientFilter>
+					<categories>
+						<li>SLDBar</li>
+						<li>USLDBar</li>
+						<li>HeavyBar</li>
+					</categories>
+					<thingDefs>
+						<li>Powder</li>
+						<li>Prometheum</li>
+					</thingDefs>
+				</fixedIngredientFilter>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/RecipeDef[defName="MakeAmmo_58x42mmDBP10_HE"]</xpath>
+				<value>
+					<researchPrerequisite>Range_C2</researchPrerequisite>
+				</value>
+			</li>
+		
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/RecipeDef[defName="MakeAmmo_58x42mmDBP10_HE"]/ingredients</xpath>
+				<value>
+				<ingredients>
+					<li>
+						<filter>
+							<categories>
+								<li>SLDBar</li>
+								<li>USLDBar</li>
+							</categories>
+						</filter>
+						<count>110</count>
+					</li>
+					<li>
+						<filter>
+							<categories>
+								<li>USLDHBar</li>
+							</categories>
+						</filter>
+						<count>30</count>
+					</li>
+					<li>
+						<filter>
+							<thingDefs>
+								<li>FSX</li>
+							</thingDefs>
+						</filter>
+						<count>12</count>
+					</li>
+					<li>
+						<filter>
+							<thingDefs>
+								<li>Powder</li>
+							</thingDefs>
+						</filter>
+						<count>30</count>
+					</li>
+				</ingredients>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/RecipeDef[defName="MakeAmmo_58x42mmDBP10_HE"]/fixedIngredientFilter</xpath>
+				<value>
+				<fixedIngredientFilter>
+					<categories>
+						<li>SLDBar</li>
+						<li>USLDBar</li>
+						<li>USLDHBar</li>
+						<li>HeavyBar</li>
+					</categories>
+					<thingDefs>
+						<li>Powder</li>
+						<li>FSX</li>
+					</thingDefs>
+				</fixedIngredientFilter>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/RecipeDef[defName="MakeAmmo_58x42mmDBP10_Sabot"]</xpath>
+				<value>
+					<researchPrerequisite>Range_C2</researchPrerequisite>
+				</value>
+			</li>
+		
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/RecipeDef[defName="MakeAmmo_58x42mmDBP10_Sabot"]/ingredients</xpath>
+				<value>
+				<ingredients>
+					<li>
+						<filter>
+							<categories>
+								<li>SLDBar</li>
+								<li>USLDBar</li>
+							</categories>
+						</filter>
+						<count>110</count>
+					</li>
+					<li>
+						<filter>
+							<categories>
+								<li>USLDHBar</li>
+							</categories>
+						</filter>
+						<count>60</count>
+					</li>
+					<li>
+						<filter>
+							<thingDefs>
+								<li>Powder</li>
+							</thingDefs>
+						</filter>
+						<count>30</count>
+					</li>
+				</ingredients>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/RecipeDef[defName="MakeAmmo_58x42mmDBP10_Sabot"]/fixedIngredientFilter</xpath>
+				<value>
+				<fixedIngredientFilter>
+					<categories>
+						<li>SLDBar</li>
+						<li>USLDBar</li>
+						<li>USLDHBar</li>
+					</categories>
+					<thingDefs>
+						<li>Powder</li>
+					</thingDefs>
+				</fixedIngredientFilter>
+				</value>
+			</li>
+
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/RecipeDef[defName="MakeAmmo_58x42mmDBP10_HP"]</xpath>
+				<value>
+					<researchPrerequisite>Range_C2</researchPrerequisite>
+				</value>
+			</li>
+		
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/RecipeDef[defName="MakeAmmo_58x42mmDBP10_HP"]/ingredients</xpath>
+				<value>
+				<ingredients>
+					<li>
+						<filter>
+							<categories>
+								<li>SLDBar</li>
+								<li>HeavyBar</li>
+							</categories>
+							<thingDefs>
+								<li>Plastic</li>
+							</thingDefs>
+						</filter>
+						<count>45</count>
+					</li>
+					<li>
+						<filter>
+							<categories>
+								<li>HeavyBar</li>
+							</categories>
+						</filter>
+						<count>85</count>
+					</li>
+					<li>
+						<filter>
+							<thingDefs>
+								<li>Powder</li>
+							</thingDefs>
+						</filter>
+						<count>30</count>
+					</li>
+				</ingredients>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/RecipeDef[defName="MakeAmmo_58x42mmDBP10_HP"]/fixedIngredientFilter</xpath>
+				<value>
+				<fixedIngredientFilter>
+					<categories>
+						<li>SLDBar</li>
+						<li>HeavyBar</li>
+					</categories>
+					<thingDefs>
+						<li>Powder</li>
+					</thingDefs>
+				</fixedIngredientFilter>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/RecipeDef[defName="MakeAmmo_58x42mmDBP10_AP"]</xpath>
+				<value>
+					<researchPrerequisite>Range_C2</researchPrerequisite>
+				</value>
+			</li>
+		
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/RecipeDef[defName="MakeAmmo_58x42mmDBP10_AP"]/ingredients</xpath>
+				<value>
+				<ingredients>
+					<li>
+						<filter>
+							<categories>
+								<li>SLDBar</li>
+								<li>USLDBar</li>
+							</categories>
+						</filter>
+						<count>110</count>
+					</li>
+					<li>
+						<filter>
+							<categories>
+								<li>USLDHBar</li>
+								<li>Ceramic</li>
+							</categories>
+						</filter>
+						<count>30</count>
+					</li>
+					<li>
+						<filter>
+							<thingDefs>
+								<li>Powder</li>
+							</thingDefs>
+						</filter>
+						<count>30</count>
+					</li>
+				</ingredients>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/RecipeDef[defName="MakeAmmo_58x42mmDBP10_AP"]/fixedIngredientFilter</xpath>
+				<value>
+				<fixedIngredientFilter>
+					<categories>
+						<li>SLDBar</li>
+						<li>USLDBar</li>
+						<li>USLDHBar</li>
+						<li>Ceramic</li>
+					</categories>
+					<thingDefs>
+						<li>Powder</li>
+					</thingDefs>
+				</fixedIngredientFilter>
+				</value>
+			</li>
+
+				<!-- ========== 127 x 108mm Soviet ========== -->
+				
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/RecipeDef[defName="MakeAmmo_127x108mm_FMJ"]</xpath>
+				<value>
+					<researchPrerequisite>Range_C2</researchPrerequisite>
+				</value>
+			</li>
+		
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/RecipeDef[defName="MakeAmmo_127x108mm_FMJ"]/ingredients</xpath>
+				<value>
+				<ingredients>
+					<li>
+						<filter>
+							<categories>
+								<li>SLDBar</li>
+								<li>USLDBar</li>
+							</categories>
+						</filter>
+						<count>50</count>
+					</li>
+					<li>
+						<filter>
+							<categories>
+								<li>HeavyBar</li>
+							</categories>
+						</filter>
+						<count>20</count>
+					</li>
+					<li>
+						<filter>
+							<thingDefs>
+								<li>Powder</li>
+							</thingDefs>
+						</filter>
+						<count>10</count>
+					</li>
+					<li>
+						<filter>
+							<thingDefs>
+								<li>ComponentIndustrial</li>
+							</thingDefs>
+						</filter>
+						<count>3</count>
+					</li>
+				</ingredients>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/RecipeDef[defName="MakeAmmo_127x108mm_FMJ"]/fixedIngredientFilter</xpath>
+				<value>
+				<fixedIngredientFilter>
+					<categories>
+						<li>SLDBar</li>
+						<li>USLDBar</li>
+						<li>HeavyBar</li>
+					</categories>
+					<thingDefs>
+						<li>Powder</li>
+					</thingDefs>
+				</fixedIngredientFilter>
+				</value>
+			</li>
+		
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/RecipeDef[defName="MakeAmmo_127x108mm_Incendiary"]</xpath>
+				<value>
+					<researchPrerequisite>Range_C2</researchPrerequisite>
+				</value>
+			</li>
+
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/RecipeDef[defName="MakeAmmo_127x108mm_Incendiary"]/ingredients</xpath>
+				<value>
+				<ingredients>
+					<li>
+						<filter>
+							<categories>
+								<li>SLDBar</li>
+								<li>USLDBar</li>
+							</categories>
+						</filter>
+						<count>50</count>
+					</li>
+					<li>
+						<filter>
+							<categories>
+								<li>HeavyBar</li>
+							</categories>
+						</filter>
+						<count>20</count>
+					</li>
+					<li>
+						<filter>
+							<thingDefs>
+								<li>Prometheum</li>
+							</thingDefs>
+						</filter>
+						<count>14</count>
+					</li>
+					<li>
+						<filter>
+							<thingDefs>
+								<li>Powder</li>
+							</thingDefs>
+						</filter>
+						<count>10</count>
+					</li>
+				</ingredients>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/RecipeDef[defName="MakeAmmo_127x108mm_Incendiary"]/fixedIngredientFilter</xpath>
+				<value>
+				<fixedIngredientFilter>
+					<categories>
+						<li>SLDBar</li>
+						<li>USLDBar</li>
+						<li>HeavyBar</li>
+					</categories>
+					<thingDefs>
+						<li>Powder</li>
+						<li>Prometheum</li>
+					</thingDefs>
+				</fixedIngredientFilter>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/RecipeDef[defName="MakeAmmo_127x108mm_HE"]</xpath>
+				<value>
+					<researchPrerequisite>Range_C2</researchPrerequisite>
+				</value>
+			</li>
+		
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/RecipeDef[defName="MakeAmmo_127x108mm_HE"]/ingredients</xpath>
+				<value>
+				<ingredients>
+					<li>
+						<filter>
+							<categories>
+								<li>SLDBar</li>
+								<li>USLDBar</li>
+							</categories>
+						</filter>
+						<count>50</count>
+					</li>
+					<li>
+						<filter>
+							<categories>
+								<li>USLDHBar</li>
+							</categories>
+						</filter>
+						<count>20</count>
+					</li>
+					<li>
+						<filter>
+							<thingDefs>
+								<li>FSX</li>
+							</thingDefs>
+						</filter>
+						<count>14</count>
+					</li>
+					<li>
+						<filter>
+							<thingDefs>
+								<li>Powder</li>
+							</thingDefs>
+						</filter>
+						<count>10</count>
+					</li>
+				</ingredients>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/RecipeDef[defName="MakeAmmo_127x108mm_HE"]/fixedIngredientFilter</xpath>
+				<value>
+				<fixedIngredientFilter>
+					<categories>
+						<li>SLDBar</li>
+						<li>USLDBar</li>
+						<li>USLDHBar</li>
+						<li>HeavyBar</li>
+					</categories>
+					<thingDefs>
+						<li>Powder</li>
+						<li>FSX</li>
+					</thingDefs>
+				</fixedIngredientFilter>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/RecipeDef[defName="MakeAmmo_127x108mm_Sabot"]</xpath>
+				<value>
+					<researchPrerequisite>Range_C2</researchPrerequisite>
+				</value>
+			</li>
+		
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/RecipeDef[defName="MakeAmmo_127x108mm_Sabot"]/ingredients</xpath>
+				<value>
+				<ingredients>
+					<li>
+						<filter>
+							<categories>
+								<li>SLDBar</li>
+								<li>USLDBar</li>
+							</categories>
+						</filter>
+						<count>35</count>
+					</li>
+					<li>
+						<filter>
+							<categories>
+								<li>USLDHBar</li>
+							</categories>
+						</filter>
+						<count>30</count>
+					</li>
+					<li>
+						<filter>
+							<thingDefs>
+								<li>Powder</li>
+							</thingDefs>
+						</filter>
+						<count>8</count>
+					</li>
+				</ingredients>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/RecipeDef[defName="MakeAmmo_127x108mm_Sabot"]/fixedIngredientFilter</xpath>
+				<value>
+				<fixedIngredientFilter>
+					<categories>
+						<li>SLDBar</li>
+						<li>USLDBar</li>
+						<li>USLDHBar</li>
+					</categories>
+					<thingDefs>
+						<li>Powder</li>
+					</thingDefs>
+				</fixedIngredientFilter>
+				</value>
+			</li>
+
+				<!-- ========== Turret Drone ========== -->
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="PLA_BuildingTurretDrone"]/costList</xpath>
+				<value>
+				<costList>
+					<Wire>15</Wire>
+					<Mechanism>3</Mechanism>
+					<ElectronicComponents>2</ElectronicComponents>
+					<Rubber>35</Rubber>
+					<ReinforcedGlass>16</ReinforcedGlass>
+					<PLA_VehicleWeapon89HMG>1</PLA_VehicleWeapon89HMG>
+					<ComponentIndustrial>4</ComponentIndustrial>
+					<ComponentSpacer>2</ComponentSpacer>
+				</costList>
+				</value>
+			</li>
+
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/ThingDef[defName = "PLA_BuildingTurretDrone"]</xpath>
+				<value>
+					<stuffCategories>
+						<li>Metallic</li>
+						<li>SolidMetallic</li>
+						<li>RuggedMetallic</li>
+					</stuffCategories>
+					<costStuffCount>350</costStuffCount>
+				</value>
+			</li>
+
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="PLA_BuildingTurretDrone"]/designationCategory</xpath>
+				<value>
+				<designationCategory>Ship</designationCategory>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="PLA_TurretDrone"]/comps/li[@Class="CompProperties_Refuelable"]/initialFuelPercent</xpath>
+				<value>
+				<initialFuelPercent>0</initialFuelPercent>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="PLA_TurretDrone"]/comps/li[@Class="CompProperties_Refuelable"]/showAllowAutoRefuelToggle</xpath>
+				<value>
+				<showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="PLA_TurretDrone"]/butcherProducts</xpath>
+				<value>
+				<butcherProducts>
+					<Wire>10</Wire>
+					<Mechanism>2</Mechanism>
+					<ElectronicComponents>1</ElectronicComponents>
+					<Rubber>25</Rubber>
+					<ReinforcedGlass>12</ReinforcedGlass>
+					<PLA_VehicleWeapon89HMG>1</PLA_VehicleWeapon89HMG>
+					<ComponentIndustrial>2</ComponentIndustrial>
+					<ComponentSpacer>1</ComponentSpacer>
+				</butcherProducts>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="PLA_TurretDrone"]/killedLeavings</xpath>
+				<value>
+				<killedLeavings>
+					<Wire>5</Wire>
+					<Mechanism>1</Mechanism>
+					<Rubber>10</Rubber>
+					<ReinforcedGlass>6</ReinforcedGlass>
+					<ComponentIndustrial>1</ComponentIndustrial>
+				</killedLeavings>
 				</value>
 			</li>
 
