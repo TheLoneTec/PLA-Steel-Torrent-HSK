@@ -10,8 +10,8 @@
 
 				<!-- ========== 23mm AutoCannon ========== -->
 
-			<li Class="PatchOperationAdd">
-				<xpath>Defs/ThingDef[defName="PLA_VehicleWeapon23mmAutocannon"]</xpath>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="PLA_VehicleWeapon23mmAutocannon"]/recipeMaker</xpath>
 				<value>
 				<recipeMaker>
 					<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
@@ -59,8 +59,8 @@
 			
 			<!-- =========== 40mm Cannon ============ -->
 			
-			<li Class="PatchOperationAdd">
-				<xpath>Defs/ThingDef[defName="PLA_VehicleWeapon40mmCannon"]</xpath>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="PLA_VehicleWeapon40mmCannon"]/recipeMaker</xpath>
 				<value>
 				<recipeMaker>
 					<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
@@ -107,8 +107,8 @@
 			
 			<!-- =========== 107mm Rocket Launcher ============ -->
 			
-			<li Class="PatchOperationAdd">
-				<xpath>Defs/ThingDef[defName="PLA_VehicleWeapon107mmRocketLauncher"]</xpath>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="PLA_VehicleWeapon107mmRocketLauncher"]/recipeMaker</xpath>
 				<value>
 				<recipeMaker>
 					<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
@@ -155,8 +155,8 @@
 		
 			<!-- =========== 105mm Cannon ============ -->
 			
-			<li Class="PatchOperationAdd">
-				<xpath>Defs/ThingDef[defName="PLA_VehicleWeapon105mmCannon"]</xpath>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="PLA_VehicleWeapon105mmCannon"]/recipeMaker</xpath>
 				<value>
 				<recipeMaker>
 					<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
@@ -204,8 +204,8 @@
 		
 			<!-- =========== 40mm AutoCannon ============ -->
 			
-			<li Class="PatchOperationAdd">
-				<xpath>Defs/ThingDef[defName="PLA_VehicleWeapon40mmAutoCannon"]</xpath>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="PLA_VehicleWeapon40mmAutoCannon"]/recipeMaker</xpath>
 				<value>
 				<recipeMaker>
 					<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
@@ -252,8 +252,8 @@
 		
 				<!-- ========== 89 HMG ========== -->
 
-			<li Class="PatchOperationAdd">
-				<xpath>Defs/ThingDef[defName="PLA_VehicleWeapon89HMG"]</xpath>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="PLA_VehicleWeapon89HMG"]/recipeMaker</xpath>
 				<value>
 				<recipeMaker>
 					<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
@@ -300,8 +300,8 @@
 		
 			<!-- =========== 04 GL ============ -->
 			
-			<li Class="PatchOperationAdd">
-				<xpath>Defs/ThingDef[defName="PLA_VehicleWeapon04GL"]</xpath>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="PLA_VehicleWeapon04GL"]/recipeMaker</xpath>
 				<value>
 				<recipeMaker>
 					<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
@@ -348,8 +348,8 @@
 		
 			<!-- =========== 30mm AutoCannon ============ -->
 			
-			<li Class="PatchOperationAdd">
-				<xpath>Defs/ThingDef[defName="PLA_VehicleWeapon30mmAutocannon"]</xpath>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="PLA_VehicleWeapon30mmAutocannon"]/recipeMaker</xpath>
 				<value>
 				<recipeMaker>
 					<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
@@ -443,8 +443,8 @@
 
 			<!-- =========== Fire Control Computer ============ -->
 	
-			<li Class="PatchOperationAdd">
-				<xpath>Defs/ThingDef[defName="PLA_AdvancedFireControlComputer"]</xpath>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="PLA_AdvancedFireControlComputer"]/recipeMaker</xpath>
 				<value>
 				<recipeMaker>
 					<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
@@ -494,8 +494,8 @@
 		
 			<!-- =========== FComposite Armor ============ -->
 			
-			<li Class="PatchOperationAdd">
-				<xpath>Defs/ThingDef[defName="PLA_CompositeArmor"]</xpath>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="PLA_CompositeArmor"]/recipeMaker</xpath>
 				<value>
 				<recipeMaker>
 					<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
