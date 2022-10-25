@@ -6,7 +6,7 @@
     </Operation>
 
     <Operation Class="PatchOperationReplace">
-		<xpath>Defs/ThingDef[@Name="PLA_BaseVehiclePawn"]/inspectorTabs/li[.="ITab_Pawn_Gear"]</xpath>
+		<xpath>Defs/ThingDef[@Name="PLA_BaseVehiclePawn"]/inspectorTabs/li[text()="ITab_Pawn_Gear"]</xpath>
 		<value>
 			<li>PLA.CE.Vehicle.ITab_VehicleInventory</li>
 		</value>

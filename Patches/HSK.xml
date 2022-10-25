@@ -167,7 +167,7 @@
 				</fixedIngredientFilter>
 				</value>
 			</li>
-		
+		<!--
 			<li Class="PatchOperationAdd">
 				<xpath>Defs/RecipeDef[defName="MakeAmmo_105mmShell_APFSDS"]</xpath>
 				<value>
@@ -243,7 +243,7 @@
 				</fixedIngredientFilter>
 				</value>
 			</li>	
-			
+			-->
 			<li Class="PatchOperationAdd">
 				<xpath>Defs/RecipeDef[defName="MakeAmmo_125mmShell_HE"]</xpath>
 				<value>
@@ -310,7 +310,7 @@
 				</fixedIngredientFilter>
 				</value>
 			</li>
-	
+	<!--
 			<li Class="PatchOperationAdd">
 				<xpath>Defs/RecipeDef[defName="MakeAmmo_125mmShell_APFSDS"]</xpath>
 				<value>
@@ -393,7 +393,7 @@
 				<damageAmountBase>350</damageAmountBase>
 				</value>
 			</li>	
-		
+		-->
 			<li Class="PatchOperationReplace">
 				<xpath>Defs/ThingDef[defName="Bullet_125mmShell_HE"]/projectile/armorPenetrationSharp</xpath>
 				<value>
@@ -483,7 +483,7 @@
 				</fixedIngredientFilter>
 				</value>
 			</li>	
-	
+	<!--
 			<li Class="PatchOperationAdd">
 				<xpath>Defs/RecipeDef[defName="MakeAmmo_40mmCT_EMP"]</xpath>
 				<value>
@@ -550,7 +550,7 @@
 				</fixedIngredientFilter>
 				</value>
 			</li>
-	
+	-->
 			<li Class="PatchOperationAdd">
 				<xpath>Defs/RecipeDef[defName="MakeAmmo_23x115mmSoviet_FMJ"]</xpath>
 				<value>
@@ -625,7 +625,7 @@
 				</projectile>
 				</value>
 			</li>
-		
+		<!--
 			<li Class="PatchOperationAdd">
 				<xpath>Defs/RecipeDef[defName="MakeAmmo_23x115mmSoviet_Incendiary"]</xpath>
 				<value>
@@ -857,7 +857,7 @@
 				</projectile>
 				</value>
 			</li>
-		
+		-->
 				<!-- ========== 30 x 165mm Soviet ========== -->
 				
 			<li Class="PatchOperationAdd">
@@ -934,7 +934,7 @@
 				</projectile>
 				</value>
 			</li>
-		
+		<!--
 			<li Class="PatchOperationAdd">
 				<xpath>Defs/RecipeDef[defName="MakeAmmo_30x165mmSoviet_Incendiary"]</xpath>
 				<value>
@@ -1166,7 +1166,7 @@
 				</projectile>
 				</value>
 			</li>
-		
+		-->
 				<!-- ========== 7.62 x 54mm Soviet ========== -->
 				
 			<li Class="PatchOperationAdd">

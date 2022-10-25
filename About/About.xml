@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ModMetaData>
 	<name>PLA Steel Torrent</name>
-	<author>Issac Zhuang</author>
+	<author>Issac Zhuang and TheLoneTec</author>
 	<packageId>IssacZhuang.PLA.Vehicle</packageId>
 	<description>The vehicle of the People's Liberation Army.</description>
 	<supportedVersions>
