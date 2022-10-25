@@ -8,7 +8,7 @@
 		<iconPath>UI/Icons/ThingCategories/CaliberHighCaliber</iconPath>
 	</ThingCategoryDef>
 
-	<!-- ==================== AmmoSet ========================== -->
+	<!-- ==================== AmmoSet ========================== 
 
 	<CombatExtended.AmmoSetDef>
 		<defName>AmmoSet_23x115mmSoviet</defName>
@@ -20,7 +20,7 @@
 			<Ammo_23x115mmSoviet_Sabot>Bullet_23x115mmSoviet_Sabot</Ammo_23x115mmSoviet_Sabot>
 		</ammoTypes>
 	</CombatExtended.AmmoSetDef>
-
+-->
 	<!-- ==================== Ammo ========================== -->
 
 	<ThingDef Class="CombatExtended.AmmoDef" Name="Ammo23x115mmSovietBase" ParentName="SmallAmmoBase" Abstract="True">
@@ -52,7 +52,7 @@
       <ammoClass>FullMetalJacket</ammoClass>
       <cookOffProjectile>Bullet_23x115mmSoviet_FMJ</cookOffProjectile>
     </ThingDef>
-
+<!--
 	<ThingDef Class="CombatExtended.AmmoDef" ParentName="Ammo23x115mmSovietBase">
 		<defName>Ammo_23x115mmSoviet_Incendiary</defName>
 		<label>23x115mm Soviet cartridge (AP-I)</label>
@@ -95,7 +95,7 @@
 		<ammoClass>Sabot</ammoClass>
 		<cookOffProjectile>Bullet_23x115mmSoviet_Sabot</cookOffProjectile>
 	</ThingDef>
-
+-->
 	<!-- ================== Projectiles ================== -->
 
 	<ThingDef Name="Base23x115mmSovietBullet" ParentName="BaseBullet" Abstract="true">
@@ -119,7 +119,7 @@
         <armorPenetrationBlunt>1629.080</armorPenetrationBlunt>
       </projectile>
     </ThingDef>
-
+<!--
 	<ThingDef ParentName="Base23x115mmSovietBullet">
 		<defName>Bullet_23x115mmSoviet_Incendiary</defName>
 		<label>23x115mm Soviet bullet (AP-I)</label>
@@ -162,7 +162,7 @@
 			<speed>309</speed>
 		</projectile>
 	</ThingDef>
-
+-->
 	<!-- ==================== Recipes ========================== -->
 
     <RecipeDef ParentName="PLA_VehicleAmmoRecipeBase">
@@ -190,7 +190,7 @@
       </products>
       <workAmount>10400</workAmount>
     </RecipeDef>
-
+<!--
 	<RecipeDef ParentName="PLA_VehicleAdvancedAmmoRecipeBase">
 		<defName>MakeAmmo_23x115mmSoviet_Incendiary</defName>
 		<label>make 23x115mm Soviet (AP-I) cartridge x200</label>
@@ -304,5 +304,5 @@
 		</products>
 		<workAmount>13600</workAmount>
 	</RecipeDef>
-
+-->
 </Defs>

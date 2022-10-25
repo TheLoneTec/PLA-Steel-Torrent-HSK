@@ -8,7 +8,7 @@
 		<iconPath>UI/Icons/ThingCategories/CaliberHighCaliber</iconPath>
 	</ThingCategoryDef>
 
-	<!-- ==================== AmmoSet ========================== -->
+	<!-- ==================== AmmoSet ========================== 
 
 	<CombatExtended.AmmoSetDef>
 		<defName>AmmoSet_40mmCT</defName>
@@ -18,7 +18,7 @@
 			<Ammo_40mmCT_EMP>Bullet_40mmCT_EMP</Ammo_40mmCT_EMP>
 		</ammoTypes>
 	</CombatExtended.AmmoSetDef>
-
+-->
 	<ThingDef Class="CombatExtended.AmmoDef" Name="Ammo40mmCTBase" ParentName="SmallAmmoBase" Abstract="True">
 		<description>Large caliber CT used by autocannons.</description>
 		<statBases>
@@ -49,7 +49,7 @@
 		<ammoClass>Sabot</ammoClass>
 		<cookOffProjectile>Bullet_40mmCT_APFSDS</cookOffProjectile>
 	</ThingDef>
-
+<!--
 	<ThingDef Class="CombatExtended.AmmoDef" ParentName="Ammo40mmCTBase">
 		<defName>Ammo_40mmCT_EMP</defName>
 		<label>40mm CT (EMP)</label>
@@ -64,6 +64,7 @@
 		<ammoClass>GrenadeEMP</ammoClass>
 		<cookOffProjectile>Bullet_40mmCT_EMP</cookOffProjectile>
 	</ThingDef>
+	-->
 	<!-- ================== Projectiles ================== -->
 
     <ThingDef Class="CombatExtended.AmmoDef" Name="Base40mmCTBullet" ParentName="BaseBullet" Abstract="true">
@@ -107,7 +108,7 @@
 			</li>
 		</comps>
 	</ThingDef>
-
+<!--
 	<ThingDef Class="CombatExtended.AmmoDef" ParentName="Base40mmCTBullet">
 		<defName>Bullet_40mmCT_EMP</defName>
 		<label>40mm CT shell (EMP)</label>
@@ -117,7 +118,7 @@
 			<damageAmountBase>28</damageAmountBase>
 		</projectile>
 	</ThingDef>
-
+-->
 	<!-- ==================== Recipes ========================== -->
 	<RecipeDef ParentName="PLA_VehicleAmmoRecipeBase">
 		<defName>MakeAmmo_40mmCT_APFSDS</defName>
@@ -165,7 +166,7 @@
 		</products>
 		<workAmount>8600</workAmount>
 	</RecipeDef>
-
+<!--
 	<RecipeDef ParentName="PLA_VehicleAmmoRecipeBase">
 		<defName>MakeAmmo_40mmCT_EMP</defName>
 		<label>make 40mm CT (EMP) shells x100</label>
@@ -203,5 +204,5 @@
 		</products>
 		<workAmount>8600</workAmount>
 	</RecipeDef>
-
+-->
 </Defs>

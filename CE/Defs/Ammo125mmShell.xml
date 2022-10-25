@@ -9,7 +9,7 @@
 		<iconPath>Things/Ammo/Cannon/120mmTank/Sabot</iconPath>
 	</ThingCategoryDef>
 
-	<!-- ==================== AmmoSet ========================== -->
+	<!-- ==================== AmmoSet ==========================
 
 	<CombatExtended.AmmoSetDef>
 		<defName>AmmoSet_125mmShell</defName>
@@ -19,7 +19,7 @@
 			<Ammo_125mmShell_APFSDS>Bullet_125mmShell_APFSDS</Ammo_125mmShell_APFSDS>
 		</ammoTypes>
 	</CombatExtended.AmmoSetDef>
-
+ -->
 	<!-- ==================== Ammo ========================== -->
 
 	<ThingDef Class="CombatExtended.AmmoDef" Name="125mmShellBase" ParentName="AmmoBase" Abstract="True">
@@ -54,7 +54,7 @@
 		<ammoClass>GrenadeHE</ammoClass>
 		<detonateProjectile>Bullet_125mmShell_HE</detonateProjectile>
 	</ThingDef>
-
+<!--
 	<ThingDef Class="CombatExtended.AmmoDef" ParentName="125mmShellBase">
 		<defName>Ammo_125mmShell_APFSDS</defName>
 		<label>125mm Shell (APFSDS)</label>
@@ -70,7 +70,7 @@
 		<ammoClass>Sabot</ammoClass>
 		<detonateProjectile>Bullet_125mmShell_APFSDS</detonateProjectile>
 	</ThingDef>
-
+-->
 	<!-- ================== Projectiles ================== -->
 
 	<ThingDef Class="CombatExtended.AmmoDef" Name="Base125mmShell" ParentName="BaseBullet" Abstract="true">
@@ -119,7 +119,7 @@
 			</li>
 		</comps>
 	</ThingDef>
-
+<!--
 	<ThingDef Class="CombatExtended.AmmoDef" ParentName="Base125mmShell">
 		<defName>Bullet_125mmShell_APFSDS</defName>
 		<label>125mm Shell (APFSDS)</label>
@@ -149,7 +149,7 @@
 			</li>
 		</comps>
 	</ThingDef>
-
+-->
 	<!-- ==================== Recipes ========================== -->
 
 	<RecipeDef ParentName="PLA_VehicleAmmoRecipeBase">
@@ -195,7 +195,7 @@
 			<Ammo_125mmShell_HE>2</Ammo_125mmShell_HE>
 		</products>
 	</RecipeDef>
-
+<!--
 	<RecipeDef ParentName="PLA_VehicleAmmoRecipeBase">
 		<defName>MakeAmmo_125mmShell_APFSDS</defName>
 		<label>make 125mm cannon shells (APFSDS) x2</label>
@@ -239,5 +239,5 @@
 			<Ammo_125mmShell_APFSDS>2</Ammo_125mmShell_APFSDS>
 		</products>
 	</RecipeDef>
-
+-->
 </Defs>

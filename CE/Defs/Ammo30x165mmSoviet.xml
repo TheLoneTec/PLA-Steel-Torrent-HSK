@@ -8,7 +8,7 @@
 		<iconPath>UI/Icons/ThingCategories/CaliberHighCaliber</iconPath>
 	</ThingCategoryDef>
 
-	<!-- ==================== AmmoSet ========================== -->
+	<!-- ==================== AmmoSet ==========================
 
 	<CombatExtended.AmmoSetDef>
 		<defName>AmmoSet_30x165mmSoviet</defName>
@@ -20,7 +20,7 @@
 			<Ammo_30x165mmSoviet_Sabot>Bullet_30x165mmSoviet_Sabot</Ammo_30x165mmSoviet_Sabot>
 		</ammoTypes>
 	</CombatExtended.AmmoSetDef>
-
+ -->
 	<!-- ==================== Ammo ========================== -->
 
 	<ThingDef Class="CombatExtended.AmmoDef" Name="Ammo30x165mmSovietBase" ParentName="SmallAmmoBase" Abstract="True">
@@ -52,7 +52,7 @@
 		<ammoClass>FullMetalJacket</ammoClass>
 		<cookOffProjectile>Bullet_30x165mmSoviet_FMJ</cookOffProjectile>
 	</ThingDef>
-
+<!--
 	<ThingDef Class="CombatExtended.AmmoDef" ParentName="Ammo30x165mmSovietBase">
 		<defName>Ammo_30x165mmSoviet_Incendiary</defName>
 		<label>30x165mm Soviet cartridge (AP-I)</label>
@@ -95,7 +95,7 @@
 		<ammoClass>Sabot</ammoClass>
 		<cookOffProjectile>Bullet_30x165mmSoviet_Sabot</cookOffProjectile>
 	</ThingDef>
-
+-->
 	<!-- ================== Projectiles ================== -->
 
 	<ThingDef Name="Base30x165mmSovietBullet" ParentName="BaseBullet" Abstract="true">
@@ -119,7 +119,7 @@
 			<armorPenetrationBlunt>3849.480</armorPenetrationBlunt>
 		</projectile>
 	</ThingDef>
-
+<!--
 	<ThingDef ParentName="Base30x165mmSovietBullet">
 		<defName>Bullet_30x165mmSoviet_Incendiary</defName>
 		<label>30x165mm Soviet bullet (AP-I)</label>
@@ -162,7 +162,7 @@
 			<speed>306</speed>
 		</projectile>
 	</ThingDef>
-
+-->
 	<!-- ==================== Recipes ========================== -->
 
 	<RecipeDef ParentName="PLA_VehicleAmmoRecipeBase">
@@ -190,7 +190,7 @@
 		</products>
 		<workAmount>14400</workAmount>
 	</RecipeDef>
-
+<!--
 	<RecipeDef ParentName="PLA_VehicleAdvancedAmmoRecipeBase">
 		<defName>MakeAmmo_30x165mmSoviet_Incendiary</defName>
 		<label>make 30x165mm Soviet (AP-I) cartridge x200</label>
@@ -304,5 +304,5 @@
 		</products>
 		<workAmount>18600</workAmount>
 	</RecipeDef>
-
+-->
 </Defs>
